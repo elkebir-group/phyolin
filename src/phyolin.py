@@ -131,24 +131,25 @@ def estFN(obj, B):
 
     return fn
 
-def convertFiletoMatrix(fname, cells):
+def convertFiletoMatrix(fname):
     #fname = "/home/leah/Documents/UIUC/Research/Phyolin/phyolin/data/test_data.csv"
     input_dat = pd.DataFrame(pd.read_csv(fname))
-    B = input_dat.sample(cells).to_numpy()
+    #B = input_dat.sample(cells).to_numpy()
+    B = input_dat.to_numpy()
     return(B)
     
 
-def main(fname, cells, t, m):
+def main(fname):
    
-    B = convertFiletoMatrix(fname, int(cells))
+    B = convertFiletoMatrix(fname)
 
 
     print("Input Matrix:")
     # B = np.array([[1,1,0,0],[1,0,1,1],[0,0,1,0], [0,0,0,1],[0,0,0,1]])
 
     print("Generating Model....")
-    #mod,x ,c = phyolin_model(B)
-    mod, x, c = phyolin_cluster(B,t, m)
+    mod,x ,c = phyolin_model(B)
+    #mod, x, c = phyolin_cluster(B,t, m)
     print("Solving Model....")
     msol, obj = solve(mod)
     print("Solve Complete")
@@ -166,9 +167,9 @@ def main(fname, cells, t, m):
 
 if __name__ == "__main__":
     fname = sys.argv[1]
-    cells = sys.argv[2]
+    #cells = sys.argv[2]
     t = 10
     m = 5
-    main(fname, cells, t, m)
+    main(fname)
 
 # print(test_ex[:,[2,3,1,0]])
