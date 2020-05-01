@@ -134,8 +134,8 @@ def estFN(obj, B):
 def convertFiletoMatrix(fname):
     #fname = "/home/leah/Documents/UIUC/Research/Phyolin/phyolin/data/test_data.csv"
     input_dat = pd.DataFrame(pd.read_csv(fname))
-    #B = input_dat.sample(cells).to_numpy()
-    B = input_dat.to_numpy()
+    B = input_dat.sample(1000).to_numpy()
+    #B = input_dat.to_numpy()
     return(B)
     
 
