@@ -11,7 +11,9 @@
 
 #include <ilcp/cp.h>
 #include <vector>
-//#include <fstream>
+#include <fstream>
+#include <iostream>
+#include <sstream>
 
 class PhyolinCP
 {
@@ -21,7 +23,8 @@ public:
   double solve();
   //void printSolutions(std::string, std::string, int ,const std::vector<std::vector<int>> );
 
-
+   void write_csv(std::string filename, std::vector<std::string> colnames, 
+                   std::string delim);
   
 private:
   void init(const std::vector<std::vector<int>> B);
@@ -37,13 +40,16 @@ private:
   /// Solver
   IloCP _cp;
   /// Cover variables
-  IloArray<IloIntVarArray> _x;
+  IloArray <IloIntVarArray> _x;
 
   IloIntVarArray _c;
   /// Minimum weight variable
   //IloNumVar _z;
   /// Objective value
   double _objValue;
+
+  std::vector<std::vector<int>> _Bout;
+
 };
 
 #endif // SETCOVERILP_H
