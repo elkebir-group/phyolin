@@ -279,7 +279,7 @@ int main(int argc, char** argv){
       }else{
         
           std::string s;
-          for (std::array<char, 20> a; input.getline(&a[0], 20, ','); ) {
+          for (std::array<char, 1000> a; input.getline(&a[0], 1000, ','); ) {
                   colnames.push_back(&a[0]);
           }
       }   
