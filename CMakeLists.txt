@@ -63,6 +63,14 @@ set (phyolin_hdr
   src/phyolinCP.h
 )
 
+set (phyolinClust_src
+  src/phyolinClust.cpp
+)
+
+set (phyolinClust_hdr
+  src/phyolinClust.h
+)
+
 set( Boost_USE_STATIC_LIBS ON )
 #set( Boost_USE_SHARED_LIBS ON )
   find_package( Boost REQUIRED )
@@ -87,3 +95,4 @@ set( CommonLibs
 add_executable( phyolin ${phyolin_src} ${phyolin_hdr} )
 target_include_directories( phyolin PUBLIC "src" "${LIBLEMON_ROOT}/include" ${Boost_INCLUDE_DIRS} ${CPLEX_INC_DIR} ${CONCERT_INC_DIR} ${CP_INC_DIR})
 target_link_libraries(phyolin cp  concert cp cplex  ${CommonLibs} )
+
