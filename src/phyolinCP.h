@@ -18,13 +18,15 @@
 class PhyolinCP
 {
 public:
-  PhyolinCP(const std::vector<std::vector<int>> B);
+  PhyolinCP(const std::vector<std::vector<int>> B, double fn);
   
   double solve();
   //void printSolutions(std::string, std::string, int ,const std::vector<std::vector<int>> );
 
    void write_csv(std::string filename, std::vector<std::string> colnames, 
                    std::string delim);
+
+   bool _solve;
   
 private:
   void init(const std::vector<std::vector<int>> B);
@@ -47,6 +49,9 @@ private:
   //IloNumVar _z;
   /// Objective value
   double _objValue;
+
+  double _fnr;
+
 
   std::vector<std::vector<int>> _Bout;
 

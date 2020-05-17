@@ -10,70 +10,52 @@
 #include <array>
 // #include "utils.h"
 
-PhyolinCP::PhyolinCP( const std::vector<std::vector<int>> B)
+PhyolinCP::PhyolinCP( const std::vector<std::vector<int>> B, double fn)
                          
   : _env()
   , _model(_env)
   , _cp(_model)
+  ,_fnr(fn)
+  ,_solve(false)
 {
   init(B);
 }
 
 void PhyolinCP::init(const std::vector<std::vector<int>> B)
 {
-  char buf[1024];
+
   
   IloInt rows = B.size();
   IloInt cols = B[0].size();
-  std::cout << "rows: " << rows << std::endl;
-  std::cout << "cols: " << cols << std::endl;
+  //std::cout << "rows: " << rows << std::endl;
+  //std::cout << "cols: " << cols << std::endl;
   
+  int zero_count = 0;
+  for(int i=0; i < rows; i++){
+    for(int j=0; j < cols; j++)
+      if(B[i][j]==0){
+        zero_count = zero_count + 1;
+      }
+  }
 
-typedef IloArray<IloIntVarArray> IloIntVarArray2;
+  int total_flips_allowed = zero_count * _fnr;
 
-  //  for k in range(ROWS):
-  //       for i in range(COLS):
-  //           for j in range(COLS):
-  //               mdl.add(mdl.if_then(c[i] < c[j], x[k][j] <= x[k][i]))
-  
-  // Initialize variables
-  
- //public IloIfThen(const IloEnv env, const IloConstraint left, const IloConstraint right, const char * name=0)
+  //initialize variables 
+  typedef IloArray<IloIntVarArray> IloIntVarArray2;
+  IloIntVarArray2 _x(_env, rows);
 
-    IloIntVarArray2 _x(_env, rows);
-
-
-    for (IloInt i = 0; i < rows; i++) {
+  //add x variables to the model with domain 0-1
+  for (IloInt i = 0; i < rows; i++) {
       _x[i]  = IloIntVarArray(_env, cols, 0, 1);
-      //_model.add(_x[i]);
-      
-    }
-
-  //  for (IloInt i = 0; i < rows; i++) {
-  //    for(IloInt j=0; j < cols; j++){
-  //           _model.add(_x[i][j]);
-  //    }
-    
 
       
-  //   }
+  }
 
+
+
+  //add permutation column variables to the model
   _c = IloIntVarArray(_env, cols, 0, cols-1);
-  // _model.add(_c);
-  
-  //_z = IloNumVar(_env, -IloInfinity, 0, "z");
-  
-  // // Initialize constraints
-  // IloExpr sum(_env);
-  // sum = 0;
-
-  
-
-
-
  
- 
-
 
   
   
@@ -116,12 +98,13 @@ typedef IloArray<IloIntVarArray> IloIntVarArray2;
    
   std::cout << "init obj" <<std::endl; 
   for(IloInt i=0; i < rows; i++){
-      std::cout << i << std::endl;
+      //std::cout << i << std::endl;
       obj += IloSum(_x[i]);
     
   }
   obj += Bsum;
   
+ // _model.add(obj <= total_flips_allowed);
 
   std::cout << "adding all different" <<std::endl;
      
@@ -165,7 +148,8 @@ typedef IloArray<IloIntVarArray> IloIntVarArray2;
 
     _cp.setParameter(IloCP::TimeLimit, 500);
     _cp.setParameter(IloCP::LogPeriod, 10000);
-  if(_cp.solve()){;
+  if(_cp.solve()){
+     _solve = true;
   // if (!_cp.solve())
   // {
   //   new_sol.push_back(-1);
@@ -184,7 +168,10 @@ typedef IloArray<IloIntVarArray> IloIntVarArray2;
           v.push_back(_cp.getValue(_x[i][j]));
         }
         _Bout.push_back(v);
+      
       }
+  }
+      
     
        
 
@@ -195,7 +182,7 @@ typedef IloArray<IloIntVarArray> IloIntVarArray2;
       //   }
       // }
  
-  }
+  
 }
 
 //https://www.gormanalysis.com/blog/reading-and-writing-csv-files-with-cpp/
@@ -296,9 +283,14 @@ int main(int argc, char** argv){
   // Bin[4][1] = 1;
   // std::cout << "launched" << std::endl;
   //std::cout << Bin.size() << std::endl;
-  PhyolinCP phy(Bin);
+  double fn = std::stoi(argv[3])/ (double) 100;
+  PhyolinCP phy(Bin, fn);
   std::cout << "Flips: " << phy.solve() << std::endl;
-  phy.write_csv(outputFile, colnames, ",");
+  //std::cout << "Phylogeny is Linear:" << phy._solve << std::endl;
+  if(phy._solve){
+    phy.write_csv(outputFile, colnames, ",");
+  }
+  
   //std::cout << "init" << std::endl;
   //phy.solve();
 
