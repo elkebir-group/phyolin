@@ -21,16 +21,17 @@ def convertMat(fname):
 
 def addNoise(B, alpha=0.1, beta=0.2, delta=0.1):
     rows, cols = B.shape
+    Bout = B.copy()
     fp = 0
     fn = 0
     for i in range(rows):
         for j in range(cols):
             if B[i,j]==0 and np.random.random_sample() < alpha:
-                B[i,j] = 1
+                Bout[i,j] = 1
                 fp = fp + 1
             
             if B[i,j] == 1 and np.random.random_sample() < beta:
-                B[i,j] = 0
+                Bout[i,j] = 0
                 fn = fn + 1
     
     for i in range(rows):
@@ -38,21 +39,21 @@ def addNoise(B, alpha=0.1, beta=0.2, delta=0.1):
             k = np.random.randint(0, rows-1, size =1)
             for j in range(cols):
                 if B[k,j] ==1:
-                    B[i,j] =1
+                    Bout[i,j] =1
     
     print(fp)
     print(fn)
     
-    return B
+    return Bout
 
-def saveTrue(B, base_path, sim_id, label):
-    rows, cols = B.shape
+def saveTrue(Bin, base_path, sim_id, label):
+    rows, cols = Bin.shape
     fname = "sim" + str(sim_id) + "_m" + str(rows) + "_n" + str(cols) + "_" + label
     
 
     fname_csv = base_path + "/true/" + fname + ".csv"
     
-    Bcsv = np.vstack((np.array(range(0, cols)), B))
+    Bcsv = np.vstack((np.array(range(0, cols)), Bin))
     np.savetxt(fname_csv, Bcsv,fmt="%01d", delimiter="," )
 
 
@@ -110,41 +111,56 @@ def genSims(base_path, n=100, m=100, num_sims = 25,
     while(linear_count < num_sims and branch_count < num_sims):
         B =run_ms("temp.txt", m, n)
         if(is_linear(B)):
-            linear_count= linear_count + 1
-            Bnoisy = addNoise(B,  alpha= alpha, beta = beta, delta = delta)
-            sim_id = sim_id + 1
-            label = "linear"
-            saveB(Bnoisy,base_path, sim_id, label )
-            saveTrue(B, base_path, sim_id, label)
-            labels.append(label)
+            print("next")
+            # linear_count= linear_count + 1
+            # Bnoisy = addNoise(B,  alpha= alpha, beta = beta, delta = delta)
+            # sim_id = sim_id + 1
+            # label = "linear"
+            # saveB(Bnoisy,base_path, sim_id, label )
+            # saveTrue(B, base_path, sim_id, label)
+            # labels.append(label)
         else:
             branch_count = branch_count + 1
             sim_id = sim_id + 1
-            Bnoisy = addNoise(B,  alpha= alpha, beta = beta, delta = delta)
             label= "branched"
-            labels.append(label)
-            saveB(Bnoisy,base_path, sim_id, label )
             saveTrue(B, base_path, sim_id, label)
+            Bnoisy = addNoise(B,  alpha= alpha, beta = beta, delta = delta)
+           
+            #labels.append(label)
+            saveB(Bnoisy,base_path, sim_id, label )
+            
             weight = np.sum(B)
 
             B_lin = make_constrained_linear_input(n, m, weight)
-            
-            Bnoisy = addNoise(B_lin,  alpha= alpha, beta = beta, delta = delta)
+            label = "linear"
             sim_id = sim_id + 1
             linear_count = linear_count + 1
-            label = "linear"
-            labels.append(label)
             saveTrue(B_lin, base_path, sim_id, label)
+            Bnoisy = addNoise(B_lin,  alpha= alpha, beta = beta, delta = delta)
+           
+            
+            
+            #labels.append(label)
+          
             saveB(Bnoisy, base_path, sim_id, label )
 
 
 
 #genSims("../data/sim2", num_sims=25, delta=0)
 #genSims("../data/sim3", num_sims=25, delta=.1)
-genSims("../data/sim4", num_sims=25, beta = 0.4, delta = 0.2)
-genSims("../data/sim5", num_sims=25, beta = 0.4, delta = 0.0)
-genSims("../data/sim6", num_sims=25, beta = 0.4, delta = 0.1)
-genSims("../data/sim7", num_sims=25, beta = 0.4, delta = 0.2)
+#genSims("../data/sim4", num_sims=25, beta = 0.4, delta = 0.2)
+#genSims("../data/sim5", num_sims=25, beta = 0.4, delta = 0.0)
+#genSims("../data/sim6", num_sims=25, beta = 0.4, delta = 0.1)
+#genSims("../data/sim7", num_sims=25, beta = 0.4, delta = 0.2)
+#genSims("../data/test", num_sims=2, beta=0.2, delta= 0.1)
+# genSims("../data/sim8", num_sims=25, alpha = 0, beta=0.2, delta= 0.0)
+# genSims("../data/sim9", num_sims=25, alpha = 0, beta=0.2, delta= 0.1)
+# genSims("../data/sim10", num_sims=25, alpha = 0, beta=0.2, delta= 0.2)
+
+# genSims("../data/sim11", num_sims=25, alpha = 0, beta=0.4, delta= 0.0)
+# genSims("../data/sim12", num_sims=25, alpha = 0, beta=0.4, delta= 0.1)
+# genSims("../data/sim13", num_sims=25, alpha = 0, beta=0.4, delta= 0.2)
+
 
 #print(is_linear(foo))
 #print(is_linear(make_constrained_linear_input(100,100, np.sum(foo))))

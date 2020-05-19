@@ -1,2 +1,0 @@
-file seconds
-./Patient6.csv 47.47
