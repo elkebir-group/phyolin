@@ -60,7 +60,7 @@ EXECUTABLE | DESCRIPTION
 
 <a name="io"></a>
 ### I/O formats
-The input to Phyolin is a .csv file that contains n +1 rows and m columns where n is the the number of single-cells and m is the number of mutations. The first row must contain the mutation names or ids. All other entries in the .csv file should be either 1 is mutation j is present in cell i an 0 otherwise. 
+The input to Phyolin is a .csv file that contains n +1 rows and m columns where n is the the number of single-cells and m is the number of mutations. The first row must contain the mutation names or ids. All other entries in the .csv file should be either 1 if mutation j is present in cell i adn 0 otherwise. 
 
 The output is a .csv file with the same number of rows and columns with the linear phylogeny inferred by Phyolin by flipping potential false negatives.
 
