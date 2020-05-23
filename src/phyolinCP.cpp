@@ -8,6 +8,7 @@
 #include "phyolinCP.h"
 #include <vector>
 #include <array>
+#include <cstdlib>
 // #include "utils.h"
 
 PhyolinCP::PhyolinCP( const std::vector<std::vector<int>> B, double fn)
@@ -17,6 +18,7 @@ PhyolinCP::PhyolinCP( const std::vector<std::vector<int>> B, double fn)
   , _cp(_model)
   ,_fnr(fn)
   ,_solve(false)
+  ,_flips(0)
 {
   init(B);
 }
@@ -68,7 +70,7 @@ void PhyolinCP::init(const std::vector<std::vector<int>> B)
     }
   }
 }
- std::cout << "Constraints added: " << total_const << std::endl;
+
   
  
 
@@ -83,10 +85,7 @@ void PhyolinCP::init(const std::vector<std::vector<int>> B)
       }
     }
   }
-   std::cout << "adding domain constraint: " << tc << std::endl;
-  // IloIntExpr InitTotal(_env, Bsum);
-  // IloIntExpr total(_env);
-  std::cout << "adding objective" <<std::endl;  
+ 
   IloIntExpr obj(_env,0);
   IloIntExpr Bsum(_env);
   for(IloInt i=0; i < rows; i++){
@@ -95,8 +94,7 @@ void PhyolinCP::init(const std::vector<std::vector<int>> B)
     }
   }
  
-   
-  std::cout << "init obj" <<std::endl; 
+
   for(IloInt i=0; i < rows; i++){
       //std::cout << i << std::endl;
       obj += IloSum(_x[i]);
@@ -106,61 +104,33 @@ void PhyolinCP::init(const std::vector<std::vector<int>> B)
   
  // _model.add(obj <= total_flips_allowed);
 
-  std::cout << "adding all different" <<std::endl;
      
   //_model.add(obj == total);
      
   
   _model.add(IloAllDiff(_env, _c));
 
-   std::cout << "obj" <<std::endl; 
   _model.add(IloMinimize(_env, obj));
 
    
-  // // there are _k features in the cover
-  // for (int i = 0; i < nrFeatures; ++i)
-  // {
-  //   sum += _x[i];
-  // }
-  // _model.add(sum == _k);
-  // sum.clear();
   
   
 
-  // for( std::vector<int> sol: solution_set){
-  //   int card = sol.size();
-  //   for( int s: sol){
-  //     sum += _x[s];
-  //   }
-  //   _model.add(sum < card);
-  //   sum.clear();
-  // }
- 
-  // //create the objective function
-  // for (int i = 0; i < nrFeatures; ++i)
-  // {
-  //   //assert(_freqMap.count(_mutationVector[i]) == 1);
-  //   //double freq = log(_freqMap.find(_mutationVector[i])->second);
-  //   obj += _x[i];
-  // }
   
-  std::cout << "model initialized" << std::endl;
 
     _cp.setParameter(IloCP::TimeLimit, 500);
-    _cp.setParameter(IloCP::LogPeriod, 10000);
+    //_cp.setParameter(IloCP::LogPeriod, 10000);
+    _cp.setParameter(IloCP::LogVerbosity, IloCP::Quiet);
   if(_cp.solve()){
      _solve = true;
-  // if (!_cp.solve())
-  // {
-  //   new_sol.push_back(-1);
-  //   return new_sol;
-  // }
+
 
 
 
   
       _objValue = _cp.getObjValue();
-      std::cout << "Obj value: " << _objValue  << std::endl;
+      _flips = _objValue;
+  
       
       for(IloInt i = 0; i < rows; i++){
         std::vector<int> v;
@@ -173,15 +143,7 @@ void PhyolinCP::init(const std::vector<std::vector<int>> B)
   }
       
     
-       
-
-       //std::cout << _cp.getValue(_x[0][0]) << std::endl;
-      // for(IloInt i=0; i < 4; i++){
-      //   for(IloInt j=0; j < 5; j++){
-      //       std::cout << "x_" << i << "," << j << "=" << _cp.getValue(_x[i][j]) << std::endl;
-      //   }
-      // }
- 
+      
   
 }
 
@@ -223,7 +185,13 @@ double PhyolinCP::solve()
 {
   int r = _Bout.size();
   int c = _Bout[0].size();
-  double estFn = (double) _objValue / (r*c);
+  int all_ones = 0;
+  for(int i =0; i < _Bout.size(); i++){
+    for(int j=0; j < _Bout[i].size(); j++){
+      all_ones += _Bout[i][j];
+    }
+  }
+  double estFn = (double) _objValue / all_ones;
   return estFn;
 }
 
@@ -233,7 +201,7 @@ int main(int argc, char** argv){
   //convert to B input
 
   std::string inputFile  = argv[1];
-  std::cout << inputFile << std::endl;
+  //std::cout << inputFile << std::endl;
   std::string outputFile = argv[2];
   std::vector<std::vector<int>> Bin;
   std::vector<std::string> colnames;
@@ -246,12 +214,12 @@ int main(int argc, char** argv){
     while(!myfile.eof()){
       
       std::string line;
-      //std::cout << n << std::endl;
+
       std::getline(myfile, line);
       if(line == "") break;
       n = n + 1;
       
-        //std::cout << line << std::endl;
+    
         std::istringstream input(line);
         
         if(n > 1){
@@ -276,24 +244,28 @@ int main(int argc, char** argv){
   }
 
 
-  // std::vector<int> v(4,0);
-  // std::vector<std::vector<int>> Bin(1000,v);
-  // Bin[0][0] =1;
-  // Bin[3][1] = 1;
-  // Bin[4][1] = 1;
-  // std::cout << "launched" << std::endl;
-  //std::cout << Bin.size() << std::endl;
-  double fn = std::stoi(argv[3])/ (double) 100;
+
+  double fn = strtod(argv[3], NULL);
+  std::cout << std::endl;
+  std::cout << "Starting Phyolin...." <<std::endl;
   PhyolinCP phy(Bin, fn);
-  std::cout << "Flips: " << phy.solve() << std::endl;
-  //std::cout << "Phylogeny is Linear:" << phy._solve << std::endl;
+  float estFN = 0;
+ 
+  
   if(phy._solve){
+    std::cout << "Solve complete, writing output..." << std::endl;
+    std::cout << "Total Flips: " << phy._flips << std::endl;
     phy.write_csv(outputFile, colnames, ",");
+    estFN = phy.solve();
+    std::cout << "Phyolin estimated false negative rate: " << estFN << std::endl;
+    if(estFN <= fn){
+      std::cout << "Topology is Linear" << std::endl;
+    }else{
+        std::cout << "Topology is Branched" << std::endl;
+    }
   }
   
-  //std::cout << "init" << std::endl;
-  //phy.solve();
-
+    std::cout << std::endl;
   
   return 0;
 }

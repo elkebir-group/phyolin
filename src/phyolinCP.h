@@ -27,6 +27,8 @@ public:
                    std::string delim);
 
    bool _solve;
+
+   int _flips;
   
 private:
   void init(const std::vector<std::vector<int>> B);
