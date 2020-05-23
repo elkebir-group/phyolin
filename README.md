@@ -22,7 +22,7 @@ PhyDOSE is implemented in C++.
 
 | Folder    | DESCRIPTION                                                  |
 | --------- | ------------------------------------------------------------ |
-| `src`     | source code for PhyDOSE                                      |
+| `src`     | source code for Phyolin                                     |
 | `data`    | example, simulated and real data for Phyolin                             
 | `plots`   | output plots 
 
@@ -31,7 +31,7 @@ PhyDOSE is implemented in C++.
 
 ### Dependencies   
 
-PhyDOSE has the following dependencies:
+Phyolin has the following dependencies:
 
 
 * [CMake](http://www.cmake.org/) (>= 2.8)
