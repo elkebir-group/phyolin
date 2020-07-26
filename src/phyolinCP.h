@@ -1,8 +1,8 @@
 /*
- * setcoverilp.h
+ * phyolinCP.h
  *
- *  Created on: 5-dec-2019
- *      Author: M. El-Kebir
+ *  created on 30 Apr 2020
+ *      Author: Leah Weber
  */
 
 #ifndef PHYOLINCP_H
@@ -20,43 +20,51 @@ class PhyolinCP
 public:
   PhyolinCP(const std::vector<std::vector<int>> B, double fn);
   
-  double solve();
-  //void printSolutions(std::string, std::string, int ,const std::vector<std::vector<int>> );
+  double hypoTest();
+
+  void solve();
+  
 
    void write_csv(std::string filename, std::vector<std::string> colnames, 
                    std::string delim);
 
    bool _solve;
 
-   int _flips;
+   double _flips;
+
+
+
+   
+  
+
   
 private:
-  void init(const std::vector<std::vector<int>> B);
-  
-private:
-  /// Number of features in distinguishing feature set
-  //const int _k;
+  //input matrix B
+ std::vector<std::vector<int>> _B;
+
   /// Environment
- 
   IloEnv _env;
-  /// CPlex model
+
+  /// CP model
   IloModel _model;
+
   /// Solver
   IloCP _cp;
-  /// Cover variables
+  
+  /// decision variablse
   IloArray <IloIntVarArray> _x;
 
   IloIntVarArray _c;
-  /// Minimum weight variable
-  //IloNumVar _z;
-  /// Objective value
-  double _objValue;
-
+  
+  //false negative rate
   double _fnr;
 
-
+  //B' output matrix after flipping
   std::vector<std::vector<int>> _Bout;
+
+  //time limit for the solver
+  int _time;
 
 };
 
-#endif // SETCOVERILP_H
+#endif 
