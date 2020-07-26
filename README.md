@@ -1,6 +1,6 @@
 # Phyolin - Identifying a linear perfect phylogeny in single-cell DNA sequencing data of tumors
 
-The input to PhyDOSE is a binary matrix and a threshold false negative rate.  Under the assumption that the phylogeny is linear, Phyolin outputs an estimated false negative rate, an inferred linear phylogeny and classification of the tree topology based on the inputted threshold. 
+The input to Phyolin is a binary matrix and a threshold false negative rate.  Under the assumption that the phylogeny is linear, Phyolin outputs an estimated false negative rate, an inferred linear phylogeny and classification of the tree topology based on the inputted threshold. 
 
 ![Overview of Phyolin](Figure1.png)
 
@@ -18,7 +18,7 @@ The input to PhyDOSE is a binary matrix and a threshold false negative rate.  Un
 <a name="start"></a>
 ## Getting started
 
-PhyDOSE is implemented in C++. 
+Phyolin is implemented in C++. 
 
 | Folder    | DESCRIPTION                                                  |
 | --------- | ------------------------------------------------------------ |
