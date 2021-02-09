@@ -6,3 +6,4 @@ aml_patients/read_counts
 *.yaml
 Snakefile
 aml_patients/*.txt
+plots/
