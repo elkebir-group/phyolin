@@ -23,7 +23,7 @@ public:
     int getSolveStatus() {
       return _solve;
     }
-  //void printSolutions(std::string, std::string, int ,const std::vector<std::vector<int>> );
+  
 
    void write_csv(std::string filename, 
                    std::string delim);
