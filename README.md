@@ -55,7 +55,7 @@ The compilation results in the following files in the `build` directory:
 
 EXECUTABLE | DESCRIPTION
 -----------|-------------
-`phyolin`  | estimate the false negative rate under a null model of a linear topology
+`phyolin`  | classify the pattern of evolution as linear or branched from a discretized single cell matrix |
 
 <a name="usage"></a>
 ## Usage Instructions
