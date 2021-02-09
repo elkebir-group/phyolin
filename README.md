@@ -37,7 +37,7 @@ Phyolin has the following dependencies:
 
 * [CMake](http://www.cmake.org/) (>= 2.8)
 * [Boost](http://www.boost.org) (>= 1.38)
-* [lemon] (https://lemon.cs.elte.hu/trac/lemon)
+* [lemon](https://lemon.cs.elte.hu/trac/lemon)
 * [CP Optimizer](https://www.ibm.com/analytics/cplex-cp-optimizer) (>= 12.7)
 
 <a name="comp"></a>
