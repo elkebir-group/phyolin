@@ -57,19 +57,15 @@ link_directories( ${CPLEX_LIB_DIR} ${CONCERT_LIB_DIR} ${CP_LIB_DIR} "${LIBLEMON_
 
 set (phyolin_src
   src/phyolinCP.cpp
+  src/singlecellmatrix.cpp
 )
 
 set (phyolin_hdr
   src/phyolinCP.h
+  src/singlecellmatrix.h
 )
 
-set (phyolinClust_src
-  src/phyolinClust.cpp
-)
 
-set (phyolinClust_hdr
-  src/phyolinClust.h
-)
 
 set( Boost_USE_STATIC_LIBS ON )
 #set( Boost_USE_SHARED_LIBS ON )
