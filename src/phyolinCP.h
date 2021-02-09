@@ -1,15 +1,11 @@
-/*
- * phyolinCP.h
- *
- *  created on 30 Apr 2020
- *      Author: Leah Weber
- */
+
 
 #ifndef PHYOLINCP_H
 #define PHYOLINCP_H
 
 
 #include <ilcp/cp.h>
+#include "singlecellmatrix.h"
 #include <vector>
 #include <fstream>
 #include <iostream>
@@ -18,53 +14,87 @@
 class PhyolinCP
 {
 public:
-  PhyolinCP(const std::vector<std::vector<int>> B, double fn);
+  PhyolinCP(const SingleCellMatrix B, double fp, int time, double threshold);
   
-  double hypoTest();
+   int getObjective() {
+      return _objValue;
+    }
 
-  void solve();
-  
+    int getSolveStatus() {
+      return _solve;
+    }
+  //void printSolutions(std::string, std::string, int ,const std::vector<std::vector<int>> );
 
-   void write_csv(std::string filename, std::vector<std::string> colnames, 
+   void write_csv(std::string filename, 
                    std::string delim);
-
-   bool _solve;
-
-   double _flips;
+  
+   void write_counts(std::string filename);
 
 
-
+  double getLikelihood();
    
   
-
+private:
+  void init();
   
 private:
-  //input matrix B
- std::vector<std::vector<int>> _B;
-
+  SingleCellMatrix _B;
+  /// Number of features in distinguishing feature set
+  //const int _k;
   /// Environment
+ 
+
   IloEnv _env;
-
-  /// CP model
+  /// CPlex model
   IloModel _model;
-
   /// Solver
   IloCP _cp;
-  
-  /// decision variablse
+  /// Cover variables
   IloArray <IloIntVarArray> _x;
 
   IloIntVarArray _c;
-  
-  //false negative rate
-  double _fnr;
 
-  //B' output matrix after flipping
-  std::vector<std::vector<int>> _Bout;
+  IloIntVar _y;
 
-  //time limit for the solver
+  bool _solve;
+
+  // IloIntVarArray _d;
+  /// Minimum weight variable
+  //IloNumVar _z;
+  /// Objective value
+  double _objValue;
+
+  double _fp;
+
   int _time;
+
+  double _threshold;
+
+
+  int _fpCounts;
+  
+  int _cells;
+  int _sites;
+
+  double _estFP;
+
+  double _estFN;
+
+  int _inputZeros;
+  int _inputOnes;
+  int _inputMissing;
+  int _outputZeros;
+  int _outputOnes;
+  int _outputMissing;
+  int N_01;
+  int N_11;
+  int N_00;
+  int N_10;
+  // double _doublet;
+
+
+  std::vector<std::vector<int>> _Bout;
 
 };
 
-#endif 
+#endif // SETCOVERILP_H
