@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 14 of /scratch/data/leah/phyolin_private/aml_patients/Snakefile:
-Missing input files for rule discretize_counts:
-read_counts/AML-01-001_input_AD.csv
-read_counts/AML-01-001_input_DP.csv
