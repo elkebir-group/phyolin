@@ -1,0 +1,70 @@
+reading  from file input/AML-84-001_input.csv
+rows: 961
+cols: 5
+input zeros:1188
+input ones:3365
+input missing:252
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 4811 variables, 26608 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.20s (0.20s extraction + 0.00s propagation)
+ !  . Log search space  : 1199.6 (before), 1199.6 (after)
+ !  . Memory usage      : 8.5 MB (before), 8.5 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 4811 variables, 26608 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1199.6 (before), 1199.6 (after)
+ !  . Memory usage      : 8.5 MB (before), 8.5 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0       4811                 -
+ + New bound is 0
+                        8          5        F     4  = _int4806
+ + New bound is 1
+ *           214      937  0.06s               (gap is 99.53%)
+             214     2813          1        F     4  = _int4806
+ + New bound is 108 (gap is 49.53%)
+ *           158     3808  0.13s               (gap is 31.65%)
+             158     3884          1        F     4  = _int4807
+ + New bound is 134 (gap is 15.19%)
+             158     3954          1        F     3  = _int4807
+ + New bound is 147 (gap is 6.96%)
+             158     4038          1        F     4  = _int4806
+ + New bound is 154 (gap is 2.53%)
+             158     4114          1        F     3  = _int4807
+ + New bound is 157 (gap is 0.63%)
+             158    10000          1        F     4  = _int4808
+             158    20000       1034              2 != _int4809
+             158    30000       1034              0 != _int4806
+             158    40000       1034        F     4  = _int4808
+             158    50000       1034        F     3  = _int4807
+             158    60000       1034        F     2  = _int4805
+             158    70000       1034        F     4  = _int4805
+             158    70820       1034        F     2  = _int4807
+ + New bound is 158 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 158 (optimal - effective tol. is 0)
+ ! Best bound             : 158
+ ! Number of branches     : 70820
+ ! Number of fails        : 34450
+ ! Total memory usage     : 47.1 MB (39.3 MB CP Optimizer + 7.9 MB Concert)
+ ! Time spent in solve    : 10.71s (10.69s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 6618.7
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 158
+Log Likelihood: -nan

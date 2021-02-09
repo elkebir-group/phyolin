@@ -1,0 +1,73 @@
+reading  from file input/AML-52-001_input.csv
+rows: 6610
+cols: 3
+input zeros:11457
+input ones:8103
+input missing:270
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 19834 variables, 77976 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.90s (0.88s extraction + 0.01s propagation)
+ !  . Log search space  : 11461.8 (before), 11461.8 (after)
+ !  . Memory usage      : 28.7 MB (before), 28.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 19834 variables, 77976 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 11461.8 (before), 11461.8 (after)
+ !  . Memory usage      : 28.7 MB (before), 28.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      19834                 -
+ + New bound is 0
+                        4          3        F     2  = _int19830
+ + New bound is 1
+ *          1476     7721  1.87s               (gap is 99.93%)
+            1476    10000          1              1  = _int15121
+            1476    20000          1              0  = _int12478
+            1476    30000          1              1  = _int19309
+            1476    40000          1              0  = _int1791
+            1476    50000          1              0  = _int4766
+            1476    60000          1              0  = _int7668
+ *           627    61050  10.59s              (gap is 99.84%)
+             627    61056          1        F     2  = _int19830
+ + New bound is 315 (gap is 49.76%)
+             627    61064          1        F     1  = _int19830
+ + New bound is 472 (gap is 24.72%)
+             627    61070          1        F     2  = _int19830
+ + New bound is 551 (gap is 12.12%)
+             627    61076          1        F     2  = _int19830
+ + New bound is 590 (gap is 5.90%)
+             627    61082          1        F     2  = _int19830
+ + New bound is 610 (gap is 2.71%)
+             627    61090          1        F     1  = _int19830
+ + New bound is 620 (gap is 1.12%)
+             627    61096          1        F     2  = _int19830
+ + New bound is 625 (gap is 0.32%)
+             627    61102          1        F     2  = _int19830
+ + New bound is 627 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 627 (optimal - effective tol. is 0)
+ ! Best bound             : 627
+ ! Number of branches     : 61102
+ ! Number of fails        : 44
+ ! Total memory usage     : 153.1 MB (130.3 MB CP Optimizer + 22.8 MB Concert)
+ ! Time spent in solve    : 11.03s (10.99s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 5559.8
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 627
+Log Likelihood: -nan

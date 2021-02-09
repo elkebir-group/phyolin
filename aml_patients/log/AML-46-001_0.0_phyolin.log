@@ -1,0 +1,65 @@
+reading  from file input/AML-46-001_input.csv
+rows: 5060
+cols: 4
+input zeros:2984
+input ones:16390
+input missing:866
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 20245 variables, 95286 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 1.23s (1.22s extraction + 0.00s propagation)
+ !  . Log search space  : 2992.0 (before), 2992.0 (after)
+ !  . Memory usage      : 25.7 MB (before), 25.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 20245 variables, 95286 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.07s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 2992.0 (before), 2992.0 (after)
+ !  . Memory usage      : 25.7 MB (before), 25.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      20245                 -
+ + New bound is 0
+                        6          4        F     3  = _int20240
+ + New bound is 1
+ *           888     1672  0.25s               (gap is 99.89%)
+             888     9237          1        F     3  = _int20240
+ + New bound is 445 (gap is 49.89%)
+             888     9257          1        F     2  = _int20240
+ + New bound is 668 (gap is 24.77%)
+             888    10000          1              0  = _int3772
+ *           709    11094  0.73s               (gap is 5.78%)
+             709    11116          1        F     2  = _int20240
+ + New bound is 689 (gap is 2.82%)
+             709    11140          1        F     3  = _int20242
+ + New bound is 700 (gap is 1.27%)
+             709    11162          1        F     1  = _int20242
+ + New bound is 706 (gap is 0.42%)
+ *           707    12993  1.01s               (gap is 0.14%)
+             707    13011          1        F     3  = _int20240
+ + New bound is 707 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 3 solutions found.
+ ! Best objective         : 707 (optimal - effective tol. is 0)
+ ! Best bound             : 707
+ ! Number of branches     : 13011
+ ! Number of fails        : 90
+ ! Total memory usage     : 153.1 MB (123.2 MB CP Optimizer + 29.9 MB Concert)
+ ! Time spent in solve    : 1.08s (1.01s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 12755.9
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 707
+Log Likelihood: -nan

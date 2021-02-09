@@ -1,0 +1,145 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	297	phyolin
+	298
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-98-001_input.csv
+    output: phyolin_matrix_output/AML-98-001_fp0.001_matrix.csv, phyolin_estimate/AML-98-001_fp0.001_predict.out
+    log: log/AML-98-001_0.001_phyolin.log, log/AML-98-001_0.001_phyolin.err.log
+    jobid: 393
+    benchmark: benchmark/AML-98-001_0.001_phyolin.out
+    wildcards: patient=AML-98-001, fp=0.001
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-51-001_input.csv
+    output: phyolin_matrix_output/AML-51-001_fp0.0_matrix.csv, phyolin_estimate/AML-51-001_fp0.0_predict.out
+    log: log/AML-51-001_0.0_phyolin.log, log/AML-51-001_0.0_phyolin.err.log
+    jobid: 250
+    benchmark: benchmark/AML-51-001_0.0_phyolin.out
+    wildcards: patient=AML-51-001, fp=0.0
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-91-001_input.csv
+    output: phyolin_matrix_output/AML-91-001_fp0.001_matrix.csv, phyolin_estimate/AML-91-001_fp0.001_predict.out
+    log: log/AML-91-001_0.001_phyolin.log, log/AML-91-001_0.001_phyolin.err.log
+    jobid: 372
+    benchmark: benchmark/AML-91-001_0.001_phyolin.out
+    wildcards: patient=AML-91-001, fp=0.001
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-15-001_input.csv
+    output: phyolin_matrix_output/AML-15-001_fp0.0_matrix.csv, phyolin_estimate/AML-15-001_fp0.0_predict.out
+    log: log/AML-15-001_0.0_phyolin.log, log/AML-15-001_0.0_phyolin.err.log
+    jobid: 148
+    benchmark: benchmark/AML-15-001_0.0_phyolin.out
+    wildcards: patient=AML-15-001, fp=0.0
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-02-001_input.csv
+    output: phyolin_matrix_output/AML-02-001_fp0.0_matrix.csv, phyolin_estimate/AML-02-001_fp0.0_predict.out
+    log: log/AML-02-001_0.0_phyolin.log, log/AML-02-001_0.0_phyolin.err.log
+    jobid: 103
+    benchmark: benchmark/AML-02-001_0.0_phyolin.out
+    wildcards: patient=AML-02-001, fp=0.0
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-20-001_input.csv
+    output: phyolin_matrix_output/AML-20-001_fp0.0_matrix.csv, phyolin_estimate/AML-20-001_fp0.0_predict.out
+    log: log/AML-20-001_0.0_phyolin.log, log/AML-20-001_0.0_phyolin.err.log
+    jobid: 163
+    benchmark: benchmark/AML-20-001_0.0_phyolin.out
+    wildcards: patient=AML-20-001, fp=0.0
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-29-001_input.csv
+    output: phyolin_matrix_output/AML-29-001_fp0.001_matrix.csv, phyolin_estimate/AML-29-001_fp0.001_predict.out
+    log: log/AML-29-001_0.001_phyolin.log, log/AML-29-001_0.001_phyolin.err.log
+    jobid: 192
+    benchmark: benchmark/AML-29-001_0.001_phyolin.out
+    wildcards: patient=AML-29-001, fp=0.001
+
+
+[Sat Jan 30 19:15:49 2021]
+rule phyolin:
+    input: input/AML-34-001_input.csv
+    output: phyolin_matrix_output/AML-34-001_fp0.001_matrix.csv, phyolin_estimate/AML-34-001_fp0.001_predict.out
+    log: log/AML-34-001_0.001_phyolin.log, log/AML-34-001_0.001_phyolin.err.log
+    jobid: 207
+    benchmark: benchmark/AML-34-001_0.001_phyolin.out
+    wildcards: patient=AML-34-001, fp=0.001
+
+[Sat Jan 30 19:15:51 2021]
+Finished job 148.
+1 of 298 steps (0.34%) done
+[Sat Jan 30 19:17:11 2021]
+Finished job 163.
+2 of 298 steps (0.67%) done
+[Sat Jan 30 19:19:01 2021]
+Finished job 250.
+3 of 298 steps (1%) done
+Terminating processes on user request, this might take some time.
+[Sat Jan 30 19:19:55 2021]
+Error in rule phyolin:
+    jobid: 207
+    output: phyolin_matrix_output/AML-34-001_fp0.001_matrix.csv, phyolin_estimate/AML-34-001_fp0.001_predict.out
+    log: log/AML-34-001_0.001_phyolin.log, log/AML-34-001_0.001_phyolin.err.log (check log file(s) for error message)
+    shell:
+        ../build/phyolin -input input/AML-34-001_input.csv -output phyolin_matrix_output/AML-34-001_fp0.001_matrix.csv -counts phyolin_estimate/AML-34-001_fp0.001_predict.out  -fp 0.001 -time 900 -fn 0.06  > log/AML-34-001_0.001_phyolin.log 2> log/AML-34-001_0.001_phyolin.err.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jan 30 19:19:55 2021]
+Error in rule phyolin:
+    jobid: 192
+    output: phyolin_matrix_output/AML-29-001_fp0.001_matrix.csv, phyolin_estimate/AML-29-001_fp0.001_predict.out
+    log: log/AML-29-001_0.001_phyolin.log, log/AML-29-001_0.001_phyolin.err.log (check log file(s) for error message)
+    shell:
+        ../build/phyolin -input input/AML-29-001_input.csv -output phyolin_matrix_output/AML-29-001_fp0.001_matrix.csv -counts phyolin_estimate/AML-29-001_fp0.001_predict.out  -fp 0.001 -time 900 -fn 0.06  > log/AML-29-001_0.001_phyolin.log 2> log/AML-29-001_0.001_phyolin.err.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jan 30 19:19:55 2021]
+Error in rule phyolin:
+    jobid: 372
+    output: phyolin_matrix_output/AML-91-001_fp0.001_matrix.csv, phyolin_estimate/AML-91-001_fp0.001_predict.out
+    log: log/AML-91-001_0.001_phyolin.log, log/AML-91-001_0.001_phyolin.err.log (check log file(s) for error message)
+    shell:
+        ../build/phyolin -input input/AML-91-001_input.csv -output phyolin_matrix_output/AML-91-001_fp0.001_matrix.csv -counts phyolin_estimate/AML-91-001_fp0.001_predict.out  -fp 0.001 -time 900 -fn 0.06  > log/AML-91-001_0.001_phyolin.log 2> log/AML-91-001_0.001_phyolin.err.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jan 30 19:19:55 2021]
+Error in rule phyolin:
+    jobid: 103
+    output: phyolin_matrix_output/AML-02-001_fp0.0_matrix.csv, phyolin_estimate/AML-02-001_fp0.0_predict.out
+    log: log/AML-02-001_0.0_phyolin.log, log/AML-02-001_0.0_phyolin.err.log (check log file(s) for error message)
+    shell:
+        ../build/phyolin -input input/AML-02-001_input.csv -output phyolin_matrix_output/AML-02-001_fp0.0_matrix.csv -counts phyolin_estimate/AML-02-001_fp0.0_predict.out  -fp 0.0 -time 900 -fn 0.06  > log/AML-02-001_0.0_phyolin.log 2> log/AML-02-001_0.0_phyolin.err.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jan 30 19:19:55 2021]
+Error in rule phyolin:
+    jobid: 393
+    output: phyolin_matrix_output/AML-98-001_fp0.001_matrix.csv, phyolin_estimate/AML-98-001_fp0.001_predict.out
+    log: log/AML-98-001_0.001_phyolin.log, log/AML-98-001_0.001_phyolin.err.log (check log file(s) for error message)
+    shell:
+        ../build/phyolin -input input/AML-98-001_input.csv -output phyolin_matrix_output/AML-98-001_fp0.001_matrix.csv -counts phyolin_estimate/AML-98-001_fp0.001_predict.out  -fp 0.001 -time 900 -fn 0.06  > log/AML-98-001_0.001_phyolin.log 2> log/AML-98-001_0.001_phyolin.err.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /scratch/data/leah/phyolin_private/aml_patients/.snakemake/log/2021-01-30T191549.036345.snakemake.log

@@ -1,0 +1,68 @@
+reading  from file input/AML-97-001_input.csv
+rows: 6013
+cols: 3
+input zeros:3659
+input ones:14159
+input missing:221
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 18043 variables, 71069 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.81s (0.80s extraction + 0.00s propagation)
+ !  . Log search space  : 3663.8 (before), 3663.8 (after)
+ !  . Memory usage      : 18.7 MB (before), 18.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 18043 variables, 71069 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.04s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 3663.8 (before), 3663.8 (after)
+ !  . Memory usage      : 18.7 MB (before), 18.7 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      18043                 -
+ + New bound is 0
+                        4          3        F     2  = _int18039
+ + New bound is 1
+ *          1972     1197  0.16s               (gap is 99.95%)
+ *          1906     7278  0.38s               (gap is 99.95%)
+            1906    10000          1              0  = _int16348
+ *           774    15838  0.69s               (gap is 99.87%)
+             774    15844          1        F     2  = _int18039
+ + New bound is 388 (gap is 49.87%)
+             774    15852          1        F     2  = _int18039
+ + New bound is 582 (gap is 24.81%)
+             774    15860          1        F     2  = _int18040
+ + New bound is 679 (gap is 12.27%)
+             774    15868          1        F     2  = _int18040
+ + New bound is 728 (gap is 5.94%)
+ *           747    18261  0.91s               (gap is 2.54%)
+             747    18269          1        F     2  = _int18039
+ + New bound is 738 (gap is 1.20%)
+             747    18277          1        F     2  = _int18040
+ + New bound is 744 (gap is 0.4%)
+             747    18285          1        F     2  = _int18040
+ + New bound is 747 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 747 (optimal - effective tol. is 0)
+ ! Best bound             : 747
+ ! Number of branches     : 18285
+ ! Number of fails        : 46
+ ! Total memory usage     : 118.6 MB (96.2 MB CP Optimizer + 22.3 MB Concert)
+ ! Time spent in solve    : 0.99s (0.95s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 19247.4
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 747
+Log Likelihood: -nan

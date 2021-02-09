@@ -1,0 +1,85 @@
+reading  from file input/AML-85-001_input.csv
+rows: 9648
+cols: 3
+input zeros:20386
+input ones:8518
+input missing:40
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 28948 variables, 115578 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 1.50s (1.48s extraction + 0.01s propagation)
+ !  . Log search space  : 20390.8 (before), 20390.8 (after)
+ !  . Memory usage      : 47.2 MB (before), 47.2 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 28948 variables, 115578 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.10s (0.08s extraction + 0.01s propagation)
+ !  . Log search space  : 20390.8 (before), 20390.8 (after)
+ !  . Memory usage      : 47.2 MB (before), 47.2 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      28948                 -
+ + New bound is 0
+                        4          3        F     2  = _int28944
+ + New bound is 1
+                    10000          3              0  = _int3158
+ *          2907    11561  6.75s               (gap is 99.97%)
+            2907    20000          1              1  = _int5668
+            2907    30000       2767              0  = _int24635
+            2907    40000          1              1  = _int10996
+            2907    50000          1              0  = _int25247
+ *          1894    56894  22.76s              (gap is 99.95%)
+            1894    60000          1              1  = _int1826
+            1894    70000          1              0  = _int23359
+            1894    80000          1              1  = _int8080
+            1894    90000          1              0  = _int18374
+            1894     100k          1              0  = _int15381
+            1894     109k          1        F     2  = _int28944
+ + New bound is 948 (gap is 49.95%)
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1422 (gap is 24.92%)
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1659 (gap is 12.41%)
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1778 (gap is 6.12%)
+            1894     109k          1        F     2  = _int28944
+ + New bound is 1837 (gap is 3.01%)
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1867 (gap is 1.43%)
+ ! Time = 42.91s, Average fail depth = 518, Memory usage = 202.8 MB
+ ! Current bound is 1867 (gap is 1.43%)
+ !          Best Branches  Non-fixed            Branch decision
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1882 (gap is 0.63%)
+            1894     109k          1        F     2  = _int28945
+ + New bound is 1889 (gap is 0.26%)
+            1894     109k          1        F     2  = _int28944
+ + New bound is 1893 (gap is 0.053%)
+            1894     110k          1        F     2  = _int28944
+            1894     115k      18907        F     2  = _int28945
+ + New bound is 1894 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 1894 (optimal - effective tol. is 0)
+ ! Best bound             : 1894
+ ! Number of branches     : 115635
+ ! Number of fails        : 4186
+ ! Total memory usage     : 238.6 MB (204.5 MB CP Optimizer + 34.1 MB Concert)
+ ! Time spent in solve    : 114.98s (114.89s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 1006.5
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 1894
+Log Likelihood: -nan

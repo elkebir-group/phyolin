@@ -1,0 +1,73 @@
+reading  from file input/AML-95-001_input.csv
+rows: 9030
+cols: 3
+input zeros:21345
+input ones:4685
+input missing:1060
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 27094 variables, 103074 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 1.10s (1.09s extraction + 0.00s propagation)
+ !  . Log search space  : 21349.8 (before), 21349.8 (after)
+ !  . Memory usage      : 44.9 MB (before), 44.9 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 27094 variables, 103074 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.08s (0.07s extraction + 0.01s propagation)
+ !  . Log search space  : 21349.8 (before), 21349.8 (after)
+ !  . Memory usage      : 44.9 MB (before), 44.9 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      27094                 -
+ + New bound is 0
+                        4          3        F     2  = _int27090
+ + New bound is 1
+ *          8982     7855  2.58s               (gap is 99.99%)
+            8982    10000          1              0  = _int3836
+            8982    20000          1              1  = _int22241
+            8982    30000       1064              0  = _int9246
+            8982    40000          1              0  = _int15568
+ *          3306    45438  22.23s              (gap is 99.97%)
+            3306    50000          1              0  = _int24984
+ *           174    59874  25.33s              (gap is 99.43%)
+             174    60000          1              1  = _int21882
+             174    70000       2392              1  = _int25412
+             174    80000          1              0  = _int2051
+             174    90000          1              1  = _int15625
+             174     100k          1              0  = _int6173
+             174     110k          1              0  = _int23639
+             174     120k       1016              0  = _int6651
+             174     121k          1        F     2  = _int27090
+ + New bound is 88 (gap is 49.43%)
+             174     130k          1              0  = _int819
+ *            90     135k  70.10s              (gap is 2.22%)
+ ! Time = 70.10s, Average fail depth = 1945, Memory usage = 193.5 MB
+ ! Current bound is 88 (gap is 2.22%)
+ !          Best Branches  Non-fixed            Branch decision
+              90     135k          1        F     2  = _int27090
+ + New bound is 90 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 90 (optimal - effective tol. is 0)
+ ! Best bound             : 90
+ ! Number of branches     : 135560
+ ! Number of fails        : 20
+ ! Total memory usage     : 223.9 MB (193.5 MB CP Optimizer + 30.5 MB Concert)
+ ! Time spent in solve    : 70.24s (70.16s engine + 0.07s extraction)
+ ! Search speed (br. / s) : 1931.9
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 90
+Log Likelihood: -nan

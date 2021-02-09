@@ -1,0 +1,133 @@
+reading  from file input/AML-43-001_input.csv
+rows: 11706
+cols: 3
+input zeros:3642
+input ones:31442
+input missing:34
+total fp flips allowed:37
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 35122 variables, 140322 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 1.90s (1.89s extraction + 0.00s propagation)
+ !  . Log search space  : 35094.0 (before), 35094.0 (after)
+ !  . Memory usage      : 63.8 MB (before), 63.8 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 35122 variables, 140322 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.08s (0.07s extraction + 0.00s propagation)
+ !  . Log search space  : 35094.0 (before), 35094.0 (after)
+ !  . Memory usage      : 63.8 MB (before), 63.8 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      35122                 -
+ + New bound is 0
+                        6      31445        F     2  = _int35118
+ + New bound is 1
+ *          1092     2037  0.86s               (gap is 99.91%)
+ *          1090     9333  3.23s               (gap is 99.91%)
+            1090    10000          1              1  = _int21080
+            1090    20000      15164              1  = _int18741
+            1090    30000        803              1  = _int10255
+ *           902    32910  10.62s              (gap is 99.89%)
+             902    40000          1              1  = _int3125
+             902    50000      26909              0  = _int17490
+             902    60000      26964              1  = _int20781
+             902    70000       1096              0  = _int10845
+ *           888    70988  74.78s              (gap is 99.89%)
+             888    80000         67              1  = _int30995
+             888    90000      25716              1  = _int32695
+             888     100k      25753              0  = _int16336
+ *           887     109k  144.16s             (gap is 99.89%)
+             887     110k         54        F     0  = _int29562
+             887     120k      24992              1  = _int15423
+             887     130k      24444              1  = _int18390
+ ! Time = 177.49s, Average fail depth = 770, Memory usage = 280.3 MB
+ ! Current bound is 1 (gap is 99.89%)
+ !          Best Branches  Non-fixed            Branch decision
+ *           886     134k  188.33s             (gap is 99.89%)
+ *           885     137k  190.86s             (gap is 99.89%)
+             885     140k         16              1  = _int2194
+             885     150k      24615              1  = _int4282
+             885     160k      13522              1  = _int8733
+             885     170k        214              0  = _int4147
+ *           877     170k  234.22s             (gap is 99.89%)
+ *           870     172k  235.58s             (gap is 99.89%)
+ *           869     175k  240.02s             (gap is 99.88%)
+ *           868     176k  241.91s             (gap is 99.88%)
+ *           867     178k  243.46s             (gap is 99.88%)
+             867     180k          1        F     0  = _int10151
+ *           866     182k  250.57s             (gap is 99.88%)
+ *           865     184k  255.44s             (gap is 99.88%)
+ *           864     186k  260.95s             (gap is 99.88%)
+ *           863     187k  263.23s             (gap is 99.88%)
+             863     190k          3              1  = _int2854
+             863     200k      17781              1  = _int17748
+ *           861     208k  296.90s             (gap is 99.88%)
+             861     210k          1              0  = _int32905
+ ! Time = 302.60s, Average fail depth = 926, Memory usage = 284.9 MB
+ ! Current bound is 1 (gap is 99.88%)
+ !          Best Branches  Non-fixed            Branch decision
+ *           858     212k  305.16s             (gap is 99.88%)
+ *           857     214k  311.69s             (gap is 99.88%)
+             857     220k          1              0  = _int12916
+             857     230k      31216              1  = _int18832
+             857     240k      13290        F     0  = _int16314
+             857     250k      26419              1  = _int7515
+             857     260k       7688              1  = _int27460
+             857     270k       5136              1  = _int31615
+             857     280k       8854              1  = _int32786
+ *           856     287k  449.15s             (gap is 99.88%)
+             856     290k       3789              0  = _int27588
+             856     300k      18071              1  = _int7812
+             856     310k      12584              1  = _int28476
+ *           855     319k  510.99s             (gap is 99.88%)
+             855     320k      24900              1  = _int28917
+             855     330k      25442              0  = _int24820
+             855     340k      13213              1  = _int27717
+             855     350k       4552              1  = _int6160
+             855     360k      11473              1  = _int34489
+             855     370k       2840              1  = _int7623
+ ! Time = 582.41s, Average fail depth = 1362, Memory usage = 286.0 MB
+ ! Current bound is 1 (gap is 99.88%)
+ !          Best Branches  Non-fixed            Branch decision
+             855     380k      26972              0  = _int25330
+             855     390k      25059              0  = _int1193
+             855     400k      18212              1  = _int24666
+             855     410k       4432              1  = _int27433
+             855     420k       2798              0  = _int33787
+             855     430k      33346              0  = _int22624
+             855     440k      24855              0  = _int6828
+             855     450k      22806              1  = _int23488
+             855     460k       6382              1  = _int30202
+             855     470k       2782              1  = _int4054
+             855     480k      24963              1  = _int16498
+             855     490k       8584              1  = _int10886
+             855     500k       2736              1  = _int8592
+             855     510k      23792              1  = _int24103
+             855     520k      11656              0  = _int10846
+             855     530k      24880              0  = _int9314
+             855     540k      33332              0  = _int26248
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 21 solutions found.
+ ! Best objective         : 855 (gap is 99.88%)
+ ! Best bound             : 1
+ ! Number of branches     : 541844
+ ! Number of fails        : 25962
+ ! Total memory usage     : 330.7 MB (286.0 MB CP Optimizer + 44.7 MB Concert)
+ ! Time spent in solve    : 900.10s (900.03s engine + 0.07s extraction)
+ ! Search speed (br. / s) : 602.0
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 855
+Log Likelihood: -4547.06

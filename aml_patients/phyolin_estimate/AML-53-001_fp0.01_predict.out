@@ -1,0 +1,15 @@
+variable,value
+prediction,branched
+cells,8013
+sites,3
+inputFP,0.01
+estFP,0.0101566
+inputFN,0.06
+estFN,0.194407
+input1,1437
+input0,22415
+N_00,22123
+N_10,227
+N_11,1210
+N_01,292
+N_missing,187

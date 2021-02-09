@@ -1,0 +1,71 @@
+reading  from file input/AML-79-001_input.csv
+rows: 2632
+cols: 3
+input zeros:5081
+input ones:2708
+input missing:107
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 7900 variables, 31097 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.33s (0.32s extraction + 0.00s propagation)
+ !  . Log search space  : 5085.8 (before), 5085.8 (after)
+ !  . Memory usage      : 12.4 MB (before), 12.4 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 7900 variables, 31097 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 5085.8 (before), 5085.8 (after)
+ !  . Memory usage      : 12.4 MB (before), 12.4 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0       7900                 -
+ + New bound is 0
+                        4          3        F     2  = _int7896
+ + New bound is 1
+ *          1826     2402  0.19s               (gap is 99.95%)
+            1826    10000          1              1  = _int7216
+ *           913    16465  0.78s               (gap is 99.89%)
+             913    20000          1              1  = _int368
+             913    23604          1        F     2  = _int7896
+ + New bound is 458 (gap is 49.84%)
+             913    23610          1        F     2  = _int7896
+ + New bound is 687 (gap is 24.75%)
+             913    23616          1        F     2  = _int7897
+ + New bound is 801 (gap is 12.27%)
+             913    23622          1        F     2  = _int7897
+ + New bound is 858 (gap is 6.02%)
+             913    23628          1        F     2  = _int7897
+ + New bound is 887 (gap is 2.85%)
+             913    23634          1        F     2  = _int7897
+ + New bound is 901 (gap is 1.31%)
+             913    23642          1        F     2  = _int7896
+ + New bound is 908 (gap is 0.55%)
+             913    23648          1        F     2  = _int7897
+ + New bound is 912 (gap is 0.11%)
+             913    29890          1        F     2  = _int7897
+ + New bound is 913 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 913 (optimal - effective tol. is 0)
+ ! Best bound             : 913
+ ! Number of branches     : 29890
+ ! Number of fails        : 4160
+ ! Total memory usage     : 63.6 MB (54.4 MB CP Optimizer + 9.2 MB Concert)
+ ! Time spent in solve    : 16.84s (16.83s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 1774.9
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 913
+Log Likelihood: -nan

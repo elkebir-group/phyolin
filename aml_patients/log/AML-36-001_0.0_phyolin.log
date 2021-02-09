@@ -1,0 +1,82 @@
+reading  from file input/AML-36-001_input.csv
+rows: 8153
+cols: 3
+input zeros:22497
+input ones:1797
+input missing:165
+total fp flips allowed:0
+adding objective
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 24463 variables, 97129 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 1.33s (1.31s extraction + 0.01s propagation)
+ !  . Log search space  : 22501.8 (before), 22501.8 (after)
+ !  . Memory usage      : 45.9 MB (before), 45.9 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 24463 variables, 97129 constraints, 1 phase
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 900
+ ! Workers              = 1
+ ! LogPeriod            = 10000
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 22501.8 (before), 22501.8 (after)
+ !  . Memory usage      : 45.9 MB (before), 45.9 MB (after)
+ ! Using sequential search.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed            Branch decision
+                        0      24463                 -
+ + New bound is 0
+                        4          3        F     2  = _int24459
+ + New bound is 1
+                    10000          3              0  = _int21702
+ *          2222    12902  10.57s              (gap is 99.95%)
+            2222    20000          1              1  = _int22784
+            2222    30000          1              1  = _int2982
+            2222    40000          1              0  = _int14427
+            2222    50000        708              1  = _int2283
+            2222    60000          1              0  = _int22841
+ *          1313    64271  39.37s              (gap is 99.92%)
+            1313    70000          1              1  = _int241
+            1313    80000          1              0  = _int13579
+            1313    90000          1              1  = _int23964
+            1313     100k       3716              1  = _int659
+            1313     110k          1              0  = _int5871
+            1313     120k          1              0  = _int968
+ *           945     129k  79.54s              (gap is 99.89%)
+             945     129k          1        F     1  = _int24461
+ + New bound is 474 (gap is 49.84%)
+             945     129k          1        F     2  = _int24461
+ + New bound is 711 (gap is 24.76%)
+             945     130k          1              0  = _int4440
+ ! Time = 81.13s, Average fail depth = 1451, Memory usage = 190.4 MB
+ ! Current bound is 711 (gap is 24.76%)
+ !          Best Branches  Non-fixed            Branch decision
+             945     140k       4006              0  = _int3264
+ *           752     143k  91.93s              (gap is 5.45%)
+             752     143k          1        F     1  = _int24461
+ + New bound is 732 (gap is 2.66%)
+             752     143k          1        F     2  = _int24461
+ + New bound is 743 (gap is 1.20%)
+             752     143k          1        F     1  = _int24461
+ + New bound is 749 (gap is 0.4%)
+             752     143k          1        F     2  = _int24461
+ + New bound is 752 (gap is 0%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 752 (optimal - effective tol. is 0)
+ ! Best bound             : 752
+ ! Number of branches     : 143416
+ ! Number of fails        : 43
+ ! Total memory usage     : 218.9 MB (190.6 MB CP Optimizer + 28.3 MB Concert)
+ ! Time spent in solve    : 92.39s (92.31s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 1553.6
+ ! ----------------------------------------------------------------------------
+solve:1
+Flips: 752
+Log Likelihood: -nan

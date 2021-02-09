@@ -1,0 +1,3880 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	297	phyolin
+	298
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-90-001_input.csv
+    output: phyolin_matrix_output/AML-90-001_fp0.0_matrix.csv, phyolin_estimate/AML-90-001_fp0.0_predict.out
+    log: log/AML-90-001_0.0_phyolin.log, log/AML-90-001_0.0_phyolin.err.log
+    jobid: 367
+    benchmark: benchmark/AML-90-001_0.0_phyolin.out
+    wildcards: patient=AML-90-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-46-001_input.csv
+    output: phyolin_matrix_output/AML-46-001_fp0.0_matrix.csv, phyolin_estimate/AML-46-001_fp0.0_predict.out
+    log: log/AML-46-001_0.0_phyolin.log, log/AML-46-001_0.0_phyolin.err.log
+    jobid: 235
+    benchmark: benchmark/AML-46-001_0.0_phyolin.out
+    wildcards: patient=AML-46-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-77-001_input.csv
+    output: phyolin_matrix_output/AML-77-001_fp0.0_matrix.csv, phyolin_estimate/AML-77-001_fp0.0_predict.out
+    log: log/AML-77-001_0.0_phyolin.log, log/AML-77-001_0.0_phyolin.err.log
+    jobid: 328
+    benchmark: benchmark/AML-77-001_0.0_phyolin.out
+    wildcards: patient=AML-77-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-02-001_input.csv
+    output: phyolin_matrix_output/AML-02-001_fp0.0_matrix.csv, phyolin_estimate/AML-02-001_fp0.0_predict.out
+    log: log/AML-02-001_0.0_phyolin.log, log/AML-02-001_0.0_phyolin.err.log
+    jobid: 103
+    benchmark: benchmark/AML-02-001_0.0_phyolin.out
+    wildcards: patient=AML-02-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-15-001_input.csv
+    output: phyolin_matrix_output/AML-15-001_fp0.0_matrix.csv, phyolin_estimate/AML-15-001_fp0.0_predict.out
+    log: log/AML-15-001_0.0_phyolin.log, log/AML-15-001_0.0_phyolin.err.log
+    jobid: 148
+    benchmark: benchmark/AML-15-001_0.0_phyolin.out
+    wildcards: patient=AML-15-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-20-001_input.csv
+    output: phyolin_matrix_output/AML-20-001_fp0.0_matrix.csv, phyolin_estimate/AML-20-001_fp0.0_predict.out
+    log: log/AML-20-001_0.0_phyolin.log, log/AML-20-001_0.0_phyolin.err.log
+    jobid: 163
+    benchmark: benchmark/AML-20-001_0.0_phyolin.out
+    wildcards: patient=AML-20-001, fp=0.0
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-29-001_input.csv
+    output: phyolin_matrix_output/AML-29-001_fp0.001_matrix.csv, phyolin_estimate/AML-29-001_fp0.001_predict.out
+    log: log/AML-29-001_0.001_phyolin.log, log/AML-29-001_0.001_phyolin.err.log
+    jobid: 192
+    benchmark: benchmark/AML-29-001_0.001_phyolin.out
+    wildcards: patient=AML-29-001, fp=0.001
+
+
+[Sat Jan 30 19:35:49 2021]
+rule phyolin:
+    input: input/AML-34-001_input.csv
+    output: phyolin_matrix_output/AML-34-001_fp0.001_matrix.csv, phyolin_estimate/AML-34-001_fp0.001_predict.out
+    log: log/AML-34-001_0.001_phyolin.log, log/AML-34-001_0.001_phyolin.err.log
+    jobid: 207
+    benchmark: benchmark/AML-34-001_0.001_phyolin.out
+    wildcards: patient=AML-34-001, fp=0.001
+
+[Sat Jan 30 19:35:52 2021]
+Finished job 235.
+1 of 298 steps (0.34%) done
+[Sat Jan 30 19:35:52 2021]
+Finished job 148.
+2 of 298 steps (0.67%) done
+[Sat Jan 30 19:37:09 2021]
+Finished job 163.
+3 of 298 steps (1%) done
+[Sat Jan 30 19:47:20 2021]
+Finished job 103.
+4 of 298 steps (1%) done
+[Sat Jan 30 19:50:51 2021]
+Finished job 207.
+5 of 298 steps (2%) done
+[Sat Jan 30 19:50:52 2021]
+Finished job 192.
+6 of 298 steps (2%) done
+[Sat Jan 30 19:50:54 2021]
+Finished job 367.
+7 of 298 steps (2%) done
+[Sat Jan 30 19:50:56 2021]
+Finished job 328.
+8 of 298 steps (3%) done
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-70-001_input.csv
+    output: phyolin_matrix_output/AML-70-001_fp0.01_matrix.csv, phyolin_estimate/AML-70-001_fp0.01_predict.out
+    log: log/AML-70-001_0.01_phyolin.log, log/AML-70-001_0.01_phyolin.err.log
+    jobid: 308
+    benchmark: benchmark/AML-70-001_0.01_phyolin.out
+    wildcards: patient=AML-70-001, fp=0.01
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-34-001_input.csv
+    output: phyolin_matrix_output/AML-34-001_fp0.01_matrix.csv, phyolin_estimate/AML-34-001_fp0.01_predict.out
+    log: log/AML-34-001_0.01_phyolin.log, log/AML-34-001_0.01_phyolin.err.log
+    jobid: 206
+    benchmark: benchmark/AML-34-001_0.01_phyolin.out
+    wildcards: patient=AML-34-001, fp=0.01
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-19-001_input.csv
+    output: phyolin_matrix_output/AML-19-001_fp0.001_matrix.csv, phyolin_estimate/AML-19-001_fp0.001_predict.out
+    log: log/AML-19-001_0.001_phyolin.log, log/AML-19-001_0.001_phyolin.err.log
+    jobid: 162
+    benchmark: benchmark/AML-19-001_0.001_phyolin.out
+    wildcards: patient=AML-19-001, fp=0.001
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-65-001_input.csv
+    output: phyolin_matrix_output/AML-65-001_fp0.01_matrix.csv, phyolin_estimate/AML-65-001_fp0.01_predict.out
+    log: log/AML-65-001_0.01_phyolin.log, log/AML-65-001_0.01_phyolin.err.log
+    jobid: 293
+    benchmark: benchmark/AML-65-001_0.01_phyolin.out
+    wildcards: patient=AML-65-001, fp=0.01
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-46-001_input.csv
+    output: phyolin_matrix_output/AML-46-001_fp0.01_matrix.csv, phyolin_estimate/AML-46-001_fp0.01_predict.out
+    log: log/AML-46-001_0.01_phyolin.log, log/AML-46-001_0.01_phyolin.err.log
+    jobid: 236
+    benchmark: benchmark/AML-46-001_0.01_phyolin.out
+    wildcards: patient=AML-46-001, fp=0.01
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-65-001_input.csv
+    output: phyolin_matrix_output/AML-65-001_fp0.001_matrix.csv, phyolin_estimate/AML-65-001_fp0.001_predict.out
+    log: log/AML-65-001_0.001_phyolin.log, log/AML-65-001_0.001_phyolin.err.log
+    jobid: 294
+    benchmark: benchmark/AML-65-001_0.001_phyolin.out
+    wildcards: patient=AML-65-001, fp=0.001
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-70-001_input.csv
+    output: phyolin_matrix_output/AML-70-001_fp0.001_matrix.csv, phyolin_estimate/AML-70-001_fp0.001_predict.out
+    log: log/AML-70-001_0.001_phyolin.log, log/AML-70-001_0.001_phyolin.err.log
+    jobid: 309
+    benchmark: benchmark/AML-70-001_0.001_phyolin.out
+    wildcards: patient=AML-70-001, fp=0.001
+
+
+[Sat Jan 30 19:50:56 2021]
+rule phyolin:
+    input: input/AML-90-001_input.csv
+    output: phyolin_matrix_output/AML-90-001_fp0.01_matrix.csv, phyolin_estimate/AML-90-001_fp0.01_predict.out
+    log: log/AML-90-001_0.01_phyolin.log, log/AML-90-001_0.01_phyolin.err.log
+    jobid: 368
+    benchmark: benchmark/AML-90-001_0.01_phyolin.out
+    wildcards: patient=AML-90-001, fp=0.01
+
+[Sat Jan 30 19:50:57 2021]
+Finished job 206.
+9 of 298 steps (3%) done
+[Sat Jan 30 20:05:56 2021]
+Finished job 293.
+10 of 298 steps (3%) done
+[Sat Jan 30 20:05:56 2021]
+Finished job 294.
+11 of 298 steps (4%) done
+[Sat Jan 30 20:05:57 2021]
+Finished job 162.
+12 of 298 steps (4%) done
+[Sat Jan 30 20:05:57 2021]
+Finished job 236.
+13 of 298 steps (4%) done
+[Sat Jan 30 20:05:58 2021]
+Finished job 308.
+14 of 298 steps (5%) done
+[Sat Jan 30 20:05:58 2021]
+Finished job 309.
+15 of 298 steps (5%) done
+[Sat Jan 30 20:06:01 2021]
+Finished job 368.
+16 of 298 steps (5%) done
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-01-001_input.csv
+    output: phyolin_matrix_output/AML-01-001_fp0.001_matrix.csv, phyolin_estimate/AML-01-001_fp0.001_predict.out
+    log: log/AML-01-001_0.001_phyolin.log, log/AML-01-001_0.001_phyolin.err.log
+    jobid: 102
+    benchmark: benchmark/AML-01-001_0.001_phyolin.out
+    wildcards: patient=AML-01-001, fp=0.001
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-72-001_input.csv
+    output: phyolin_matrix_output/AML-72-001_fp0.0_matrix.csv, phyolin_estimate/AML-72-001_fp0.0_predict.out
+    log: log/AML-72-001_0.0_phyolin.log, log/AML-72-001_0.0_phyolin.err.log
+    jobid: 313
+    benchmark: benchmark/AML-72-001_0.0_phyolin.out
+    wildcards: patient=AML-72-001, fp=0.0
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-14-001_input.csv
+    output: phyolin_matrix_output/AML-14-001_fp0.001_matrix.csv, phyolin_estimate/AML-14-001_fp0.001_predict.out
+    log: log/AML-14-001_0.001_phyolin.log, log/AML-14-001_0.001_phyolin.err.log
+    jobid: 147
+    benchmark: benchmark/AML-14-001_0.001_phyolin.out
+    wildcards: patient=AML-14-001, fp=0.001
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-29-001_input.csv
+    output: phyolin_matrix_output/AML-29-001_fp0.01_matrix.csv, phyolin_estimate/AML-29-001_fp0.01_predict.out
+    log: log/AML-29-001_0.01_phyolin.log, log/AML-29-001_0.01_phyolin.err.log
+    jobid: 191
+    benchmark: benchmark/AML-29-001_0.01_phyolin.out
+    wildcards: patient=AML-29-001, fp=0.01
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-02-001_input.csv
+    output: phyolin_matrix_output/AML-02-001_fp0.01_matrix.csv, phyolin_estimate/AML-02-001_fp0.01_predict.out
+    log: log/AML-02-001_0.01_phyolin.log, log/AML-02-001_0.01_phyolin.err.log
+    jobid: 104
+    benchmark: benchmark/AML-02-001_0.01_phyolin.out
+    wildcards: patient=AML-02-001, fp=0.01
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-15-001_input.csv
+    output: phyolin_matrix_output/AML-15-001_fp0.01_matrix.csv, phyolin_estimate/AML-15-001_fp0.01_predict.out
+    log: log/AML-15-001_0.01_phyolin.log, log/AML-15-001_0.01_phyolin.err.log
+    jobid: 149
+    benchmark: benchmark/AML-15-001_0.01_phyolin.out
+    wildcards: patient=AML-15-001, fp=0.01
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-99-001_input.csv
+    output: phyolin_matrix_output/AML-99-001_fp0.001_matrix.csv, phyolin_estimate/AML-99-001_fp0.001_predict.out
+    log: log/AML-99-001_0.001_phyolin.log, log/AML-99-001_0.001_phyolin.err.log
+    jobid: 396
+    benchmark: benchmark/AML-99-001_0.001_phyolin.out
+    wildcards: patient=AML-99-001, fp=0.001
+
+
+[Sat Jan 30 20:06:01 2021]
+rule phyolin:
+    input: input/AML-70-001_input.csv
+    output: phyolin_matrix_output/AML-70-001_fp0.0_matrix.csv, phyolin_estimate/AML-70-001_fp0.0_predict.out
+    log: log/AML-70-001_0.0_phyolin.log, log/AML-70-001_0.0_phyolin.err.log
+    jobid: 307
+    benchmark: benchmark/AML-70-001_0.0_phyolin.out
+    wildcards: patient=AML-70-001, fp=0.0
+
+[Sat Jan 30 20:06:03 2021]
+Finished job 313.
+17 of 298 steps (6%) done
+[Sat Jan 30 20:06:25 2021]
+Finished job 307.
+18 of 298 steps (6%) done
+[Sat Jan 30 20:21:02 2021]
+Finished job 149.
+19 of 298 steps (6%) done
+[Sat Jan 30 20:21:03 2021]
+Finished job 191.
+20 of 298 steps (7%) done
+[Sat Jan 30 20:21:04 2021]
+Finished job 396.
+21 of 298 steps (7%) done
+[Sat Jan 30 20:21:05 2021]
+Finished job 104.
+22 of 298 steps (7%) done
+[Sat Jan 30 20:21:05 2021]
+Finished job 102.
+23 of 298 steps (8%) done
+[Sat Jan 30 20:21:08 2021]
+Finished job 147.
+24 of 298 steps (8%) done
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-20-001_input.csv
+    output: phyolin_matrix_output/AML-20-001_fp0.01_matrix.csv, phyolin_estimate/AML-20-001_fp0.01_predict.out
+    log: log/AML-20-001_0.01_phyolin.log, log/AML-20-001_0.01_phyolin.err.log
+    jobid: 164
+    benchmark: benchmark/AML-20-001_0.01_phyolin.out
+    wildcards: patient=AML-20-001, fp=0.01
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-57-001_input.csv
+    output: phyolin_matrix_output/AML-57-001_fp0.0_matrix.csv, phyolin_estimate/AML-57-001_fp0.0_predict.out
+    log: log/AML-57-001_0.0_phyolin.log, log/AML-57-001_0.0_phyolin.err.log
+    jobid: 268
+    benchmark: benchmark/AML-57-001_0.0_phyolin.out
+    wildcards: patient=AML-57-001, fp=0.0
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-30-001_input.csv
+    output: phyolin_matrix_output/AML-30-001_fp0.0_matrix.csv, phyolin_estimate/AML-30-001_fp0.0_predict.out
+    log: log/AML-30-001_0.0_phyolin.log, log/AML-30-001_0.0_phyolin.err.log
+    jobid: 193
+    benchmark: benchmark/AML-30-001_0.0_phyolin.out
+    wildcards: patient=AML-30-001, fp=0.0
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-35-001_input.csv
+    output: phyolin_matrix_output/AML-35-001_fp0.0_matrix.csv, phyolin_estimate/AML-35-001_fp0.0_predict.out
+    log: log/AML-35-001_0.0_phyolin.log, log/AML-35-001_0.0_phyolin.err.log
+    jobid: 208
+    benchmark: benchmark/AML-35-001_0.0_phyolin.out
+    wildcards: patient=AML-35-001, fp=0.0
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-46-001_input.csv
+    output: phyolin_matrix_output/AML-46-001_fp0.001_matrix.csv, phyolin_estimate/AML-46-001_fp0.001_predict.out
+    log: log/AML-46-001_0.001_phyolin.log, log/AML-46-001_0.001_phyolin.err.log
+    jobid: 237
+    benchmark: benchmark/AML-46-001_0.001_phyolin.out
+    wildcards: patient=AML-46-001, fp=0.001
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-89-001_input.csv
+    output: phyolin_matrix_output/AML-89-001_fp0.001_matrix.csv, phyolin_estimate/AML-89-001_fp0.001_predict.out
+    log: log/AML-89-001_0.001_phyolin.log, log/AML-89-001_0.001_phyolin.err.log
+    jobid: 366
+    benchmark: benchmark/AML-89-001_0.001_phyolin.out
+    wildcards: patient=AML-89-001, fp=0.001
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-45-001_input.csv
+    output: phyolin_matrix_output/AML-45-001_fp0.001_matrix.csv, phyolin_estimate/AML-45-001_fp0.001_predict.out
+    log: log/AML-45-001_0.001_phyolin.log, log/AML-45-001_0.001_phyolin.err.log
+    jobid: 234
+    benchmark: benchmark/AML-45-001_0.001_phyolin.out
+    wildcards: patient=AML-45-001, fp=0.001
+
+
+[Sat Jan 30 20:21:08 2021]
+rule phyolin:
+    input: input/AML-65-001_input.csv
+    output: phyolin_matrix_output/AML-65-001_fp0.0_matrix.csv, phyolin_estimate/AML-65-001_fp0.0_predict.out
+    log: log/AML-65-001_0.0_phyolin.log, log/AML-65-001_0.0_phyolin.err.log
+    jobid: 292
+    benchmark: benchmark/AML-65-001_0.0_phyolin.out
+    wildcards: patient=AML-65-001, fp=0.0
+
+[Sat Jan 30 20:21:10 2021]
+Finished job 292.
+25 of 298 steps (8%) done
+[Sat Jan 30 20:21:59 2021]
+Finished job 208.
+26 of 298 steps (9%) done
+[Sat Jan 30 20:22:31 2021]
+Finished job 193.
+27 of 298 steps (9%) done
+[Sat Jan 30 20:23:01 2021]
+Finished job 268.
+28 of 298 steps (9%) done
+[Sat Jan 30 20:36:09 2021]
+Finished job 366.
+29 of 298 steps (10%) done
+[Sat Jan 30 20:36:10 2021]
+Finished job 237.
+30 of 298 steps (10%) done
+[Sat Jan 30 20:36:11 2021]
+Finished job 164.
+31 of 298 steps (10%) done
+[Sat Jan 30 20:36:11 2021]
+Finished job 234.
+32 of 298 steps (11%) done
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-93-001_input.csv
+    output: phyolin_matrix_output/AML-93-001_fp0.001_matrix.csv, phyolin_estimate/AML-93-001_fp0.001_predict.out
+    log: log/AML-93-001_0.001_phyolin.log, log/AML-93-001_0.001_phyolin.err.log
+    jobid: 378
+    benchmark: benchmark/AML-93-001_0.001_phyolin.out
+    wildcards: patient=AML-93-001, fp=0.001
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-91-001_input.csv
+    output: phyolin_matrix_output/AML-91-001_fp0.001_matrix.csv, phyolin_estimate/AML-91-001_fp0.001_predict.out
+    log: log/AML-91-001_0.001_phyolin.log, log/AML-91-001_0.001_phyolin.err.log
+    jobid: 372
+    benchmark: benchmark/AML-91-001_0.001_phyolin.out
+    wildcards: patient=AML-91-001, fp=0.001
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-66-001_input.csv
+    output: phyolin_matrix_output/AML-66-001_fp0.0_matrix.csv, phyolin_estimate/AML-66-001_fp0.0_predict.out
+    log: log/AML-66-001_0.0_phyolin.log, log/AML-66-001_0.0_phyolin.err.log
+    jobid: 295
+    benchmark: benchmark/AML-66-001_0.0_phyolin.out
+    wildcards: patient=AML-66-001, fp=0.0
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-71-001_input.csv
+    output: phyolin_matrix_output/AML-71-001_fp0.0_matrix.csv, phyolin_estimate/AML-71-001_fp0.0_predict.out
+    log: log/AML-71-001_0.0_phyolin.log, log/AML-71-001_0.0_phyolin.err.log
+    jobid: 310
+    benchmark: benchmark/AML-71-001_0.0_phyolin.out
+    wildcards: patient=AML-71-001, fp=0.0
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-14-001_input.csv
+    output: phyolin_matrix_output/AML-14-001_fp0.01_matrix.csv, phyolin_estimate/AML-14-001_fp0.01_predict.out
+    log: log/AML-14-001_0.01_phyolin.log, log/AML-14-001_0.01_phyolin.err.log
+    jobid: 146
+    benchmark: benchmark/AML-14-001_0.01_phyolin.out
+    wildcards: patient=AML-14-001, fp=0.01
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-19-001_input.csv
+    output: phyolin_matrix_output/AML-19-001_fp0.01_matrix.csv, phyolin_estimate/AML-19-001_fp0.01_predict.out
+    log: log/AML-19-001_0.01_phyolin.log, log/AML-19-001_0.01_phyolin.err.log
+    jobid: 161
+    benchmark: benchmark/AML-19-001_0.01_phyolin.out
+    wildcards: patient=AML-19-001, fp=0.01
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-29-001_input.csv
+    output: phyolin_matrix_output/AML-29-001_fp0.0_matrix.csv, phyolin_estimate/AML-29-001_fp0.0_predict.out
+    log: log/AML-29-001_0.0_phyolin.log, log/AML-29-001_0.0_phyolin.err.log
+    jobid: 190
+    benchmark: benchmark/AML-29-001_0.0_phyolin.out
+    wildcards: patient=AML-29-001, fp=0.0
+
+
+[Sat Jan 30 20:36:11 2021]
+rule phyolin:
+    input: input/AML-34-001_input.csv
+    output: phyolin_matrix_output/AML-34-001_fp0.0_matrix.csv, phyolin_estimate/AML-34-001_fp0.0_predict.out
+    log: log/AML-34-001_0.0_phyolin.log, log/AML-34-001_0.0_phyolin.err.log
+    jobid: 205
+    benchmark: benchmark/AML-34-001_0.0_phyolin.out
+    wildcards: patient=AML-34-001, fp=0.0
+
+[Sat Jan 30 20:36:32 2021]
+Finished job 190.
+33 of 298 steps (11%) done
+[Sat Jan 30 20:36:47 2021]
+Finished job 205.
+34 of 298 steps (11%) done
+[Sat Jan 30 20:45:24 2021]
+Finished job 310.
+35 of 298 steps (12%) done
+[Sat Jan 30 20:51:12 2021]
+Finished job 161.
+36 of 298 steps (12%) done
+[Sat Jan 30 20:51:13 2021]
+Finished job 378.
+37 of 298 steps (12%) done
+[Sat Jan 30 20:51:13 2021]
+Finished job 372.
+38 of 298 steps (13%) done
+[Sat Jan 30 20:51:18 2021]
+Finished job 146.
+39 of 298 steps (13%) done
+[Sat Jan 30 20:51:19 2021]
+Finished job 295.
+40 of 298 steps (13%) done
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-89-001_input.csv
+    output: phyolin_matrix_output/AML-89-001_fp0.01_matrix.csv, phyolin_estimate/AML-89-001_fp0.01_predict.out
+    log: log/AML-89-001_0.01_phyolin.log, log/AML-89-001_0.01_phyolin.err.log
+    jobid: 365
+    benchmark: benchmark/AML-89-001_0.01_phyolin.out
+    wildcards: patient=AML-89-001, fp=0.01
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-69-001_input.csv
+    output: phyolin_matrix_output/AML-69-001_fp0.001_matrix.csv, phyolin_estimate/AML-69-001_fp0.001_predict.out
+    log: log/AML-69-001_0.001_phyolin.log, log/AML-69-001_0.001_phyolin.err.log
+    jobid: 306
+    benchmark: benchmark/AML-69-001_0.001_phyolin.out
+    wildcards: patient=AML-69-001, fp=0.001
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-52-001_input.csv
+    output: phyolin_matrix_output/AML-52-001_fp0.001_matrix.csv, phyolin_estimate/AML-52-001_fp0.001_predict.out
+    log: log/AML-52-001_0.001_phyolin.log, log/AML-52-001_0.001_phyolin.err.log
+    jobid: 255
+    benchmark: benchmark/AML-52-001_0.001_phyolin.out
+    wildcards: patient=AML-52-001, fp=0.001
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-90-001_input.csv
+    output: phyolin_matrix_output/AML-90-001_fp0.001_matrix.csv, phyolin_estimate/AML-90-001_fp0.001_predict.out
+    log: log/AML-90-001_0.001_phyolin.log, log/AML-90-001_0.001_phyolin.err.log
+    jobid: 369
+    benchmark: benchmark/AML-90-001_0.001_phyolin.out
+    wildcards: patient=AML-90-001, fp=0.001
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-01-001_input.csv
+    output: phyolin_matrix_output/AML-01-001_fp0.01_matrix.csv, phyolin_estimate/AML-01-001_fp0.01_predict.out
+    log: log/AML-01-001_0.01_phyolin.log, log/AML-01-001_0.01_phyolin.err.log
+    jobid: 101
+    benchmark: benchmark/AML-01-001_0.01_phyolin.out
+    wildcards: patient=AML-01-001, fp=0.01
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-92-001_input.csv
+    output: phyolin_matrix_output/AML-92-001_fp0.0_matrix.csv, phyolin_estimate/AML-92-001_fp0.0_predict.out
+    log: log/AML-92-001_0.0_phyolin.log, log/AML-92-001_0.0_phyolin.err.log
+    jobid: 373
+    benchmark: benchmark/AML-92-001_0.0_phyolin.out
+    wildcards: patient=AML-92-001, fp=0.0
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-98-001_input.csv
+    output: phyolin_matrix_output/AML-98-001_fp0.01_matrix.csv, phyolin_estimate/AML-98-001_fp0.01_predict.out
+    log: log/AML-98-001_0.01_phyolin.log, log/AML-98-001_0.01_phyolin.err.log
+    jobid: 392
+    benchmark: benchmark/AML-98-001_0.01_phyolin.out
+    wildcards: patient=AML-98-001, fp=0.01
+
+
+[Sat Jan 30 20:51:19 2021]
+rule phyolin:
+    input: input/AML-94-001_input.csv
+    output: phyolin_matrix_output/AML-94-001_fp0.0_matrix.csv, phyolin_estimate/AML-94-001_fp0.0_predict.out
+    log: log/AML-94-001_0.0_phyolin.log, log/AML-94-001_0.0_phyolin.err.log
+    jobid: 379
+    benchmark: benchmark/AML-94-001_0.0_phyolin.out
+    wildcards: patient=AML-94-001, fp=0.0
+
+[Sat Jan 30 20:51:28 2021]
+Finished job 379.
+41 of 298 steps (14%) done
+[Sat Jan 30 20:51:52 2021]
+Finished job 373.
+42 of 298 steps (14%) done
+[Sat Jan 30 21:06:20 2021]
+Finished job 365.
+43 of 298 steps (14%) done
+[Sat Jan 30 21:06:20 2021]
+Finished job 255.
+44 of 298 steps (15%) done
+[Sat Jan 30 21:06:21 2021]
+Finished job 306.
+45 of 298 steps (15%) done
+[Sat Jan 30 21:06:23 2021]
+Finished job 392.
+46 of 298 steps (15%) done
+[Sat Jan 30 21:06:23 2021]
+Finished job 101.
+47 of 298 steps (16%) done
+[Sat Jan 30 21:06:24 2021]
+Finished job 369.
+48 of 298 steps (16%) done
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-99-001_input.csv
+    output: phyolin_matrix_output/AML-99-001_fp0.01_matrix.csv, phyolin_estimate/AML-99-001_fp0.01_predict.out
+    log: log/AML-99-001_0.01_phyolin.log, log/AML-99-001_0.01_phyolin.err.log
+    jobid: 395
+    benchmark: benchmark/AML-99-001_0.01_phyolin.out
+    wildcards: patient=AML-99-001, fp=0.01
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-47-001_input.csv
+    output: phyolin_matrix_output/AML-47-001_fp0.001_matrix.csv, phyolin_estimate/AML-47-001_fp0.001_predict.out
+    log: log/AML-47-001_0.001_phyolin.log, log/AML-47-001_0.001_phyolin.err.log
+    jobid: 240
+    benchmark: benchmark/AML-47-001_0.001_phyolin.out
+    wildcards: patient=AML-47-001, fp=0.001
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-01-001_input.csv
+    output: phyolin_matrix_output/AML-01-001_fp0.0_matrix.csv, phyolin_estimate/AML-01-001_fp0.0_predict.out
+    log: log/AML-01-001_0.0_phyolin.log, log/AML-01-001_0.0_phyolin.err.log
+    jobid: 100
+    benchmark: benchmark/AML-01-001_0.0_phyolin.out
+    wildcards: patient=AML-01-001, fp=0.0
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-14-001_input.csv
+    output: phyolin_matrix_output/AML-14-001_fp0.0_matrix.csv, phyolin_estimate/AML-14-001_fp0.0_predict.out
+    log: log/AML-14-001_0.0_phyolin.log, log/AML-14-001_0.0_phyolin.err.log
+    jobid: 145
+    benchmark: benchmark/AML-14-001_0.0_phyolin.out
+    wildcards: patient=AML-14-001, fp=0.0
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-19-001_input.csv
+    output: phyolin_matrix_output/AML-19-001_fp0.0_matrix.csv, phyolin_estimate/AML-19-001_fp0.0_predict.out
+    log: log/AML-19-001_0.0_phyolin.log, log/AML-19-001_0.0_phyolin.err.log
+    jobid: 160
+    benchmark: benchmark/AML-19-001_0.0_phyolin.out
+    wildcards: patient=AML-19-001, fp=0.0
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-89-001_input.csv
+    output: phyolin_matrix_output/AML-89-001_fp0.0_matrix.csv, phyolin_estimate/AML-89-001_fp0.0_predict.out
+    log: log/AML-89-001_0.0_phyolin.log, log/AML-89-001_0.0_phyolin.err.log
+    jobid: 364
+    benchmark: benchmark/AML-89-001_0.0_phyolin.out
+    wildcards: patient=AML-89-001, fp=0.0
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-99-001_input.csv
+    output: phyolin_matrix_output/AML-99-001_fp0.0_matrix.csv, phyolin_estimate/AML-99-001_fp0.0_predict.out
+    log: log/AML-99-001_0.0_phyolin.log, log/AML-99-001_0.0_phyolin.err.log
+    jobid: 394
+    benchmark: benchmark/AML-99-001_0.0_phyolin.out
+    wildcards: patient=AML-99-001, fp=0.0
+
+
+[Sat Jan 30 21:06:24 2021]
+rule phyolin:
+    input: input/AML-48-001_input.csv
+    output: phyolin_matrix_output/AML-48-001_fp0.0_matrix.csv, phyolin_estimate/AML-48-001_fp0.0_predict.out
+    log: log/AML-48-001_0.0_phyolin.log, log/AML-48-001_0.0_phyolin.err.log
+    jobid: 241
+    benchmark: benchmark/AML-48-001_0.0_phyolin.out
+    wildcards: patient=AML-48-001, fp=0.0
+
+[Sat Jan 30 21:06:26 2021]
+Finished job 241.
+49 of 298 steps (16%) done
+[Sat Jan 30 21:06:28 2021]
+Finished job 160.
+50 of 298 steps (17%) done
+[Sat Jan 30 21:06:52 2021]
+Finished job 100.
+51 of 298 steps (17%) done
+[Sat Jan 30 21:07:20 2021]
+Finished job 364.
+52 of 298 steps (17%) done
+[Sat Jan 30 21:21:25 2021]
+Finished job 240.
+53 of 298 steps (18%) done
+[Sat Jan 30 21:21:28 2021]
+Finished job 395.
+54 of 298 steps (18%) done
+[Sat Jan 30 21:21:28 2021]
+Finished job 394.
+55 of 298 steps (18%) done
+[Sat Jan 30 21:21:31 2021]
+Finished job 145.
+56 of 298 steps (19%) done
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-28-001_input.csv
+    output: phyolin_matrix_output/AML-28-001_fp0.001_matrix.csv, phyolin_estimate/AML-28-001_fp0.001_predict.out
+    log: log/AML-28-001_0.001_phyolin.log, log/AML-28-001_0.001_phyolin.err.log
+    jobid: 189
+    benchmark: benchmark/AML-28-001_0.001_phyolin.out
+    wildcards: patient=AML-28-001, fp=0.001
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-33-001_input.csv
+    output: phyolin_matrix_output/AML-33-001_fp0.001_matrix.csv, phyolin_estimate/AML-33-001_fp0.001_predict.out
+    log: log/AML-33-001_0.001_phyolin.log, log/AML-33-001_0.001_phyolin.err.log
+    jobid: 204
+    benchmark: benchmark/AML-33-001_0.001_phyolin.out
+    wildcards: patient=AML-33-001, fp=0.001
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-45-001_input.csv
+    output: phyolin_matrix_output/AML-45-001_fp0.01_matrix.csv, phyolin_estimate/AML-45-001_fp0.01_predict.out
+    log: log/AML-45-001_0.01_phyolin.log, log/AML-45-001_0.01_phyolin.err.log
+    jobid: 233
+    benchmark: benchmark/AML-45-001_0.01_phyolin.out
+    wildcards: patient=AML-45-001, fp=0.01
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-45-001_input.csv
+    output: phyolin_matrix_output/AML-45-001_fp0.0_matrix.csv, phyolin_estimate/AML-45-001_fp0.0_predict.out
+    log: log/AML-45-001_0.0_phyolin.log, log/AML-45-001_0.0_phyolin.err.log
+    jobid: 232
+    benchmark: benchmark/AML-45-001_0.0_phyolin.out
+    wildcards: patient=AML-45-001, fp=0.0
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-64-001_input.csv
+    output: phyolin_matrix_output/AML-64-001_fp0.01_matrix.csv, phyolin_estimate/AML-64-001_fp0.01_predict.out
+    log: log/AML-64-001_0.01_phyolin.log, log/AML-64-001_0.01_phyolin.err.log
+    jobid: 290
+    benchmark: benchmark/AML-64-001_0.01_phyolin.out
+    wildcards: patient=AML-64-001, fp=0.01
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-03-001_input.csv
+    output: phyolin_matrix_output/AML-03-001_fp0.001_matrix.csv, phyolin_estimate/AML-03-001_fp0.001_predict.out
+    log: log/AML-03-001_0.001_phyolin.log, log/AML-03-001_0.001_phyolin.err.log
+    jobid: 108
+    benchmark: benchmark/AML-03-001_0.001_phyolin.out
+    wildcards: patient=AML-03-001, fp=0.001
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-77-001_input.csv
+    output: phyolin_matrix_output/AML-77-001_fp0.01_matrix.csv, phyolin_estimate/AML-77-001_fp0.01_predict.out
+    log: log/AML-77-001_0.01_phyolin.log, log/AML-77-001_0.01_phyolin.err.log
+    jobid: 329
+    benchmark: benchmark/AML-77-001_0.01_phyolin.out
+    wildcards: patient=AML-77-001, fp=0.01
+
+
+[Sat Jan 30 21:21:31 2021]
+rule phyolin:
+    input: input/AML-69-001_input.csv
+    output: phyolin_matrix_output/AML-69-001_fp0.01_matrix.csv, phyolin_estimate/AML-69-001_fp0.01_predict.out
+    log: log/AML-69-001_0.01_phyolin.log, log/AML-69-001_0.01_phyolin.err.log
+    jobid: 305
+    benchmark: benchmark/AML-69-001_0.01_phyolin.out
+    wildcards: patient=AML-69-001, fp=0.01
+
+[Sat Jan 30 21:22:10 2021]
+Finished job 232.
+57 of 298 steps (19%) done
+[Sat Jan 30 21:36:32 2021]
+Finished job 108.
+58 of 298 steps (19%) done
+[Sat Jan 30 21:36:32 2021]
+Finished job 204.
+59 of 298 steps (20%) done
+[Sat Jan 30 21:36:33 2021]
+Finished job 233.
+60 of 298 steps (20%) done
+[Sat Jan 30 21:36:33 2021]
+Finished job 305.
+61 of 298 steps (20%) done
+[Sat Jan 30 21:36:34 2021]
+Finished job 290.
+62 of 298 steps (21%) done
+[Sat Jan 30 21:36:36 2021]
+Finished job 189.
+63 of 298 steps (21%) done
+[Sat Jan 30 21:36:37 2021]
+Finished job 329.
+64 of 298 steps (21%) done
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-22-001_input.csv
+    output: phyolin_matrix_output/AML-22-001_fp0.0_matrix.csv, phyolin_estimate/AML-22-001_fp0.0_predict.out
+    log: log/AML-22-001_0.0_phyolin.log, log/AML-22-001_0.0_phyolin.err.log
+    jobid: 169
+    benchmark: benchmark/AML-22-001_0.0_phyolin.out
+    wildcards: patient=AML-22-001, fp=0.0
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-36-001_input.csv
+    output: phyolin_matrix_output/AML-36-001_fp0.0_matrix.csv, phyolin_estimate/AML-36-001_fp0.0_predict.out
+    log: log/AML-36-001_0.0_phyolin.log, log/AML-36-001_0.0_phyolin.err.log
+    jobid: 211
+    benchmark: benchmark/AML-36-001_0.0_phyolin.out
+    wildcards: patient=AML-36-001, fp=0.0
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-64-001_input.csv
+    output: phyolin_matrix_output/AML-64-001_fp0.001_matrix.csv, phyolin_estimate/AML-64-001_fp0.001_predict.out
+    log: log/AML-64-001_0.001_phyolin.log, log/AML-64-001_0.001_phyolin.err.log
+    jobid: 291
+    benchmark: benchmark/AML-64-001_0.001_phyolin.out
+    wildcards: patient=AML-64-001, fp=0.001
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-36-001_input.csv
+    output: phyolin_matrix_output/AML-36-001_fp0.01_matrix.csv, phyolin_estimate/AML-36-001_fp0.01_predict.out
+    log: log/AML-36-001_0.01_phyolin.log, log/AML-36-001_0.01_phyolin.err.log
+    jobid: 212
+    benchmark: benchmark/AML-36-001_0.01_phyolin.out
+    wildcards: patient=AML-36-001, fp=0.01
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-09-001_input.csv
+    output: phyolin_matrix_output/AML-09-001_fp0.001_matrix.csv, phyolin_estimate/AML-09-001_fp0.001_predict.out
+    log: log/AML-09-001_0.001_phyolin.log, log/AML-09-001_0.001_phyolin.err.log
+    jobid: 123
+    benchmark: benchmark/AML-09-001_0.001_phyolin.out
+    wildcards: patient=AML-09-001, fp=0.001
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-21-001_input.csv
+    output: phyolin_matrix_output/AML-21-001_fp0.001_matrix.csv, phyolin_estimate/AML-21-001_fp0.001_predict.out
+    log: log/AML-21-001_0.001_phyolin.log, log/AML-21-001_0.001_phyolin.err.log
+    jobid: 168
+    benchmark: benchmark/AML-21-001_0.001_phyolin.out
+    wildcards: patient=AML-21-001, fp=0.001
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-28-001_input.csv
+    output: phyolin_matrix_output/AML-28-001_fp0.01_matrix.csv, phyolin_estimate/AML-28-001_fp0.01_predict.out
+    log: log/AML-28-001_0.01_phyolin.log, log/AML-28-001_0.01_phyolin.err.log
+    jobid: 188
+    benchmark: benchmark/AML-28-001_0.01_phyolin.out
+    wildcards: patient=AML-28-001, fp=0.01
+
+
+[Sat Jan 30 21:36:38 2021]
+rule phyolin:
+    input: input/AML-33-001_input.csv
+    output: phyolin_matrix_output/AML-33-001_fp0.01_matrix.csv, phyolin_estimate/AML-33-001_fp0.01_predict.out
+    log: log/AML-33-001_0.01_phyolin.log, log/AML-33-001_0.01_phyolin.err.log
+    jobid: 203
+    benchmark: benchmark/AML-33-001_0.01_phyolin.out
+    wildcards: patient=AML-33-001, fp=0.01
+
+[Sat Jan 30 21:38:12 2021]
+Finished job 211.
+65 of 298 steps (22%) done
+[Sat Jan 30 21:51:39 2021]
+Finished job 203.
+66 of 298 steps (22%) done
+[Sat Jan 30 21:51:39 2021]
+Finished job 212.
+67 of 298 steps (22%) done
+[Sat Jan 30 21:51:39 2021]
+Finished job 168.
+68 of 298 steps (23%) done
+[Sat Jan 30 21:51:40 2021]
+Finished job 291.
+69 of 298 steps (23%) done
+[Sat Jan 30 21:51:41 2021]
+Finished job 169.
+70 of 298 steps (23%) done
+[Sat Jan 30 21:51:42 2021]
+Finished job 123.
+71 of 298 steps (24%) done
+[Sat Jan 30 21:51:43 2021]
+Finished job 188.
+72 of 298 steps (24%) done
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-05-001_input.csv
+    output: phyolin_matrix_output/AML-05-001_fp0.0_matrix.csv, phyolin_estimate/AML-05-001_fp0.0_predict.out
+    log: log/AML-05-001_0.0_phyolin.log, log/AML-05-001_0.0_phyolin.err.log
+    jobid: 109
+    benchmark: benchmark/AML-05-001_0.0_phyolin.out
+    wildcards: patient=AML-05-001, fp=0.0
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-100-001_input.csv
+    output: phyolin_matrix_output/AML-100-001_fp0.0_matrix.csv, phyolin_estimate/AML-100-001_fp0.0_predict.out
+    log: log/AML-100-001_0.0_phyolin.log, log/AML-100-001_0.0_phyolin.err.log
+    jobid: 124
+    benchmark: benchmark/AML-100-001_0.0_phyolin.out
+    wildcards: patient=AML-100-001, fp=0.0
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-36-001_input.csv
+    output: phyolin_matrix_output/AML-36-001_fp0.001_matrix.csv, phyolin_estimate/AML-36-001_fp0.001_predict.out
+    log: log/AML-36-001_0.001_phyolin.log, log/AML-36-001_0.001_phyolin.err.log
+    jobid: 213
+    benchmark: benchmark/AML-36-001_0.001_phyolin.out
+    wildcards: patient=AML-36-001, fp=0.001
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-72-001_input.csv
+    output: phyolin_matrix_output/AML-72-001_fp0.01_matrix.csv, phyolin_estimate/AML-72-001_fp0.01_predict.out
+    log: log/AML-72-001_0.01_phyolin.log, log/AML-72-001_0.01_phyolin.err.log
+    jobid: 314
+    benchmark: benchmark/AML-72-001_0.01_phyolin.out
+    wildcards: patient=AML-72-001, fp=0.01
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-82-001_input.csv
+    output: phyolin_matrix_output/AML-82-001_fp0.0_matrix.csv, phyolin_estimate/AML-82-001_fp0.0_predict.out
+    log: log/AML-82-001_0.0_phyolin.log, log/AML-82-001_0.0_phyolin.err.log
+    jobid: 343
+    benchmark: benchmark/AML-82-001_0.0_phyolin.out
+    wildcards: patient=AML-82-001, fp=0.0
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-53-001_input.csv
+    output: phyolin_matrix_output/AML-53-001_fp0.0_matrix.csv, phyolin_estimate/AML-53-001_fp0.0_predict.out
+    log: log/AML-53-001_0.0_phyolin.log, log/AML-53-001_0.0_phyolin.err.log
+    jobid: 256
+    benchmark: benchmark/AML-53-001_0.0_phyolin.out
+    wildcards: patient=AML-53-001, fp=0.0
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-57-001_input.csv
+    output: phyolin_matrix_output/AML-57-001_fp0.01_matrix.csv, phyolin_estimate/AML-57-001_fp0.01_predict.out
+    log: log/AML-57-001_0.01_phyolin.log, log/AML-57-001_0.01_phyolin.err.log
+    jobid: 269
+    benchmark: benchmark/AML-57-001_0.01_phyolin.out
+    wildcards: patient=AML-57-001, fp=0.01
+
+
+[Sat Jan 30 21:51:43 2021]
+rule phyolin:
+    input: input/AML-05-001_input.csv
+    output: phyolin_matrix_output/AML-05-001_fp0.01_matrix.csv, phyolin_estimate/AML-05-001_fp0.01_predict.out
+    log: log/AML-05-001_0.01_phyolin.log, log/AML-05-001_0.01_phyolin.err.log
+    jobid: 110
+    benchmark: benchmark/AML-05-001_0.01_phyolin.out
+    wildcards: patient=AML-05-001, fp=0.01
+
+[Sat Jan 30 21:53:01 2021]
+Finished job 256.
+73 of 298 steps (24%) done
+[Sat Jan 30 21:59:02 2021]
+Finished job 109.
+74 of 298 steps (25%) done
+[Sat Jan 30 22:06:44 2021]
+Finished job 110.
+75 of 298 steps (25%) done
+[Sat Jan 30 22:06:44 2021]
+Finished job 269.
+76 of 298 steps (26%) done
+[Sat Jan 30 22:06:44 2021]
+Finished job 314.
+77 of 298 steps (26%) done
+[Sat Jan 30 22:06:44 2021]
+Finished job 213.
+78 of 298 steps (26%) done
+[Sat Jan 30 22:06:46 2021]
+Finished job 343.
+79 of 298 steps (27%) done
+[Sat Jan 30 22:06:47 2021]
+Finished job 124.
+80 of 298 steps (27%) done
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-82-001_input.csv
+    output: phyolin_matrix_output/AML-82-001_fp0.01_matrix.csv, phyolin_estimate/AML-82-001_fp0.01_predict.out
+    log: log/AML-82-001_0.01_phyolin.log, log/AML-82-001_0.01_phyolin.err.log
+    jobid: 344
+    benchmark: benchmark/AML-82-001_0.01_phyolin.out
+    wildcards: patient=AML-82-001, fp=0.01
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-47-001_input.csv
+    output: phyolin_matrix_output/AML-47-001_fp0.0_matrix.csv, phyolin_estimate/AML-47-001_fp0.0_predict.out
+    log: log/AML-47-001_0.0_phyolin.log, log/AML-47-001_0.0_phyolin.err.log
+    jobid: 238
+    benchmark: benchmark/AML-47-001_0.0_phyolin.out
+    wildcards: patient=AML-47-001, fp=0.0
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-92-001_input.csv
+    output: phyolin_matrix_output/AML-92-001_fp0.01_matrix.csv, phyolin_estimate/AML-92-001_fp0.01_predict.out
+    log: log/AML-92-001_0.01_phyolin.log, log/AML-92-001_0.01_phyolin.err.log
+    jobid: 374
+    benchmark: benchmark/AML-92-001_0.01_phyolin.out
+    wildcards: patient=AML-92-001, fp=0.01
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-77-001_input.csv
+    output: phyolin_matrix_output/AML-77-001_fp0.001_matrix.csv, phyolin_estimate/AML-77-001_fp0.001_predict.out
+    log: log/AML-77-001_0.001_phyolin.log, log/AML-77-001_0.001_phyolin.err.log
+    jobid: 330
+    benchmark: benchmark/AML-77-001_0.001_phyolin.out
+    wildcards: patient=AML-77-001, fp=0.001
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-05-001_input.csv
+    output: phyolin_matrix_output/AML-05-001_fp0.001_matrix.csv, phyolin_estimate/AML-05-001_fp0.001_predict.out
+    log: log/AML-05-001_0.001_phyolin.log, log/AML-05-001_0.001_phyolin.err.log
+    jobid: 111
+    benchmark: benchmark/AML-05-001_0.001_phyolin.out
+    wildcards: patient=AML-05-001, fp=0.001
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-100-001_input.csv
+    output: phyolin_matrix_output/AML-100-001_fp0.01_matrix.csv, phyolin_estimate/AML-100-001_fp0.01_predict.out
+    log: log/AML-100-001_0.01_phyolin.log, log/AML-100-001_0.01_phyolin.err.log
+    jobid: 125
+    benchmark: benchmark/AML-100-001_0.01_phyolin.out
+    wildcards: patient=AML-100-001, fp=0.01
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-22-001_input.csv
+    output: phyolin_matrix_output/AML-22-001_fp0.01_matrix.csv, phyolin_estimate/AML-22-001_fp0.01_predict.out
+    log: log/AML-22-001_0.01_phyolin.log, log/AML-22-001_0.01_phyolin.err.log
+    jobid: 170
+    benchmark: benchmark/AML-22-001_0.01_phyolin.out
+    wildcards: patient=AML-22-001, fp=0.01
+
+
+[Sat Jan 30 22:06:48 2021]
+rule phyolin:
+    input: input/AML-37-001_input.csv
+    output: phyolin_matrix_output/AML-37-001_fp0.0_matrix.csv, phyolin_estimate/AML-37-001_fp0.0_predict.out
+    log: log/AML-37-001_0.0_phyolin.log, log/AML-37-001_0.0_phyolin.err.log
+    jobid: 214
+    benchmark: benchmark/AML-37-001_0.0_phyolin.out
+    wildcards: patient=AML-37-001, fp=0.0
+
+[Sat Jan 30 22:06:59 2021]
+Finished job 214.
+81 of 298 steps (27%) done
+[Sat Jan 30 22:07:02 2021]
+Finished job 238.
+82 of 298 steps (28%) done
+[Sat Jan 30 22:21:49 2021]
+Finished job 111.
+83 of 298 steps (28%) done
+[Sat Jan 30 22:21:51 2021]
+Finished job 170.
+84 of 298 steps (28%) done
+[Sat Jan 30 22:21:51 2021]
+Finished job 374.
+85 of 298 steps (29%) done
+[Sat Jan 30 22:21:51 2021]
+Finished job 344.
+86 of 298 steps (29%) done
+[Sat Jan 30 22:21:52 2021]
+Finished job 125.
+87 of 298 steps (29%) done
+[Sat Jan 30 22:21:55 2021]
+Finished job 330.
+88 of 298 steps (30%) done
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-100-001_input.csv
+    output: phyolin_matrix_output/AML-100-001_fp0.001_matrix.csv, phyolin_estimate/AML-100-001_fp0.001_predict.out
+    log: log/AML-100-001_0.001_phyolin.log, log/AML-100-001_0.001_phyolin.err.log
+    jobid: 126
+    benchmark: benchmark/AML-100-001_0.001_phyolin.out
+    wildcards: patient=AML-100-001, fp=0.001
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-52-001_input.csv
+    output: phyolin_matrix_output/AML-52-001_fp0.0_matrix.csv, phyolin_estimate/AML-52-001_fp0.0_predict.out
+    log: log/AML-52-001_0.0_phyolin.log, log/AML-52-001_0.0_phyolin.err.log
+    jobid: 253
+    benchmark: benchmark/AML-52-001_0.0_phyolin.out
+    wildcards: patient=AML-52-001, fp=0.0
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-37-001_input.csv
+    output: phyolin_matrix_output/AML-37-001_fp0.01_matrix.csv, phyolin_estimate/AML-37-001_fp0.01_predict.out
+    log: log/AML-37-001_0.01_phyolin.log, log/AML-37-001_0.01_phyolin.err.log
+    jobid: 215
+    benchmark: benchmark/AML-37-001_0.01_phyolin.out
+    wildcards: patient=AML-37-001, fp=0.01
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-49-001_input.csv
+    output: phyolin_matrix_output/AML-49-001_fp0.0_matrix.csv, phyolin_estimate/AML-49-001_fp0.0_predict.out
+    log: log/AML-49-001_0.0_phyolin.log, log/AML-49-001_0.0_phyolin.err.log
+    jobid: 244
+    benchmark: benchmark/AML-49-001_0.0_phyolin.out
+    wildcards: patient=AML-49-001, fp=0.0
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-93-001_input.csv
+    output: phyolin_matrix_output/AML-93-001_fp0.0_matrix.csv, phyolin_estimate/AML-93-001_fp0.0_predict.out
+    log: log/AML-93-001_0.0_phyolin.log, log/AML-93-001_0.0_phyolin.err.log
+    jobid: 376
+    benchmark: benchmark/AML-93-001_0.0_phyolin.out
+    wildcards: patient=AML-93-001, fp=0.0
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-82-001_input.csv
+    output: phyolin_matrix_output/AML-82-001_fp0.001_matrix.csv, phyolin_estimate/AML-82-001_fp0.001_predict.out
+    log: log/AML-82-001_0.001_phyolin.log, log/AML-82-001_0.001_phyolin.err.log
+    jobid: 345
+    benchmark: benchmark/AML-82-001_0.001_phyolin.out
+    wildcards: patient=AML-82-001, fp=0.001
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-92-001_input.csv
+    output: phyolin_matrix_output/AML-92-001_fp0.001_matrix.csv, phyolin_estimate/AML-92-001_fp0.001_predict.out
+    log: log/AML-92-001_0.001_phyolin.log, log/AML-92-001_0.001_phyolin.err.log
+    jobid: 375
+    benchmark: benchmark/AML-92-001_0.001_phyolin.out
+    wildcards: patient=AML-92-001, fp=0.001
+
+
+[Sat Jan 30 22:21:55 2021]
+rule phyolin:
+    input: input/AML-78-001_input.csv
+    output: phyolin_matrix_output/AML-78-001_fp0.0_matrix.csv, phyolin_estimate/AML-78-001_fp0.0_predict.out
+    log: log/AML-78-001_0.0_phyolin.log, log/AML-78-001_0.0_phyolin.err.log
+    jobid: 331
+    benchmark: benchmark/AML-78-001_0.0_phyolin.out
+    wildcards: patient=AML-78-001, fp=0.0
+
+[Sat Jan 30 22:21:57 2021]
+Finished job 244.
+89 of 298 steps (30%) done
+[Sat Jan 30 22:21:58 2021]
+Finished job 376.
+90 of 298 steps (30%) done
+[Sat Jan 30 22:22:00 2021]
+Finished job 331.
+91 of 298 steps (31%) done
+[Sat Jan 30 22:22:07 2021]
+Finished job 253.
+92 of 298 steps (31%) done
+[Sat Jan 30 22:36:56 2021]
+Finished job 215.
+93 of 298 steps (31%) done
+[Sat Jan 30 22:36:58 2021]
+Finished job 375.
+94 of 298 steps (32%) done
+[Sat Jan 30 22:36:59 2021]
+Finished job 345.
+95 of 298 steps (32%) done
+[Sat Jan 30 22:37:00 2021]
+Finished job 126.
+96 of 298 steps (32%) done
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-83-001_input.csv
+    output: phyolin_matrix_output/AML-83-001_fp0.0_matrix.csv, phyolin_estimate/AML-83-001_fp0.0_predict.out
+    log: log/AML-83-001_0.0_phyolin.log, log/AML-83-001_0.0_phyolin.err.log
+    jobid: 346
+    benchmark: benchmark/AML-83-001_0.0_phyolin.out
+    wildcards: patient=AML-83-001, fp=0.0
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-78-001_input.csv
+    output: phyolin_matrix_output/AML-78-001_fp0.01_matrix.csv, phyolin_estimate/AML-78-001_fp0.01_predict.out
+    log: log/AML-78-001_0.01_phyolin.log, log/AML-78-001_0.01_phyolin.err.log
+    jobid: 332
+    benchmark: benchmark/AML-78-001_0.01_phyolin.out
+    wildcards: patient=AML-78-001, fp=0.01
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-22-001_input.csv
+    output: phyolin_matrix_output/AML-22-001_fp0.001_matrix.csv, phyolin_estimate/AML-22-001_fp0.001_predict.out
+    log: log/AML-22-001_0.001_phyolin.log, log/AML-22-001_0.001_phyolin.err.log
+    jobid: 171
+    benchmark: benchmark/AML-22-001_0.001_phyolin.out
+    wildcards: patient=AML-22-001, fp=0.001
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-10-001_input.csv
+    output: phyolin_matrix_output/AML-10-001_fp0.0_matrix.csv, phyolin_estimate/AML-10-001_fp0.0_predict.out
+    log: log/AML-10-001_0.0_phyolin.log, log/AML-10-001_0.0_phyolin.err.log
+    jobid: 127
+    benchmark: benchmark/AML-10-001_0.0_phyolin.out
+    wildcards: patient=AML-10-001, fp=0.0
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-06-001_input.csv
+    output: phyolin_matrix_output/AML-06-001_fp0.0_matrix.csv, phyolin_estimate/AML-06-001_fp0.0_predict.out
+    log: log/AML-06-001_0.0_phyolin.log, log/AML-06-001_0.0_phyolin.err.log
+    jobid: 112
+    benchmark: benchmark/AML-06-001_0.0_phyolin.out
+    wildcards: patient=AML-06-001, fp=0.0
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-37-001_input.csv
+    output: phyolin_matrix_output/AML-37-001_fp0.001_matrix.csv, phyolin_estimate/AML-37-001_fp0.001_predict.out
+    log: log/AML-37-001_0.001_phyolin.log, log/AML-37-001_0.001_phyolin.err.log
+    jobid: 216
+    benchmark: benchmark/AML-37-001_0.001_phyolin.out
+    wildcards: patient=AML-37-001, fp=0.001
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-49-001_input.csv
+    output: phyolin_matrix_output/AML-49-001_fp0.01_matrix.csv, phyolin_estimate/AML-49-001_fp0.01_predict.out
+    log: log/AML-49-001_0.01_phyolin.log, log/AML-49-001_0.01_phyolin.err.log
+    jobid: 245
+    benchmark: benchmark/AML-49-001_0.01_phyolin.out
+    wildcards: patient=AML-49-001, fp=0.01
+
+
+[Sat Jan 30 22:37:00 2021]
+rule phyolin:
+    input: input/AML-83-001_input.csv
+    output: phyolin_matrix_output/AML-83-001_fp0.01_matrix.csv, phyolin_estimate/AML-83-001_fp0.01_predict.out
+    log: log/AML-83-001_0.01_phyolin.log, log/AML-83-001_0.01_phyolin.err.log
+    jobid: 347
+    benchmark: benchmark/AML-83-001_0.01_phyolin.out
+    wildcards: patient=AML-83-001, fp=0.01
+
+[Sat Jan 30 22:37:01 2021]
+Finished job 127.
+97 of 298 steps (33%) done
+[Sat Jan 30 22:37:05 2021]
+Finished job 346.
+98 of 298 steps (33%) done
+[Sat Jan 30 22:46:26 2021]
+Finished job 112.
+99 of 298 steps (33%) done
+[Sat Jan 30 22:52:01 2021]
+Finished job 332.
+100 of 298 steps (34%) done
+[Sat Jan 30 22:52:01 2021]
+Finished job 216.
+101 of 298 steps (34%) done
+[Sat Jan 30 22:52:02 2021]
+Finished job 245.
+102 of 298 steps (34%) done
+[Sat Jan 30 22:52:02 2021]
+Finished job 347.
+103 of 298 steps (35%) done
+[Sat Jan 30 22:52:03 2021]
+Finished job 171.
+104 of 298 steps (35%) done
+
+[Sat Jan 30 22:52:03 2021]
+rule phyolin:
+    input: input/AML-06-001_input.csv
+    output: phyolin_matrix_output/AML-06-001_fp0.01_matrix.csv, phyolin_estimate/AML-06-001_fp0.01_predict.out
+    log: log/AML-06-001_0.01_phyolin.log, log/AML-06-001_0.01_phyolin.err.log
+    jobid: 113
+    benchmark: benchmark/AML-06-001_0.01_phyolin.out
+    wildcards: patient=AML-06-001, fp=0.01
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-02-001_input.csv
+    output: phyolin_matrix_output/AML-02-001_fp0.001_matrix.csv, phyolin_estimate/AML-02-001_fp0.001_predict.out
+    log: log/AML-02-001_0.001_phyolin.log, log/AML-02-001_0.001_phyolin.err.log
+    jobid: 105
+    benchmark: benchmark/AML-02-001_0.001_phyolin.out
+    wildcards: patient=AML-02-001, fp=0.001
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-10-001_input.csv
+    output: phyolin_matrix_output/AML-10-001_fp0.01_matrix.csv, phyolin_estimate/AML-10-001_fp0.01_predict.out
+    log: log/AML-10-001_0.01_phyolin.log, log/AML-10-001_0.01_phyolin.err.log
+    jobid: 128
+    benchmark: benchmark/AML-10-001_0.01_phyolin.out
+    wildcards: patient=AML-10-001, fp=0.01
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-59-001_input.csv
+    output: phyolin_matrix_output/AML-59-001_fp0.0_matrix.csv, phyolin_estimate/AML-59-001_fp0.0_predict.out
+    log: log/AML-59-001_0.0_phyolin.log, log/AML-59-001_0.0_phyolin.err.log
+    jobid: 274
+    benchmark: benchmark/AML-59-001_0.0_phyolin.out
+    wildcards: patient=AML-59-001, fp=0.0
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-83-001_input.csv
+    output: phyolin_matrix_output/AML-83-001_fp0.001_matrix.csv, phyolin_estimate/AML-83-001_fp0.001_predict.out
+    log: log/AML-83-001_0.001_phyolin.log, log/AML-83-001_0.001_phyolin.err.log
+    jobid: 348
+    benchmark: benchmark/AML-83-001_0.001_phyolin.out
+    wildcards: patient=AML-83-001, fp=0.001
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-49-001_input.csv
+    output: phyolin_matrix_output/AML-49-001_fp0.001_matrix.csv, phyolin_estimate/AML-49-001_fp0.001_predict.out
+    log: log/AML-49-001_0.001_phyolin.log, log/AML-49-001_0.001_phyolin.err.log
+    jobid: 246
+    benchmark: benchmark/AML-49-001_0.001_phyolin.out
+    wildcards: patient=AML-49-001, fp=0.001
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-78-001_input.csv
+    output: phyolin_matrix_output/AML-78-001_fp0.001_matrix.csv, phyolin_estimate/AML-78-001_fp0.001_predict.out
+    log: log/AML-78-001_0.001_phyolin.log, log/AML-78-001_0.001_phyolin.err.log
+    jobid: 333
+    benchmark: benchmark/AML-78-001_0.001_phyolin.out
+    wildcards: patient=AML-78-001, fp=0.001
+
+
+[Sat Jan 30 22:52:04 2021]
+rule phyolin:
+    input: input/AML-93-001_input.csv
+    output: phyolin_matrix_output/AML-93-001_fp0.01_matrix.csv, phyolin_estimate/AML-93-001_fp0.01_predict.out
+    log: log/AML-93-001_0.01_phyolin.log, log/AML-93-001_0.01_phyolin.err.log
+    jobid: 377
+    benchmark: benchmark/AML-93-001_0.01_phyolin.out
+    wildcards: patient=AML-93-001, fp=0.01
+
+[Sat Jan 30 22:52:05 2021]
+Finished job 274.
+105 of 298 steps (35%) done
+[Sat Jan 30 23:07:04 2021]
+Finished job 128.
+106 of 298 steps (36%) done
+[Sat Jan 30 23:07:04 2021]
+Finished job 333.
+107 of 298 steps (36%) done
+[Sat Jan 30 23:07:05 2021]
+Finished job 377.
+108 of 298 steps (36%) done
+[Sat Jan 30 23:07:05 2021]
+Finished job 246.
+109 of 298 steps (37%) done
+[Sat Jan 30 23:07:06 2021]
+Finished job 348.
+110 of 298 steps (37%) done
+[Sat Jan 30 23:07:07 2021]
+Finished job 105.
+111 of 298 steps (37%) done
+[Sat Jan 30 23:07:09 2021]
+Finished job 113.
+112 of 298 steps (38%) done
+
+[Sat Jan 30 23:07:09 2021]
+rule phyolin:
+    input: input/AML-79-001_input.csv
+    output: phyolin_matrix_output/AML-79-001_fp0.0_matrix.csv, phyolin_estimate/AML-79-001_fp0.0_predict.out
+    log: log/AML-79-001_0.0_phyolin.log, log/AML-79-001_0.0_phyolin.err.log
+    jobid: 334
+    benchmark: benchmark/AML-79-001_0.0_phyolin.out
+    wildcards: patient=AML-79-001, fp=0.0
+
+
+[Sat Jan 30 23:07:09 2021]
+rule phyolin:
+    input: input/AML-71-001_input.csv
+    output: phyolin_matrix_output/AML-71-001_fp0.01_matrix.csv, phyolin_estimate/AML-71-001_fp0.01_predict.out
+    log: log/AML-71-001_0.01_phyolin.log, log/AML-71-001_0.01_phyolin.err.log
+    jobid: 311
+    benchmark: benchmark/AML-71-001_0.01_phyolin.out
+    wildcards: patient=AML-71-001, fp=0.01
+
+
+[Sat Jan 30 23:07:09 2021]
+rule phyolin:
+    input: input/AML-10-001_input.csv
+    output: phyolin_matrix_output/AML-10-001_fp0.001_matrix.csv, phyolin_estimate/AML-10-001_fp0.001_predict.out
+    log: log/AML-10-001_0.001_phyolin.log, log/AML-10-001_0.001_phyolin.err.log
+    jobid: 129
+    benchmark: benchmark/AML-10-001_0.001_phyolin.out
+    wildcards: patient=AML-10-001, fp=0.001
+
+
+[Sat Jan 30 23:07:09 2021]
+rule phyolin:
+    input: input/AML-74-001_input.csv
+    output: phyolin_matrix_output/AML-74-001_fp0.01_matrix.csv, phyolin_estimate/AML-74-001_fp0.01_predict.out
+    log: log/AML-74-001_0.01_phyolin.log, log/AML-74-001_0.01_phyolin.err.log
+    jobid: 320
+    benchmark: benchmark/AML-74-001_0.01_phyolin.out
+    wildcards: patient=AML-74-001, fp=0.01
+
+
+[Sat Jan 30 23:07:09 2021]
+rule phyolin:
+    input: input/AML-06-001_input.csv
+    output: phyolin_matrix_output/AML-06-001_fp0.001_matrix.csv, phyolin_estimate/AML-06-001_fp0.001_predict.out
+    log: log/AML-06-001_0.001_phyolin.log, log/AML-06-001_0.001_phyolin.err.log
+    jobid: 114
+    benchmark: benchmark/AML-06-001_0.001_phyolin.out
+    wildcards: patient=AML-06-001, fp=0.001
+
+
+[Sat Jan 30 23:07:10 2021]
+rule phyolin:
+    input: input/AML-39-001_input.csv
+    output: phyolin_matrix_output/AML-39-001_fp0.01_matrix.csv, phyolin_estimate/AML-39-001_fp0.01_predict.out
+    log: log/AML-39-001_0.01_phyolin.log, log/AML-39-001_0.01_phyolin.err.log
+    jobid: 218
+    benchmark: benchmark/AML-39-001_0.01_phyolin.out
+    wildcards: patient=AML-39-001, fp=0.01
+
+
+[Sat Jan 30 23:07:10 2021]
+rule phyolin:
+    input: input/AML-79-001_input.csv
+    output: phyolin_matrix_output/AML-79-001_fp0.01_matrix.csv, phyolin_estimate/AML-79-001_fp0.01_predict.out
+    log: log/AML-79-001_0.01_phyolin.log, log/AML-79-001_0.01_phyolin.err.log
+    jobid: 335
+    benchmark: benchmark/AML-79-001_0.01_phyolin.out
+    wildcards: patient=AML-79-001, fp=0.01
+
+
+[Sat Jan 30 23:07:10 2021]
+rule phyolin:
+    input: input/AML-54-001_input.csv
+    output: phyolin_matrix_output/AML-54-001_fp0.01_matrix.csv, phyolin_estimate/AML-54-001_fp0.01_predict.out
+    log: log/AML-54-001_0.01_phyolin.log, log/AML-54-001_0.01_phyolin.err.log
+    jobid: 260
+    benchmark: benchmark/AML-54-001_0.01_phyolin.out
+    wildcards: patient=AML-54-001, fp=0.01
+
+[Sat Jan 30 23:07:27 2021]
+Finished job 334.
+113 of 298 steps (38%) done
+[Sat Jan 30 23:22:10 2021]
+Finished job 129.
+114 of 298 steps (38%) done
+[Sat Jan 30 23:22:10 2021]
+Finished job 335.
+115 of 298 steps (39%) done
+[Sat Jan 30 23:22:11 2021]
+Finished job 260.
+116 of 298 steps (39%) done
+[Sat Jan 30 23:22:13 2021]
+Finished job 311.
+117 of 298 steps (39%) done
+[Sat Jan 30 23:22:14 2021]
+Finished job 320.
+118 of 298 steps (40%) done
+[Sat Jan 30 23:22:14 2021]
+Finished job 218.
+119 of 298 steps (40%) done
+[Sat Jan 30 23:22:15 2021]
+Finished job 114.
+120 of 298 steps (40%) done
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-07-001_input.csv
+    output: phyolin_matrix_output/AML-07-001_fp0.0_matrix.csv, phyolin_estimate/AML-07-001_fp0.0_predict.out
+    log: log/AML-07-001_0.0_phyolin.log, log/AML-07-001_0.0_phyolin.err.log
+    jobid: 115
+    benchmark: benchmark/AML-07-001_0.0_phyolin.out
+    wildcards: patient=AML-07-001, fp=0.0
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-79-001_input.csv
+    output: phyolin_matrix_output/AML-79-001_fp0.001_matrix.csv, phyolin_estimate/AML-79-001_fp0.001_predict.out
+    log: log/AML-79-001_0.001_phyolin.log, log/AML-79-001_0.001_phyolin.err.log
+    jobid: 336
+    benchmark: benchmark/AML-79-001_0.001_phyolin.out
+    wildcards: patient=AML-79-001, fp=0.001
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-94-001_input.csv
+    output: phyolin_matrix_output/AML-94-001_fp0.01_matrix.csv, phyolin_estimate/AML-94-001_fp0.01_predict.out
+    log: log/AML-94-001_0.01_phyolin.log, log/AML-94-001_0.01_phyolin.err.log
+    jobid: 380
+    benchmark: benchmark/AML-94-001_0.01_phyolin.out
+    wildcards: patient=AML-94-001, fp=0.01
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-76-001_input.csv
+    output: phyolin_matrix_output/AML-76-001_fp0.01_matrix.csv, phyolin_estimate/AML-76-001_fp0.01_predict.out
+    log: log/AML-76-001_0.01_phyolin.log, log/AML-76-001_0.01_phyolin.err.log
+    jobid: 326
+    benchmark: benchmark/AML-76-001_0.01_phyolin.out
+    wildcards: patient=AML-76-001, fp=0.01
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-81-001_input.csv
+    output: phyolin_matrix_output/AML-81-001_fp0.01_matrix.csv, phyolin_estimate/AML-81-001_fp0.01_predict.out
+    log: log/AML-81-001_0.01_phyolin.log, log/AML-81-001_0.01_phyolin.err.log
+    jobid: 341
+    benchmark: benchmark/AML-81-001_0.01_phyolin.out
+    wildcards: patient=AML-81-001, fp=0.01
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-101-001_input.csv
+    output: phyolin_matrix_output/AML-101-001_fp0.0_matrix.csv, phyolin_estimate/AML-101-001_fp0.0_predict.out
+    log: log/AML-101-001_0.0_phyolin.log, log/AML-101-001_0.0_phyolin.err.log
+    jobid: 130
+    benchmark: benchmark/AML-101-001_0.0_phyolin.out
+    wildcards: patient=AML-101-001, fp=0.0
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-23-001_input.csv
+    output: phyolin_matrix_output/AML-23-001_fp0.001_matrix.csv, phyolin_estimate/AML-23-001_fp0.001_predict.out
+    log: log/AML-23-001_0.001_phyolin.log, log/AML-23-001_0.001_phyolin.err.log
+    jobid: 174
+    benchmark: benchmark/AML-23-001_0.001_phyolin.out
+    wildcards: patient=AML-23-001, fp=0.001
+
+
+[Sat Jan 30 23:22:15 2021]
+rule phyolin:
+    input: input/AML-39-001_input.csv
+    output: phyolin_matrix_output/AML-39-001_fp0.001_matrix.csv, phyolin_estimate/AML-39-001_fp0.001_predict.out
+    log: log/AML-39-001_0.001_phyolin.log, log/AML-39-001_0.001_phyolin.err.log
+    jobid: 219
+    benchmark: benchmark/AML-39-001_0.001_phyolin.out
+    wildcards: patient=AML-39-001, fp=0.001
+
+[Sat Jan 30 23:22:18 2021]
+Finished job 115.
+121 of 298 steps (41%) done
+[Sat Jan 30 23:22:50 2021]
+Finished job 130.
+122 of 298 steps (41%) done
+[Sat Jan 30 23:31:01 2021]
+Finished job 174.
+123 of 298 steps (41%) done
+[Sat Jan 30 23:37:16 2021]
+Finished job 336.
+124 of 298 steps (42%) done
+[Sat Jan 30 23:37:17 2021]
+Finished job 380.
+125 of 298 steps (42%) done
+[Sat Jan 30 23:37:17 2021]
+Finished job 341.
+126 of 298 steps (42%) done
+[Sat Jan 30 23:37:19 2021]
+Finished job 219.
+127 of 298 steps (43%) done
+[Sat Jan 30 23:37:24 2021]
+Finished job 326.
+128 of 298 steps (43%) done
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-84-001_input.csv
+    output: phyolin_matrix_output/AML-84-001_fp0.01_matrix.csv, phyolin_estimate/AML-84-001_fp0.01_predict.out
+    log: log/AML-84-001_0.01_phyolin.log, log/AML-84-001_0.01_phyolin.err.log
+    jobid: 350
+    benchmark: benchmark/AML-84-001_0.01_phyolin.out
+    wildcards: patient=AML-84-001, fp=0.01
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-07-001_input.csv
+    output: phyolin_matrix_output/AML-07-001_fp0.01_matrix.csv, phyolin_estimate/AML-07-001_fp0.01_predict.out
+    log: log/AML-07-001_0.01_phyolin.log, log/AML-07-001_0.01_phyolin.err.log
+    jobid: 116
+    benchmark: benchmark/AML-07-001_0.01_phyolin.out
+    wildcards: patient=AML-07-001, fp=0.01
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-24-001_input.csv
+    output: phyolin_matrix_output/AML-24-001_fp0.0_matrix.csv, phyolin_estimate/AML-24-001_fp0.0_predict.out
+    log: log/AML-24-001_0.0_phyolin.log, log/AML-24-001_0.0_phyolin.err.log
+    jobid: 175
+    benchmark: benchmark/AML-24-001_0.0_phyolin.out
+    wildcards: patient=AML-24-001, fp=0.0
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-101-001_input.csv
+    output: phyolin_matrix_output/AML-101-001_fp0.01_matrix.csv, phyolin_estimate/AML-101-001_fp0.01_predict.out
+    log: log/AML-101-001_0.01_phyolin.log, log/AML-101-001_0.01_phyolin.err.log
+    jobid: 131
+    benchmark: benchmark/AML-101-001_0.01_phyolin.out
+    wildcards: patient=AML-101-001, fp=0.01
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-50-001_input.csv
+    output: phyolin_matrix_output/AML-50-001_fp0.001_matrix.csv, phyolin_estimate/AML-50-001_fp0.001_predict.out
+    log: log/AML-50-001_0.001_phyolin.log, log/AML-50-001_0.001_phyolin.err.log
+    jobid: 249
+    benchmark: benchmark/AML-50-001_0.001_phyolin.out
+    wildcards: patient=AML-50-001, fp=0.001
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-55-001_input.csv
+    output: phyolin_matrix_output/AML-55-001_fp0.0_matrix.csv, phyolin_estimate/AML-55-001_fp0.0_predict.out
+    log: log/AML-55-001_0.0_phyolin.log, log/AML-55-001_0.0_phyolin.err.log
+    jobid: 262
+    benchmark: benchmark/AML-55-001_0.0_phyolin.out
+    wildcards: patient=AML-55-001, fp=0.0
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-94-001_input.csv
+    output: phyolin_matrix_output/AML-94-001_fp0.001_matrix.csv, phyolin_estimate/AML-94-001_fp0.001_predict.out
+    log: log/AML-94-001_0.001_phyolin.log, log/AML-94-001_0.001_phyolin.err.log
+    jobid: 381
+    benchmark: benchmark/AML-94-001_0.001_phyolin.out
+    wildcards: patient=AML-94-001, fp=0.001
+
+
+[Sat Jan 30 23:37:24 2021]
+rule phyolin:
+    input: input/AML-75-001_input.csv
+    output: phyolin_matrix_output/AML-75-001_fp0.0_matrix.csv, phyolin_estimate/AML-75-001_fp0.0_predict.out
+    log: log/AML-75-001_0.0_phyolin.log, log/AML-75-001_0.0_phyolin.err.log
+    jobid: 322
+    benchmark: benchmark/AML-75-001_0.0_phyolin.out
+    wildcards: patient=AML-75-001, fp=0.0
+
+[Sat Jan 30 23:38:45 2021]
+Finished job 262.
+129 of 298 steps (43%) done
+[Sat Jan 30 23:41:21 2021]
+Finished job 175.
+130 of 298 steps (44%) done
+[Sat Jan 30 23:43:22 2021]
+Finished job 322.
+131 of 298 steps (44%) done
+[Sat Jan 30 23:52:25 2021]
+Finished job 350.
+132 of 298 steps (44%) done
+[Sat Jan 30 23:52:25 2021]
+Finished job 131.
+133 of 298 steps (45%) done
+[Sat Jan 30 23:52:26 2021]
+Finished job 116.
+134 of 298 steps (45%) done
+[Sat Jan 30 23:52:26 2021]
+Finished job 249.
+135 of 298 steps (45%) done
+[Sat Jan 30 23:52:27 2021]
+Finished job 381.
+136 of 298 steps (46%) done
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-24-001_input.csv
+    output: phyolin_matrix_output/AML-24-001_fp0.01_matrix.csv, phyolin_estimate/AML-24-001_fp0.01_predict.out
+    log: log/AML-24-001_0.01_phyolin.log, log/AML-24-001_0.01_phyolin.err.log
+    jobid: 176
+    benchmark: benchmark/AML-24-001_0.01_phyolin.out
+    wildcards: patient=AML-24-001, fp=0.01
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-101-001_input.csv
+    output: phyolin_matrix_output/AML-101-001_fp0.001_matrix.csv, phyolin_estimate/AML-101-001_fp0.001_predict.out
+    log: log/AML-101-001_0.001_phyolin.log, log/AML-101-001_0.001_phyolin.err.log
+    jobid: 132
+    benchmark: benchmark/AML-101-001_0.001_phyolin.out
+    wildcards: patient=AML-101-001, fp=0.001
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-07-001_input.csv
+    output: phyolin_matrix_output/AML-07-001_fp0.001_matrix.csv, phyolin_estimate/AML-07-001_fp0.001_predict.out
+    log: log/AML-07-001_0.001_phyolin.log, log/AML-07-001_0.001_phyolin.err.log
+    jobid: 117
+    benchmark: benchmark/AML-07-001_0.001_phyolin.out
+    wildcards: patient=AML-07-001, fp=0.001
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-51-001_input.csv
+    output: phyolin_matrix_output/AML-51-001_fp0.0_matrix.csv, phyolin_estimate/AML-51-001_fp0.0_predict.out
+    log: log/AML-51-001_0.0_phyolin.log, log/AML-51-001_0.0_phyolin.err.log
+    jobid: 250
+    benchmark: benchmark/AML-51-001_0.0_phyolin.out
+    wildcards: patient=AML-51-001, fp=0.0
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-55-001_input.csv
+    output: phyolin_matrix_output/AML-55-001_fp0.01_matrix.csv, phyolin_estimate/AML-55-001_fp0.01_predict.out
+    log: log/AML-55-001_0.01_phyolin.log, log/AML-55-001_0.01_phyolin.err.log
+    jobid: 263
+    benchmark: benchmark/AML-55-001_0.01_phyolin.out
+    wildcards: patient=AML-55-001, fp=0.01
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-85-001_input.csv
+    output: phyolin_matrix_output/AML-85-001_fp0.0_matrix.csv, phyolin_estimate/AML-85-001_fp0.0_predict.out
+    log: log/AML-85-001_0.0_phyolin.log, log/AML-85-001_0.0_phyolin.err.log
+    jobid: 352
+    benchmark: benchmark/AML-85-001_0.0_phyolin.out
+    wildcards: patient=AML-85-001, fp=0.0
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-84-001_input.csv
+    output: phyolin_matrix_output/AML-84-001_fp0.001_matrix.csv, phyolin_estimate/AML-84-001_fp0.001_predict.out
+    log: log/AML-84-001_0.001_phyolin.log, log/AML-84-001_0.001_phyolin.err.log
+    jobid: 351
+    benchmark: benchmark/AML-84-001_0.001_phyolin.out
+    wildcards: patient=AML-84-001, fp=0.001
+
+
+[Sat Jan 30 23:52:27 2021]
+rule phyolin:
+    input: input/AML-21-001_input.csv
+    output: phyolin_matrix_output/AML-21-001_fp0.0_matrix.csv, phyolin_estimate/AML-21-001_fp0.0_predict.out
+    log: log/AML-21-001_0.0_phyolin.log, log/AML-21-001_0.0_phyolin.err.log
+    jobid: 166
+    benchmark: benchmark/AML-21-001_0.0_phyolin.out
+    wildcards: patient=AML-21-001, fp=0.0
+
+[Sat Jan 30 23:52:28 2021]
+Finished job 176.
+137 of 298 steps (46%) done
+[Sat Jan 30 23:52:48 2021]
+Finished job 166.
+138 of 298 steps (46%) done
+[Sat Jan 30 23:54:23 2021]
+Finished job 352.
+139 of 298 steps (47%) done
+[Sat Jan 30 23:54:54 2021]
+Finished job 250.
+140 of 298 steps (47%) done
+[Sun Jan 31 00:07:27 2021]
+Finished job 351.
+141 of 298 steps (47%) done
+[Sun Jan 31 00:07:27 2021]
+Finished job 132.
+142 of 298 steps (48%) done
+[Sun Jan 31 00:07:28 2021]
+Finished job 117.
+143 of 298 steps (48%) done
+[Sun Jan 31 00:07:29 2021]
+Finished job 263.
+144 of 298 steps (48%) done
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-95-001_input.csv
+    output: phyolin_matrix_output/AML-95-001_fp0.0_matrix.csv, phyolin_estimate/AML-95-001_fp0.0_predict.out
+    log: log/AML-95-001_0.0_phyolin.log, log/AML-95-001_0.0_phyolin.err.log
+    jobid: 382
+    benchmark: benchmark/AML-95-001_0.0_phyolin.out
+    wildcards: patient=AML-95-001, fp=0.0
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-24-001_input.csv
+    output: phyolin_matrix_output/AML-24-001_fp0.001_matrix.csv, phyolin_estimate/AML-24-001_fp0.001_predict.out
+    log: log/AML-24-001_0.001_phyolin.log, log/AML-24-001_0.001_phyolin.err.log
+    jobid: 177
+    benchmark: benchmark/AML-24-001_0.001_phyolin.out
+    wildcards: patient=AML-24-001, fp=0.001
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-11-001_input.csv
+    output: phyolin_matrix_output/AML-11-001_fp0.0_matrix.csv, phyolin_estimate/AML-11-001_fp0.0_predict.out
+    log: log/AML-11-001_0.0_phyolin.log, log/AML-11-001_0.0_phyolin.err.log
+    jobid: 133
+    benchmark: benchmark/AML-11-001_0.0_phyolin.out
+    wildcards: patient=AML-11-001, fp=0.0
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-47-001_input.csv
+    output: phyolin_matrix_output/AML-47-001_fp0.01_matrix.csv, phyolin_estimate/AML-47-001_fp0.01_predict.out
+    log: log/AML-47-001_0.01_phyolin.log, log/AML-47-001_0.01_phyolin.err.log
+    jobid: 239
+    benchmark: benchmark/AML-47-001_0.01_phyolin.out
+    wildcards: patient=AML-47-001, fp=0.01
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-08-001_input.csv
+    output: phyolin_matrix_output/AML-08-001_fp0.0_matrix.csv, phyolin_estimate/AML-08-001_fp0.0_predict.out
+    log: log/AML-08-001_0.0_phyolin.log, log/AML-08-001_0.0_phyolin.err.log
+    jobid: 118
+    benchmark: benchmark/AML-08-001_0.0_phyolin.out
+    wildcards: patient=AML-08-001, fp=0.0
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-51-001_input.csv
+    output: phyolin_matrix_output/AML-51-001_fp0.01_matrix.csv, phyolin_estimate/AML-51-001_fp0.01_predict.out
+    log: log/AML-51-001_0.01_phyolin.log, log/AML-51-001_0.01_phyolin.err.log
+    jobid: 251
+    benchmark: benchmark/AML-51-001_0.01_phyolin.out
+    wildcards: patient=AML-51-001, fp=0.01
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-55-001_input.csv
+    output: phyolin_matrix_output/AML-55-001_fp0.001_matrix.csv, phyolin_estimate/AML-55-001_fp0.001_predict.out
+    log: log/AML-55-001_0.001_phyolin.log, log/AML-55-001_0.001_phyolin.err.log
+    jobid: 264
+    benchmark: benchmark/AML-55-001_0.001_phyolin.out
+    wildcards: patient=AML-55-001, fp=0.001
+
+
+[Sun Jan 31 00:07:29 2021]
+rule phyolin:
+    input: input/AML-75-001_input.csv
+    output: phyolin_matrix_output/AML-75-001_fp0.001_matrix.csv, phyolin_estimate/AML-75-001_fp0.001_predict.out
+    log: log/AML-75-001_0.001_phyolin.log, log/AML-75-001_0.001_phyolin.err.log
+    jobid: 324
+    benchmark: benchmark/AML-75-001_0.001_phyolin.out
+    wildcards: patient=AML-75-001, fp=0.001
+
+[Sun Jan 31 00:07:30 2021]
+Finished job 133.
+145 of 298 steps (49%) done
+[Sun Jan 31 00:07:31 2021]
+Finished job 118.
+146 of 298 steps (49%) done
+[Sun Jan 31 00:08:40 2021]
+Finished job 382.
+147 of 298 steps (49%) done
+[Sun Jan 31 00:22:30 2021]
+Finished job 177.
+148 of 298 steps (50%) done
+[Sun Jan 31 00:22:30 2021]
+Finished job 239.
+149 of 298 steps (50%) done
+[Sun Jan 31 00:22:31 2021]
+Finished job 264.
+150 of 298 steps (50%) done
+[Sun Jan 31 00:22:31 2021]
+Finished job 324.
+151 of 298 steps (51%) done
+[Sun Jan 31 00:22:34 2021]
+Finished job 251.
+152 of 298 steps (51%) done
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-08-001_input.csv
+    output: phyolin_matrix_output/AML-08-001_fp0.01_matrix.csv, phyolin_estimate/AML-08-001_fp0.01_predict.out
+    log: log/AML-08-001_0.01_phyolin.log, log/AML-08-001_0.01_phyolin.err.log
+    jobid: 119
+    benchmark: benchmark/AML-08-001_0.01_phyolin.out
+    wildcards: patient=AML-08-001, fp=0.01
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-25-001_input.csv
+    output: phyolin_matrix_output/AML-25-001_fp0.0_matrix.csv, phyolin_estimate/AML-25-001_fp0.0_predict.out
+    log: log/AML-25-001_0.0_phyolin.log, log/AML-25-001_0.0_phyolin.err.log
+    jobid: 178
+    benchmark: benchmark/AML-25-001_0.0_phyolin.out
+    wildcards: patient=AML-25-001, fp=0.0
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-11-001_input.csv
+    output: phyolin_matrix_output/AML-11-001_fp0.01_matrix.csv, phyolin_estimate/AML-11-001_fp0.01_predict.out
+    log: log/AML-11-001_0.01_phyolin.log, log/AML-11-001_0.01_phyolin.err.log
+    jobid: 134
+    benchmark: benchmark/AML-11-001_0.01_phyolin.out
+    wildcards: patient=AML-11-001, fp=0.01
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-51-001_input.csv
+    output: phyolin_matrix_output/AML-51-001_fp0.001_matrix.csv, phyolin_estimate/AML-51-001_fp0.001_predict.out
+    log: log/AML-51-001_0.001_phyolin.log, log/AML-51-001_0.001_phyolin.err.log
+    jobid: 252
+    benchmark: benchmark/AML-51-001_0.001_phyolin.out
+    wildcards: patient=AML-51-001, fp=0.001
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-56-001_input.csv
+    output: phyolin_matrix_output/AML-56-001_fp0.0_matrix.csv, phyolin_estimate/AML-56-001_fp0.0_predict.out
+    log: log/AML-56-001_0.0_phyolin.log, log/AML-56-001_0.0_phyolin.err.log
+    jobid: 265
+    benchmark: benchmark/AML-56-001_0.0_phyolin.out
+    wildcards: patient=AML-56-001, fp=0.0
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-76-001_input.csv
+    output: phyolin_matrix_output/AML-76-001_fp0.0_matrix.csv, phyolin_estimate/AML-76-001_fp0.0_predict.out
+    log: log/AML-76-001_0.0_phyolin.log, log/AML-76-001_0.0_phyolin.err.log
+    jobid: 325
+    benchmark: benchmark/AML-76-001_0.0_phyolin.out
+    wildcards: patient=AML-76-001, fp=0.0
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-95-001_input.csv
+    output: phyolin_matrix_output/AML-95-001_fp0.01_matrix.csv, phyolin_estimate/AML-95-001_fp0.01_predict.out
+    log: log/AML-95-001_0.01_phyolin.log, log/AML-95-001_0.01_phyolin.err.log
+    jobid: 383
+    benchmark: benchmark/AML-95-001_0.01_phyolin.out
+    wildcards: patient=AML-95-001, fp=0.01
+
+
+[Sun Jan 31 00:22:34 2021]
+rule phyolin:
+    input: input/AML-85-001_input.csv
+    output: phyolin_matrix_output/AML-85-001_fp0.01_matrix.csv, phyolin_estimate/AML-85-001_fp0.01_predict.out
+    log: log/AML-85-001_0.01_phyolin.log, log/AML-85-001_0.01_phyolin.err.log
+    jobid: 353
+    benchmark: benchmark/AML-85-001_0.01_phyolin.out
+    wildcards: patient=AML-85-001, fp=0.01
+
+[Sun Jan 31 00:22:35 2021]
+Finished job 265.
+153 of 298 steps (51%) done
+[Sun Jan 31 00:22:36 2021]
+Finished job 383.
+154 of 298 steps (52%) done
+[Sun Jan 31 00:22:43 2021]
+Finished job 178.
+155 of 298 steps (52%) done
+[Sun Jan 31 00:37:35 2021]
+Finished job 134.
+156 of 298 steps (52%) done
+[Sun Jan 31 00:37:35 2021]
+Finished job 119.
+157 of 298 steps (53%) done
+[Sun Jan 31 00:37:36 2021]
+Finished job 353.
+158 of 298 steps (53%) done
+[Sun Jan 31 00:37:40 2021]
+Finished job 252.
+159 of 298 steps (53%) done
+[Sun Jan 31 00:37:43 2021]
+Finished job 325.
+160 of 298 steps (54%) done
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-41-001_input.csv
+    output: phyolin_matrix_output/AML-41-001_fp0.0_matrix.csv, phyolin_estimate/AML-41-001_fp0.0_predict.out
+    log: log/AML-41-001_0.0_phyolin.log, log/AML-41-001_0.0_phyolin.err.log
+    jobid: 223
+    benchmark: benchmark/AML-41-001_0.0_phyolin.out
+    wildcards: patient=AML-41-001, fp=0.0
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-86-001_input.csv
+    output: phyolin_matrix_output/AML-86-001_fp0.0_matrix.csv, phyolin_estimate/AML-86-001_fp0.0_predict.out
+    log: log/AML-86-001_0.0_phyolin.log, log/AML-86-001_0.0_phyolin.err.log
+    jobid: 355
+    benchmark: benchmark/AML-86-001_0.0_phyolin.out
+    wildcards: patient=AML-86-001, fp=0.0
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-85-001_input.csv
+    output: phyolin_matrix_output/AML-85-001_fp0.001_matrix.csv, phyolin_estimate/AML-85-001_fp0.001_predict.out
+    log: log/AML-85-001_0.001_phyolin.log, log/AML-85-001_0.001_phyolin.err.log
+    jobid: 354
+    benchmark: benchmark/AML-85-001_0.001_phyolin.out
+    wildcards: patient=AML-85-001, fp=0.001
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-95-001_input.csv
+    output: phyolin_matrix_output/AML-95-001_fp0.001_matrix.csv, phyolin_estimate/AML-95-001_fp0.001_predict.out
+    log: log/AML-95-001_0.001_phyolin.log, log/AML-95-001_0.001_phyolin.err.log
+    jobid: 384
+    benchmark: benchmark/AML-95-001_0.001_phyolin.out
+    wildcards: patient=AML-95-001, fp=0.001
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-66-001_input.csv
+    output: phyolin_matrix_output/AML-66-001_fp0.01_matrix.csv, phyolin_estimate/AML-66-001_fp0.01_predict.out
+    log: log/AML-66-001_0.01_phyolin.log, log/AML-66-001_0.01_phyolin.err.log
+    jobid: 296
+    benchmark: benchmark/AML-66-001_0.01_phyolin.out
+    wildcards: patient=AML-66-001, fp=0.01
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-96-001_input.csv
+    output: phyolin_matrix_output/AML-96-001_fp0.0_matrix.csv, phyolin_estimate/AML-96-001_fp0.0_predict.out
+    log: log/AML-96-001_0.0_phyolin.log, log/AML-96-001_0.0_phyolin.err.log
+    jobid: 385
+    benchmark: benchmark/AML-96-001_0.0_phyolin.out
+    wildcards: patient=AML-96-001, fp=0.0
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-11-001_input.csv
+    output: phyolin_matrix_output/AML-11-001_fp0.001_matrix.csv, phyolin_estimate/AML-11-001_fp0.001_predict.out
+    log: log/AML-11-001_0.001_phyolin.log, log/AML-11-001_0.001_phyolin.err.log
+    jobid: 135
+    benchmark: benchmark/AML-11-001_0.001_phyolin.out
+    wildcards: patient=AML-11-001, fp=0.001
+
+
+[Sun Jan 31 00:37:43 2021]
+rule phyolin:
+    input: input/AML-15-001_input.csv
+    output: phyolin_matrix_output/AML-15-001_fp0.001_matrix.csv, phyolin_estimate/AML-15-001_fp0.001_predict.out
+    log: log/AML-15-001_0.001_phyolin.log, log/AML-15-001_0.001_phyolin.err.log
+    jobid: 150
+    benchmark: benchmark/AML-15-001_0.001_phyolin.out
+    wildcards: patient=AML-15-001, fp=0.001
+
+[Sun Jan 31 00:37:53 2021]
+Finished job 355.
+161 of 298 steps (54%) done
+[Sun Jan 31 00:52:43 2021]
+Finished job 150.
+162 of 298 steps (54%) done
+[Sun Jan 31 00:52:44 2021]
+Finished job 135.
+163 of 298 steps (55%) done
+[Sun Jan 31 00:52:44 2021]
+Finished job 384.
+164 of 298 steps (55%) done
+[Sun Jan 31 00:52:45 2021]
+Finished job 354.
+165 of 298 steps (55%) done
+[Sun Jan 31 00:52:46 2021]
+Finished job 385.
+166 of 298 steps (56%) done
+[Sun Jan 31 00:52:50 2021]
+Finished job 223.
+167 of 298 steps (56%) done
+[Sun Jan 31 00:52:50 2021]
+Finished job 296.
+168 of 298 steps (56%) done
+
+[Sun Jan 31 00:52:50 2021]
+rule phyolin:
+    input: input/AML-66-001_input.csv
+    output: phyolin_matrix_output/AML-66-001_fp0.001_matrix.csv, phyolin_estimate/AML-66-001_fp0.001_predict.out
+    log: log/AML-66-001_0.001_phyolin.log, log/AML-66-001_0.001_phyolin.err.log
+    jobid: 297
+    benchmark: benchmark/AML-66-001_0.001_phyolin.out
+    wildcards: patient=AML-66-001, fp=0.001
+
+
+[Sun Jan 31 00:52:50 2021]
+rule phyolin:
+    input: input/AML-52-001_input.csv
+    output: phyolin_matrix_output/AML-52-001_fp0.01_matrix.csv, phyolin_estimate/AML-52-001_fp0.01_predict.out
+    log: log/AML-52-001_0.01_phyolin.log, log/AML-52-001_0.01_phyolin.err.log
+    jobid: 254
+    benchmark: benchmark/AML-52-001_0.01_phyolin.out
+    wildcards: patient=AML-52-001, fp=0.01
+
+
+[Sun Jan 31 00:52:50 2021]
+rule phyolin:
+    input: input/AML-41-001_input.csv
+    output: phyolin_matrix_output/AML-41-001_fp0.01_matrix.csv, phyolin_estimate/AML-41-001_fp0.01_predict.out
+    log: log/AML-41-001_0.01_phyolin.log, log/AML-41-001_0.01_phyolin.err.log
+    jobid: 224
+    benchmark: benchmark/AML-41-001_0.01_phyolin.out
+    wildcards: patient=AML-41-001, fp=0.01
+
+
+[Sun Jan 31 00:52:50 2021]
+rule phyolin:
+    input: input/AML-86-001_input.csv
+    output: phyolin_matrix_output/AML-86-001_fp0.01_matrix.csv, phyolin_estimate/AML-86-001_fp0.01_predict.out
+    log: log/AML-86-001_0.01_phyolin.log, log/AML-86-001_0.01_phyolin.err.log
+    jobid: 356
+    benchmark: benchmark/AML-86-001_0.01_phyolin.out
+    wildcards: patient=AML-86-001, fp=0.01
+
+
+[Sun Jan 31 00:52:50 2021]
+rule phyolin:
+    input: input/AML-96-001_input.csv
+    output: phyolin_matrix_output/AML-96-001_fp0.01_matrix.csv, phyolin_estimate/AML-96-001_fp0.01_predict.out
+    log: log/AML-96-001_0.01_phyolin.log, log/AML-96-001_0.01_phyolin.err.log
+    jobid: 386
+    benchmark: benchmark/AML-96-001_0.01_phyolin.out
+    wildcards: patient=AML-96-001, fp=0.01
+
+
+[Sun Jan 31 00:52:51 2021]
+rule phyolin:
+    input: input/AML-116-001_input.csv
+    output: phyolin_matrix_output/AML-116-001_fp0.0_matrix.csv, phyolin_estimate/AML-116-001_fp0.0_predict.out
+    log: log/AML-116-001_0.0_phyolin.log, log/AML-116-001_0.0_phyolin.err.log
+    jobid: 136
+    benchmark: benchmark/AML-116-001_0.0_phyolin.out
+    wildcards: patient=AML-116-001, fp=0.0
+
+
+[Sun Jan 31 00:52:51 2021]
+rule phyolin:
+    input: input/AML-16-001_input.csv
+    output: phyolin_matrix_output/AML-16-001_fp0.0_matrix.csv, phyolin_estimate/AML-16-001_fp0.0_predict.out
+    log: log/AML-16-001_0.0_phyolin.log, log/AML-16-001_0.0_phyolin.err.log
+    jobid: 151
+    benchmark: benchmark/AML-16-001_0.0_phyolin.out
+    wildcards: patient=AML-16-001, fp=0.0
+
+
+[Sun Jan 31 00:52:51 2021]
+rule phyolin:
+    input: input/AML-30-001_input.csv
+    output: phyolin_matrix_output/AML-30-001_fp0.001_matrix.csv, phyolin_estimate/AML-30-001_fp0.001_predict.out
+    log: log/AML-30-001_0.001_phyolin.log, log/AML-30-001_0.001_phyolin.err.log
+    jobid: 195
+    benchmark: benchmark/AML-30-001_0.001_phyolin.out
+    wildcards: patient=AML-30-001, fp=0.001
+
+[Sun Jan 31 00:52:52 2021]
+Finished job 136.
+169 of 298 steps (57%) done
+[Sun Jan 31 00:53:50 2021]
+Finished job 151.
+170 of 298 steps (57%) done
+[Sun Jan 31 01:07:52 2021]
+Finished job 254.
+171 of 298 steps (57%) done
+[Sun Jan 31 01:07:52 2021]
+Finished job 356.
+172 of 298 steps (58%) done
+[Sun Jan 31 01:07:53 2021]
+Finished job 195.
+173 of 298 steps (58%) done
+[Sun Jan 31 01:07:54 2021]
+Finished job 386.
+174 of 298 steps (58%) done
+[Sun Jan 31 01:07:58 2021]
+Finished job 224.
+175 of 298 steps (59%) done
+[Sun Jan 31 01:07:58 2021]
+Finished job 297.
+176 of 298 steps (59%) done
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-96-001_input.csv
+    output: phyolin_matrix_output/AML-96-001_fp0.001_matrix.csv, phyolin_estimate/AML-96-001_fp0.001_predict.out
+    log: log/AML-96-001_0.001_phyolin.log, log/AML-96-001_0.001_phyolin.err.log
+    jobid: 387
+    benchmark: benchmark/AML-96-001_0.001_phyolin.out
+    wildcards: patient=AML-96-001, fp=0.001
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-42-001_input.csv
+    output: phyolin_matrix_output/AML-42-001_fp0.0_matrix.csv, phyolin_estimate/AML-42-001_fp0.0_predict.out
+    log: log/AML-42-001_0.0_phyolin.log, log/AML-42-001_0.0_phyolin.err.log
+    jobid: 226
+    benchmark: benchmark/AML-42-001_0.0_phyolin.out
+    wildcards: patient=AML-42-001, fp=0.0
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-87-001_input.csv
+    output: phyolin_matrix_output/AML-87-001_fp0.0_matrix.csv, phyolin_estimate/AML-87-001_fp0.0_predict.out
+    log: log/AML-87-001_0.0_phyolin.log, log/AML-87-001_0.0_phyolin.err.log
+    jobid: 358
+    benchmark: benchmark/AML-87-001_0.0_phyolin.out
+    wildcards: patient=AML-87-001, fp=0.0
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-35-001_input.csv
+    output: phyolin_matrix_output/AML-35-001_fp0.001_matrix.csv, phyolin_estimate/AML-35-001_fp0.001_predict.out
+    log: log/AML-35-001_0.001_phyolin.log, log/AML-35-001_0.001_phyolin.err.log
+    jobid: 210
+    benchmark: benchmark/AML-35-001_0.001_phyolin.out
+    wildcards: patient=AML-35-001, fp=0.001
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-67-001_input.csv
+    output: phyolin_matrix_output/AML-67-001_fp0.01_matrix.csv, phyolin_estimate/AML-67-001_fp0.01_predict.out
+    log: log/AML-67-001_0.01_phyolin.log, log/AML-67-001_0.01_phyolin.err.log
+    jobid: 299
+    benchmark: benchmark/AML-67-001_0.01_phyolin.out
+    wildcards: patient=AML-67-001, fp=0.01
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-97-001_input.csv
+    output: phyolin_matrix_output/AML-97-001_fp0.0_matrix.csv, phyolin_estimate/AML-97-001_fp0.0_predict.out
+    log: log/AML-97-001_0.0_phyolin.log, log/AML-97-001_0.0_phyolin.err.log
+    jobid: 388
+    benchmark: benchmark/AML-97-001_0.0_phyolin.out
+    wildcards: patient=AML-97-001, fp=0.0
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-116-001_input.csv
+    output: phyolin_matrix_output/AML-116-001_fp0.001_matrix.csv, phyolin_estimate/AML-116-001_fp0.001_predict.out
+    log: log/AML-116-001_0.001_phyolin.log, log/AML-116-001_0.001_phyolin.err.log
+    jobid: 138
+    benchmark: benchmark/AML-116-001_0.001_phyolin.out
+    wildcards: patient=AML-116-001, fp=0.001
+
+
+[Sun Jan 31 01:07:59 2021]
+rule phyolin:
+    input: input/AML-16-001_input.csv
+    output: phyolin_matrix_output/AML-16-001_fp0.001_matrix.csv, phyolin_estimate/AML-16-001_fp0.001_predict.out
+    log: log/AML-16-001_0.001_phyolin.log, log/AML-16-001_0.001_phyolin.err.log
+    jobid: 153
+    benchmark: benchmark/AML-16-001_0.001_phyolin.out
+    wildcards: patient=AML-16-001, fp=0.001
+
+[Sun Jan 31 01:08:01 2021]
+Finished job 388.
+177 of 298 steps (59%) done
+[Sun Jan 31 01:08:26 2021]
+Finished job 358.
+178 of 298 steps (60%) done
+[Sun Jan 31 01:22:59 2021]
+Finished job 138.
+179 of 298 steps (60%) done
+[Sun Jan 31 01:23:00 2021]
+Finished job 210.
+180 of 298 steps (60%) done
+[Sun Jan 31 01:23:00 2021]
+Finished job 153.
+181 of 298 steps (61%) done
+[Sun Jan 31 01:23:02 2021]
+Finished job 226.
+182 of 298 steps (61%) done
+[Sun Jan 31 01:23:02 2021]
+Finished job 387.
+183 of 298 steps (61%) done
+[Sun Jan 31 01:23:09 2021]
+Finished job 299.
+184 of 298 steps (62%) done
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-87-001_input.csv
+    output: phyolin_matrix_output/AML-87-001_fp0.01_matrix.csv, phyolin_estimate/AML-87-001_fp0.01_predict.out
+    log: log/AML-87-001_0.01_phyolin.log, log/AML-87-001_0.01_phyolin.err.log
+    jobid: 359
+    benchmark: benchmark/AML-87-001_0.01_phyolin.out
+    wildcards: patient=AML-87-001, fp=0.01
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-97-001_input.csv
+    output: phyolin_matrix_output/AML-97-001_fp0.01_matrix.csv, phyolin_estimate/AML-97-001_fp0.01_predict.out
+    log: log/AML-97-001_0.01_phyolin.log, log/AML-97-001_0.01_phyolin.err.log
+    jobid: 389
+    benchmark: benchmark/AML-97-001_0.01_phyolin.out
+    wildcards: patient=AML-97-001, fp=0.01
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-16-001_input.csv
+    output: phyolin_matrix_output/AML-16-001_fp0.01_matrix.csv, phyolin_estimate/AML-16-001_fp0.01_predict.out
+    log: log/AML-16-001_0.01_phyolin.log, log/AML-16-001_0.01_phyolin.err.log
+    jobid: 152
+    benchmark: benchmark/AML-16-001_0.01_phyolin.out
+    wildcards: patient=AML-16-001, fp=0.01
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-67-001_input.csv
+    output: phyolin_matrix_output/AML-67-001_fp0.001_matrix.csv, phyolin_estimate/AML-67-001_fp0.001_predict.out
+    log: log/AML-67-001_0.001_phyolin.log, log/AML-67-001_0.001_phyolin.err.log
+    jobid: 300
+    benchmark: benchmark/AML-67-001_0.001_phyolin.out
+    wildcards: patient=AML-67-001, fp=0.001
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-12-001_input.csv
+    output: phyolin_matrix_output/AML-12-001_fp0.0_matrix.csv, phyolin_estimate/AML-12-001_fp0.0_predict.out
+    log: log/AML-12-001_0.0_phyolin.log, log/AML-12-001_0.0_phyolin.err.log
+    jobid: 139
+    benchmark: benchmark/AML-12-001_0.0_phyolin.out
+    wildcards: patient=AML-12-001, fp=0.0
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-17-001_input.csv
+    output: phyolin_matrix_output/AML-17-001_fp0.0_matrix.csv, phyolin_estimate/AML-17-001_fp0.0_predict.out
+    log: log/AML-17-001_0.0_phyolin.log, log/AML-17-001_0.0_phyolin.err.log
+    jobid: 154
+    benchmark: benchmark/AML-17-001_0.0_phyolin.out
+    wildcards: patient=AML-17-001, fp=0.0
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-26-001_input.csv
+    output: phyolin_matrix_output/AML-26-001_fp0.001_matrix.csv, phyolin_estimate/AML-26-001_fp0.001_predict.out
+    log: log/AML-26-001_0.001_phyolin.log, log/AML-26-001_0.001_phyolin.err.log
+    jobid: 183
+    benchmark: benchmark/AML-26-001_0.001_phyolin.out
+    wildcards: patient=AML-26-001, fp=0.001
+
+
+[Sun Jan 31 01:23:09 2021]
+rule phyolin:
+    input: input/AML-56-001_input.csv
+    output: phyolin_matrix_output/AML-56-001_fp0.001_matrix.csv, phyolin_estimate/AML-56-001_fp0.001_predict.out
+    log: log/AML-56-001_0.001_phyolin.log, log/AML-56-001_0.001_phyolin.err.log
+    jobid: 267
+    benchmark: benchmark/AML-56-001_0.001_phyolin.out
+    wildcards: patient=AML-56-001, fp=0.001
+
+[Sun Jan 31 01:23:10 2021]
+Finished job 267.
+185 of 298 steps (62%) done
+[Sun Jan 31 01:23:11 2021]
+Finished job 154.
+186 of 298 steps (62%) done
+[Sun Jan 31 01:24:24 2021]
+Finished job 139.
+187 of 298 steps (63%) done
+[Sun Jan 31 01:38:10 2021]
+Finished job 359.
+188 of 298 steps (63%) done
+[Sun Jan 31 01:38:10 2021]
+Finished job 389.
+189 of 298 steps (63%) done
+[Sun Jan 31 01:38:11 2021]
+Finished job 152.
+190 of 298 steps (64%) done
+[Sun Jan 31 01:38:15 2021]
+Finished job 183.
+191 of 298 steps (64%) done
+[Sun Jan 31 01:38:19 2021]
+Finished job 300.
+192 of 298 steps (64%) done
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-97-001_input.csv
+    output: phyolin_matrix_output/AML-97-001_fp0.001_matrix.csv, phyolin_estimate/AML-97-001_fp0.001_predict.out
+    log: log/AML-97-001_0.001_phyolin.log, log/AML-97-001_0.001_phyolin.err.log
+    jobid: 390
+    benchmark: benchmark/AML-97-001_0.001_phyolin.out
+    wildcards: patient=AML-97-001, fp=0.001
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-12-001_input.csv
+    output: phyolin_matrix_output/AML-12-001_fp0.01_matrix.csv, phyolin_estimate/AML-12-001_fp0.01_predict.out
+    log: log/AML-12-001_0.01_phyolin.log, log/AML-12-001_0.01_phyolin.err.log
+    jobid: 140
+    benchmark: benchmark/AML-12-001_0.01_phyolin.out
+    wildcards: patient=AML-12-001, fp=0.01
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-71-001_input.csv
+    output: phyolin_matrix_output/AML-71-001_fp0.001_matrix.csv, phyolin_estimate/AML-71-001_fp0.001_predict.out
+    log: log/AML-71-001_0.001_phyolin.log, log/AML-71-001_0.001_phyolin.err.log
+    jobid: 312
+    benchmark: benchmark/AML-71-001_0.001_phyolin.out
+    wildcards: patient=AML-71-001, fp=0.001
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-31-001_input.csv
+    output: phyolin_matrix_output/AML-31-001_fp0.01_matrix.csv, phyolin_estimate/AML-31-001_fp0.01_predict.out
+    log: log/AML-31-001_0.01_phyolin.log, log/AML-31-001_0.01_phyolin.err.log
+    jobid: 197
+    benchmark: benchmark/AML-31-001_0.01_phyolin.out
+    wildcards: patient=AML-31-001, fp=0.01
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-87-001_input.csv
+    output: phyolin_matrix_output/AML-87-001_fp0.001_matrix.csv, phyolin_estimate/AML-87-001_fp0.001_predict.out
+    log: log/AML-87-001_0.001_phyolin.log, log/AML-87-001_0.001_phyolin.err.log
+    jobid: 360
+    benchmark: benchmark/AML-87-001_0.001_phyolin.out
+    wildcards: patient=AML-87-001, fp=0.001
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-17-001_input.csv
+    output: phyolin_matrix_output/AML-17-001_fp0.01_matrix.csv, phyolin_estimate/AML-17-001_fp0.01_predict.out
+    log: log/AML-17-001_0.01_phyolin.log, log/AML-17-001_0.01_phyolin.err.log
+    jobid: 155
+    benchmark: benchmark/AML-17-001_0.01_phyolin.out
+    wildcards: patient=AML-17-001, fp=0.01
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-27-001_input.csv
+    output: phyolin_matrix_output/AML-27-001_fp0.0_matrix.csv, phyolin_estimate/AML-27-001_fp0.0_predict.out
+    log: log/AML-27-001_0.0_phyolin.log, log/AML-27-001_0.0_phyolin.err.log
+    jobid: 184
+    benchmark: benchmark/AML-27-001_0.0_phyolin.out
+    wildcards: patient=AML-27-001, fp=0.0
+
+
+[Sun Jan 31 01:38:19 2021]
+rule phyolin:
+    input: input/AML-32-001_input.csv
+    output: phyolin_matrix_output/AML-32-001_fp0.0_matrix.csv, phyolin_estimate/AML-32-001_fp0.0_predict.out
+    log: log/AML-32-001_0.0_phyolin.log, log/AML-32-001_0.0_phyolin.err.log
+    jobid: 199
+    benchmark: benchmark/AML-32-001_0.0_phyolin.out
+    wildcards: patient=AML-32-001, fp=0.0
+
+[Sun Jan 31 01:38:47 2021]
+Finished job 199.
+193 of 298 steps (65%) done
+[Sun Jan 31 01:39:15 2021]
+Finished job 184.
+194 of 298 steps (65%) done
+[Sun Jan 31 01:53:20 2021]
+Finished job 360.
+195 of 298 steps (65%) done
+[Sun Jan 31 01:53:20 2021]
+Finished job 390.
+196 of 298 steps (66%) done
+[Sun Jan 31 01:53:20 2021]
+Finished job 140.
+197 of 298 steps (66%) done
+[Sun Jan 31 01:53:20 2021]
+Finished job 155.
+198 of 298 steps (66%) done
+[Sun Jan 31 01:53:22 2021]
+Finished job 312.
+199 of 298 steps (67%) done
+[Sun Jan 31 01:53:24 2021]
+Finished job 197.
+200 of 298 steps (67%) done
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-43-001_input.csv
+    output: phyolin_matrix_output/AML-43-001_fp0.0_matrix.csv, phyolin_estimate/AML-43-001_fp0.0_predict.out
+    log: log/AML-43-001_0.0_phyolin.log, log/AML-43-001_0.0_phyolin.err.log
+    jobid: 229
+    benchmark: benchmark/AML-43-001_0.0_phyolin.out
+    wildcards: patient=AML-43-001, fp=0.0
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-68-001_input.csv
+    output: phyolin_matrix_output/AML-68-001_fp0.01_matrix.csv, phyolin_estimate/AML-68-001_fp0.01_predict.out
+    log: log/AML-68-001_0.01_phyolin.log, log/AML-68-001_0.01_phyolin.err.log
+    jobid: 302
+    benchmark: benchmark/AML-68-001_0.01_phyolin.out
+    wildcards: patient=AML-68-001, fp=0.01
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-88-001_input.csv
+    output: phyolin_matrix_output/AML-88-001_fp0.0_matrix.csv, phyolin_estimate/AML-88-001_fp0.0_predict.out
+    log: log/AML-88-001_0.0_phyolin.log, log/AML-88-001_0.0_phyolin.err.log
+    jobid: 361
+    benchmark: benchmark/AML-88-001_0.0_phyolin.out
+    wildcards: patient=AML-88-001, fp=0.0
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-42-001_input.csv
+    output: phyolin_matrix_output/AML-42-001_fp0.01_matrix.csv, phyolin_estimate/AML-42-001_fp0.01_predict.out
+    log: log/AML-42-001_0.01_phyolin.log, log/AML-42-001_0.01_phyolin.err.log
+    jobid: 227
+    benchmark: benchmark/AML-42-001_0.01_phyolin.out
+    wildcards: patient=AML-42-001, fp=0.01
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-98-001_input.csv
+    output: phyolin_matrix_output/AML-98-001_fp0.0_matrix.csv, phyolin_estimate/AML-98-001_fp0.0_predict.out
+    log: log/AML-98-001_0.0_phyolin.log, log/AML-98-001_0.0_phyolin.err.log
+    jobid: 391
+    benchmark: benchmark/AML-98-001_0.0_phyolin.out
+    wildcards: patient=AML-98-001, fp=0.0
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-12-001_input.csv
+    output: phyolin_matrix_output/AML-12-001_fp0.001_matrix.csv, phyolin_estimate/AML-12-001_fp0.001_predict.out
+    log: log/AML-12-001_0.001_phyolin.log, log/AML-12-001_0.001_phyolin.err.log
+    jobid: 141
+    benchmark: benchmark/AML-12-001_0.001_phyolin.out
+    wildcards: patient=AML-12-001, fp=0.001
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-17-001_input.csv
+    output: phyolin_matrix_output/AML-17-001_fp0.001_matrix.csv, phyolin_estimate/AML-17-001_fp0.001_predict.out
+    log: log/AML-17-001_0.001_phyolin.log, log/AML-17-001_0.001_phyolin.err.log
+    jobid: 156
+    benchmark: benchmark/AML-17-001_0.001_phyolin.out
+    wildcards: patient=AML-17-001, fp=0.001
+
+
+[Sun Jan 31 01:53:24 2021]
+rule phyolin:
+    input: input/AML-76-001_input.csv
+    output: phyolin_matrix_output/AML-76-001_fp0.001_matrix.csv, phyolin_estimate/AML-76-001_fp0.001_predict.out
+    log: log/AML-76-001_0.001_phyolin.log, log/AML-76-001_0.001_phyolin.err.log
+    jobid: 327
+    benchmark: benchmark/AML-76-001_0.001_phyolin.out
+    wildcards: patient=AML-76-001, fp=0.001
+
+[Sun Jan 31 01:53:39 2021]
+Finished job 229.
+201 of 298 steps (67%) done
+[Sun Jan 31 02:08:25 2021]
+Finished job 141.
+202 of 298 steps (68%) done
+[Sun Jan 31 02:08:25 2021]
+Finished job 156.
+203 of 298 steps (68%) done
+[Sun Jan 31 02:08:26 2021]
+Finished job 302.
+204 of 298 steps (68%) done
+[Sun Jan 31 02:08:27 2021]
+Finished job 227.
+205 of 298 steps (69%) done
+[Sun Jan 31 02:08:27 2021]
+Finished job 391.
+206 of 298 steps (69%) done
+[Sun Jan 31 02:08:28 2021]
+Finished job 361.
+207 of 298 steps (69%) done
+[Sun Jan 31 02:08:33 2021]
+Finished job 327.
+208 of 298 steps (70%) done
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-31-001_input.csv
+    output: phyolin_matrix_output/AML-31-001_fp0.0_matrix.csv, phyolin_estimate/AML-31-001_fp0.0_predict.out
+    log: log/AML-31-001_0.0_phyolin.log, log/AML-31-001_0.0_phyolin.err.log
+    jobid: 196
+    benchmark: benchmark/AML-31-001_0.0_phyolin.out
+    wildcards: patient=AML-31-001, fp=0.0
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-62-001_input.csv
+    output: phyolin_matrix_output/AML-62-001_fp0.001_matrix.csv, phyolin_estimate/AML-62-001_fp0.001_predict.out
+    log: log/AML-62-001_0.001_phyolin.log, log/AML-62-001_0.001_phyolin.err.log
+    jobid: 285
+    benchmark: benchmark/AML-62-001_0.001_phyolin.out
+    wildcards: patient=AML-62-001, fp=0.001
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-27-001_input.csv
+    output: phyolin_matrix_output/AML-27-001_fp0.01_matrix.csv, phyolin_estimate/AML-27-001_fp0.01_predict.out
+    log: log/AML-27-001_0.01_phyolin.log, log/AML-27-001_0.01_phyolin.err.log
+    jobid: 185
+    benchmark: benchmark/AML-27-001_0.01_phyolin.out
+    wildcards: patient=AML-27-001, fp=0.01
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-32-001_input.csv
+    output: phyolin_matrix_output/AML-32-001_fp0.01_matrix.csv, phyolin_estimate/AML-32-001_fp0.01_predict.out
+    log: log/AML-32-001_0.01_phyolin.log, log/AML-32-001_0.01_phyolin.err.log
+    jobid: 200
+    benchmark: benchmark/AML-32-001_0.01_phyolin.out
+    wildcards: patient=AML-32-001, fp=0.01
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-63-001_input.csv
+    output: phyolin_matrix_output/AML-63-001_fp0.01_matrix.csv, phyolin_estimate/AML-63-001_fp0.01_predict.out
+    log: log/AML-63-001_0.01_phyolin.log, log/AML-63-001_0.01_phyolin.err.log
+    jobid: 287
+    benchmark: benchmark/AML-63-001_0.01_phyolin.out
+    wildcards: patient=AML-63-001, fp=0.01
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-68-001_input.csv
+    output: phyolin_matrix_output/AML-68-001_fp0.0_matrix.csv, phyolin_estimate/AML-68-001_fp0.0_predict.out
+    log: log/AML-68-001_0.0_phyolin.log, log/AML-68-001_0.0_phyolin.err.log
+    jobid: 301
+    benchmark: benchmark/AML-68-001_0.0_phyolin.out
+    wildcards: patient=AML-68-001, fp=0.0
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-63-001_input.csv
+    output: phyolin_matrix_output/AML-63-001_fp0.0_matrix.csv, phyolin_estimate/AML-63-001_fp0.0_predict.out
+    log: log/AML-63-001_0.0_phyolin.log, log/AML-63-001_0.0_phyolin.err.log
+    jobid: 286
+    benchmark: benchmark/AML-63-001_0.0_phyolin.out
+    wildcards: patient=AML-63-001, fp=0.0
+
+
+[Sun Jan 31 02:08:33 2021]
+rule phyolin:
+    input: input/AML-42-001_input.csv
+    output: phyolin_matrix_output/AML-42-001_fp0.001_matrix.csv, phyolin_estimate/AML-42-001_fp0.001_predict.out
+    log: log/AML-42-001_0.001_phyolin.log, log/AML-42-001_0.001_phyolin.err.log
+    jobid: 228
+    benchmark: benchmark/AML-42-001_0.001_phyolin.out
+    wildcards: patient=AML-42-001, fp=0.001
+
+[Sun Jan 31 02:08:47 2021]
+Finished job 301.
+209 of 298 steps (70%) done
+[Sun Jan 31 02:09:01 2021]
+Finished job 286.
+210 of 298 steps (70%) done
+[Sun Jan 31 02:11:42 2021]
+Finished job 196.
+211 of 298 steps (71%) done
+[Sun Jan 31 02:23:34 2021]
+Finished job 185.
+212 of 298 steps (71%) done
+[Sun Jan 31 02:23:35 2021]
+Finished job 285.
+213 of 298 steps (71%) done
+[Sun Jan 31 02:23:35 2021]
+Finished job 287.
+214 of 298 steps (72%) done
+[Sun Jan 31 02:23:36 2021]
+Finished job 228.
+215 of 298 steps (72%) done
+[Sun Jan 31 02:23:37 2021]
+Finished job 200.
+216 of 298 steps (72%) done
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-26-001_input.csv
+    output: phyolin_matrix_output/AML-26-001_fp0.0_matrix.csv, phyolin_estimate/AML-26-001_fp0.0_predict.out
+    log: log/AML-26-001_0.0_phyolin.log, log/AML-26-001_0.0_phyolin.err.log
+    jobid: 181
+    benchmark: benchmark/AML-26-001_0.0_phyolin.out
+    wildcards: patient=AML-26-001, fp=0.0
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-67-001_input.csv
+    output: phyolin_matrix_output/AML-67-001_fp0.0_matrix.csv, phyolin_estimate/AML-67-001_fp0.0_predict.out
+    log: log/AML-67-001_0.0_phyolin.log, log/AML-67-001_0.0_phyolin.err.log
+    jobid: 298
+    benchmark: benchmark/AML-67-001_0.0_phyolin.out
+    wildcards: patient=AML-67-001, fp=0.0
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-31-001_input.csv
+    output: phyolin_matrix_output/AML-31-001_fp0.001_matrix.csv, phyolin_estimate/AML-31-001_fp0.001_predict.out
+    log: log/AML-31-001_0.001_phyolin.log, log/AML-31-001_0.001_phyolin.err.log
+    jobid: 198
+    benchmark: benchmark/AML-31-001_0.001_phyolin.out
+    wildcards: patient=AML-31-001, fp=0.001
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-26-001_input.csv
+    output: phyolin_matrix_output/AML-26-001_fp0.01_matrix.csv, phyolin_estimate/AML-26-001_fp0.01_predict.out
+    log: log/AML-26-001_0.01_phyolin.log, log/AML-26-001_0.01_phyolin.err.log
+    jobid: 182
+    benchmark: benchmark/AML-26-001_0.01_phyolin.out
+    wildcards: patient=AML-26-001, fp=0.01
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-62-001_input.csv
+    output: phyolin_matrix_output/AML-62-001_fp0.01_matrix.csv, phyolin_estimate/AML-62-001_fp0.01_predict.out
+    log: log/AML-62-001_0.01_phyolin.log, log/AML-62-001_0.01_phyolin.err.log
+    jobid: 284
+    benchmark: benchmark/AML-62-001_0.01_phyolin.out
+    wildcards: patient=AML-62-001, fp=0.01
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-03-001_input.csv
+    output: phyolin_matrix_output/AML-03-001_fp0.0_matrix.csv, phyolin_estimate/AML-03-001_fp0.0_predict.out
+    log: log/AML-03-001_0.0_phyolin.log, log/AML-03-001_0.0_phyolin.err.log
+    jobid: 106
+    benchmark: benchmark/AML-03-001_0.0_phyolin.out
+    wildcards: patient=AML-03-001, fp=0.0
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-63-001_input.csv
+    output: phyolin_matrix_output/AML-63-001_fp0.001_matrix.csv, phyolin_estimate/AML-63-001_fp0.001_predict.out
+    log: log/AML-63-001_0.001_phyolin.log, log/AML-63-001_0.001_phyolin.err.log
+    jobid: 288
+    benchmark: benchmark/AML-63-001_0.001_phyolin.out
+    wildcards: patient=AML-63-001, fp=0.001
+
+
+[Sun Jan 31 02:23:37 2021]
+rule phyolin:
+    input: input/AML-43-001_input.csv
+    output: phyolin_matrix_output/AML-43-001_fp0.01_matrix.csv, phyolin_estimate/AML-43-001_fp0.01_predict.out
+    log: log/AML-43-001_0.01_phyolin.log, log/AML-43-001_0.01_phyolin.err.log
+    jobid: 230
+    benchmark: benchmark/AML-43-001_0.01_phyolin.out
+    wildcards: patient=AML-43-001, fp=0.01
+
+[Sun Jan 31 02:23:39 2021]
+Finished job 106.
+217 of 298 steps (73%) done
+[Sun Jan 31 02:38:39 2021]
+Finished job 284.
+218 of 298 steps (73%) done
+[Sun Jan 31 02:38:39 2021]
+Finished job 288.
+219 of 298 steps (73%) done
+[Sun Jan 31 02:38:39 2021]
+Finished job 230.
+220 of 298 steps (74%) done
+[Sun Jan 31 02:38:41 2021]
+Finished job 198.
+221 of 298 steps (74%) done
+[Sun Jan 31 02:38:43 2021]
+Finished job 181.
+222 of 298 steps (74%) done
+[Sun Jan 31 02:38:43 2021]
+Finished job 182.
+223 of 298 steps (75%) done
+[Sun Jan 31 02:38:46 2021]
+Finished job 298.
+224 of 298 steps (75%) done
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-69-001_input.csv
+    output: phyolin_matrix_output/AML-69-001_fp0.0_matrix.csv, phyolin_estimate/AML-69-001_fp0.0_predict.out
+    log: log/AML-69-001_0.0_phyolin.log, log/AML-69-001_0.0_phyolin.err.log
+    jobid: 304
+    benchmark: benchmark/AML-69-001_0.0_phyolin.out
+    wildcards: patient=AML-69-001, fp=0.0
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-53-001_input.csv
+    output: phyolin_matrix_output/AML-53-001_fp0.01_matrix.csv, phyolin_estimate/AML-53-001_fp0.01_predict.out
+    log: log/AML-53-001_0.01_phyolin.log, log/AML-53-001_0.01_phyolin.err.log
+    jobid: 257
+    benchmark: benchmark/AML-53-001_0.01_phyolin.out
+    wildcards: patient=AML-53-001, fp=0.01
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-58-001_input.csv
+    output: phyolin_matrix_output/AML-58-001_fp0.01_matrix.csv, phyolin_estimate/AML-58-001_fp0.01_predict.out
+    log: log/AML-58-001_0.01_phyolin.log, log/AML-58-001_0.01_phyolin.err.log
+    jobid: 272
+    benchmark: benchmark/AML-58-001_0.01_phyolin.out
+    wildcards: patient=AML-58-001, fp=0.01
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-73-001_input.csv
+    output: phyolin_matrix_output/AML-73-001_fp0.01_matrix.csv, phyolin_estimate/AML-73-001_fp0.01_predict.out
+    log: log/AML-73-001_0.01_phyolin.log, log/AML-73-001_0.01_phyolin.err.log
+    jobid: 317
+    benchmark: benchmark/AML-73-001_0.01_phyolin.out
+    wildcards: patient=AML-73-001, fp=0.01
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-18-001_input.csv
+    output: phyolin_matrix_output/AML-18-001_fp0.001_matrix.csv, phyolin_estimate/AML-18-001_fp0.001_predict.out
+    log: log/AML-18-001_0.001_phyolin.log, log/AML-18-001_0.001_phyolin.err.log
+    jobid: 159
+    benchmark: benchmark/AML-18-001_0.001_phyolin.out
+    wildcards: patient=AML-18-001, fp=0.001
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-80-001_input.csv
+    output: phyolin_matrix_output/AML-80-001_fp0.001_matrix.csv, phyolin_estimate/AML-80-001_fp0.001_predict.out
+    log: log/AML-80-001_0.001_phyolin.log, log/AML-80-001_0.001_phyolin.err.log
+    jobid: 339
+    benchmark: benchmark/AML-80-001_0.001_phyolin.out
+    wildcards: patient=AML-80-001, fp=0.001
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-40-001_input.csv
+    output: phyolin_matrix_output/AML-40-001_fp0.01_matrix.csv, phyolin_estimate/AML-40-001_fp0.01_predict.out
+    log: log/AML-40-001_0.01_phyolin.log, log/AML-40-001_0.01_phyolin.err.log
+    jobid: 221
+    benchmark: benchmark/AML-40-001_0.01_phyolin.out
+    wildcards: patient=AML-40-001, fp=0.01
+
+
+[Sun Jan 31 02:38:46 2021]
+rule phyolin:
+    input: input/AML-60-001_input.csv
+    output: phyolin_matrix_output/AML-60-001_fp0.001_matrix.csv, phyolin_estimate/AML-60-001_fp0.001_predict.out
+    log: log/AML-60-001_0.001_phyolin.log, log/AML-60-001_0.001_phyolin.err.log
+    jobid: 279
+    benchmark: benchmark/AML-60-001_0.001_phyolin.out
+    wildcards: patient=AML-60-001, fp=0.001
+
+[Sun Jan 31 02:38:50 2021]
+Finished job 317.
+225 of 298 steps (76%) done
+[Sun Jan 31 02:39:28 2021]
+Finished job 304.
+226 of 298 steps (76%) done
+[Sun Jan 31 02:53:47 2021]
+Finished job 339.
+227 of 298 steps (76%) done
+[Sun Jan 31 02:53:47 2021]
+Finished job 272.
+228 of 298 steps (77%) done
+[Sun Jan 31 02:53:47 2021]
+Finished job 257.
+229 of 298 steps (77%) done
+[Sun Jan 31 02:53:47 2021]
+Finished job 159.
+230 of 298 steps (77%) done
+[Sun Jan 31 02:53:48 2021]
+Finished job 279.
+231 of 298 steps (78%) done
+[Sun Jan 31 02:53:51 2021]
+Finished job 221.
+232 of 298 steps (78%) done
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-33-001_input.csv
+    output: phyolin_matrix_output/AML-33-001_fp0.0_matrix.csv, phyolin_estimate/AML-33-001_fp0.0_predict.out
+    log: log/AML-33-001_0.0_phyolin.log, log/AML-33-001_0.0_phyolin.err.log
+    jobid: 202
+    benchmark: benchmark/AML-33-001_0.0_phyolin.out
+    wildcards: patient=AML-33-001, fp=0.0
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-80-001_input.csv
+    output: phyolin_matrix_output/AML-80-001_fp0.01_matrix.csv, phyolin_estimate/AML-80-001_fp0.01_predict.out
+    log: log/AML-80-001_0.01_phyolin.log, log/AML-80-001_0.01_phyolin.err.log
+    jobid: 338
+    benchmark: benchmark/AML-80-001_0.01_phyolin.out
+    wildcards: patient=AML-80-001, fp=0.01
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-88-001_input.csv
+    output: phyolin_matrix_output/AML-88-001_fp0.001_matrix.csv, phyolin_estimate/AML-88-001_fp0.001_predict.out
+    log: log/AML-88-001_0.001_phyolin.log, log/AML-88-001_0.001_phyolin.err.log
+    jobid: 363
+    benchmark: benchmark/AML-88-001_0.001_phyolin.out
+    wildcards: patient=AML-88-001, fp=0.001
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-40-001_input.csv
+    output: phyolin_matrix_output/AML-40-001_fp0.001_matrix.csv, phyolin_estimate/AML-40-001_fp0.001_predict.out
+    log: log/AML-40-001_0.001_phyolin.log, log/AML-40-001_0.001_phyolin.err.log
+    jobid: 222
+    benchmark: benchmark/AML-40-001_0.001_phyolin.out
+    wildcards: patient=AML-40-001, fp=0.001
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-61-001_input.csv
+    output: phyolin_matrix_output/AML-61-001_fp0.0_matrix.csv, phyolin_estimate/AML-61-001_fp0.0_predict.out
+    log: log/AML-61-001_0.0_phyolin.log, log/AML-61-001_0.0_phyolin.err.log
+    jobid: 280
+    benchmark: benchmark/AML-61-001_0.0_phyolin.out
+    wildcards: patient=AML-61-001, fp=0.0
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-58-001_input.csv
+    output: phyolin_matrix_output/AML-58-001_fp0.0_matrix.csv, phyolin_estimate/AML-58-001_fp0.0_predict.out
+    log: log/AML-58-001_0.0_phyolin.log, log/AML-58-001_0.0_phyolin.err.log
+    jobid: 271
+    benchmark: benchmark/AML-58-001_0.0_phyolin.out
+    wildcards: patient=AML-58-001, fp=0.0
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-48-001_input.csv
+    output: phyolin_matrix_output/AML-48-001_fp0.001_matrix.csv, phyolin_estimate/AML-48-001_fp0.001_predict.out
+    log: log/AML-48-001_0.001_phyolin.log, log/AML-48-001_0.001_phyolin.err.log
+    jobid: 243
+    benchmark: benchmark/AML-48-001_0.001_phyolin.out
+    wildcards: patient=AML-48-001, fp=0.001
+
+
+[Sun Jan 31 02:53:51 2021]
+rule phyolin:
+    input: input/AML-73-001_input.csv
+    output: phyolin_matrix_output/AML-73-001_fp0.0_matrix.csv, phyolin_estimate/AML-73-001_fp0.0_predict.out
+    log: log/AML-73-001_0.0_phyolin.log, log/AML-73-001_0.0_phyolin.err.log
+    jobid: 316
+    benchmark: benchmark/AML-73-001_0.0_phyolin.out
+    wildcards: patient=AML-73-001, fp=0.0
+
+[Sun Jan 31 02:53:57 2021]
+Finished job 271.
+233 of 298 steps (78%) done
+[Sun Jan 31 02:54:35 2021]
+Finished job 202.
+234 of 298 steps (79%) done
+[Sun Jan 31 02:59:43 2021]
+Finished job 316.
+235 of 298 steps (79%) done
+[Sun Jan 31 03:08:51 2021]
+Finished job 243.
+236 of 298 steps (79%) done
+[Sun Jan 31 03:08:52 2021]
+Finished job 338.
+237 of 298 steps (80%) done
+[Sun Jan 31 03:08:54 2021]
+Finished job 280.
+238 of 298 steps (80%) done
+[Sun Jan 31 03:08:55 2021]
+Finished job 363.
+239 of 298 steps (80%) done
+[Sun Jan 31 03:08:57 2021]
+Finished job 222.
+240 of 298 steps (81%) done
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-28-001_input.csv
+    output: phyolin_matrix_output/AML-28-001_fp0.0_matrix.csv, phyolin_estimate/AML-28-001_fp0.0_predict.out
+    log: log/AML-28-001_0.0_phyolin.log, log/AML-28-001_0.0_phyolin.err.log
+    jobid: 187
+    benchmark: benchmark/AML-28-001_0.0_phyolin.out
+    wildcards: patient=AML-28-001, fp=0.0
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-54-001_input.csv
+    output: phyolin_matrix_output/AML-54-001_fp0.0_matrix.csv, phyolin_estimate/AML-54-001_fp0.0_predict.out
+    log: log/AML-54-001_0.0_phyolin.log, log/AML-54-001_0.0_phyolin.err.log
+    jobid: 259
+    benchmark: benchmark/AML-54-001_0.0_phyolin.out
+    wildcards: patient=AML-54-001, fp=0.0
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-48-001_input.csv
+    output: phyolin_matrix_output/AML-48-001_fp0.01_matrix.csv, phyolin_estimate/AML-48-001_fp0.01_predict.out
+    log: log/AML-48-001_0.01_phyolin.log, log/AML-48-001_0.01_phyolin.err.log
+    jobid: 242
+    benchmark: benchmark/AML-48-001_0.01_phyolin.out
+    wildcards: patient=AML-48-001, fp=0.01
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-57-001_input.csv
+    output: phyolin_matrix_output/AML-57-001_fp0.001_matrix.csv, phyolin_estimate/AML-57-001_fp0.001_predict.out
+    log: log/AML-57-001_0.001_phyolin.log, log/AML-57-001_0.001_phyolin.err.log
+    jobid: 270
+    benchmark: benchmark/AML-57-001_0.001_phyolin.out
+    wildcards: patient=AML-57-001, fp=0.001
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-40-001_input.csv
+    output: phyolin_matrix_output/AML-40-001_fp0.0_matrix.csv, phyolin_estimate/AML-40-001_fp0.0_predict.out
+    log: log/AML-40-001_0.0_phyolin.log, log/AML-40-001_0.0_phyolin.err.log
+    jobid: 220
+    benchmark: benchmark/AML-40-001_0.0_phyolin.out
+    wildcards: patient=AML-40-001, fp=0.0
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-80-001_input.csv
+    output: phyolin_matrix_output/AML-80-001_fp0.0_matrix.csv, phyolin_estimate/AML-80-001_fp0.0_predict.out
+    log: log/AML-80-001_0.0_phyolin.log, log/AML-80-001_0.0_phyolin.err.log
+    jobid: 337
+    benchmark: benchmark/AML-80-001_0.0_phyolin.out
+    wildcards: patient=AML-80-001, fp=0.0
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-60-001_input.csv
+    output: phyolin_matrix_output/AML-60-001_fp0.0_matrix.csv, phyolin_estimate/AML-60-001_fp0.0_predict.out
+    log: log/AML-60-001_0.0_phyolin.log, log/AML-60-001_0.0_phyolin.err.log
+    jobid: 277
+    benchmark: benchmark/AML-60-001_0.0_phyolin.out
+    wildcards: patient=AML-60-001, fp=0.0
+
+
+[Sun Jan 31 03:08:57 2021]
+rule phyolin:
+    input: input/AML-53-001_input.csv
+    output: phyolin_matrix_output/AML-53-001_fp0.001_matrix.csv, phyolin_estimate/AML-53-001_fp0.001_predict.out
+    log: log/AML-53-001_0.001_phyolin.log, log/AML-53-001_0.001_phyolin.err.log
+    jobid: 258
+    benchmark: benchmark/AML-53-001_0.001_phyolin.out
+    wildcards: patient=AML-53-001, fp=0.001
+
+[Sun Jan 31 03:08:58 2021]
+Finished job 337.
+241 of 298 steps (81%) done
+[Sun Jan 31 03:09:28 2021]
+Finished job 259.
+242 of 298 steps (81%) done
+[Sun Jan 31 03:09:46 2021]
+Finished job 187.
+243 of 298 steps (82%) done
+[Sun Jan 31 03:10:57 2021]
+Finished job 277.
+244 of 298 steps (82%) done
+[Sun Jan 31 03:23:57 2021]
+Finished job 242.
+245 of 298 steps (82%) done
+[Sun Jan 31 03:23:58 2021]
+Finished job 270.
+246 of 298 steps (83%) done
+[Sun Jan 31 03:23:58 2021]
+Finished job 258.
+247 of 298 steps (83%) done
+[Sun Jan 31 03:24:02 2021]
+Finished job 220.
+248 of 298 steps (83%) done
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-74-001_input.csv
+    output: phyolin_matrix_output/AML-74-001_fp0.001_matrix.csv, phyolin_estimate/AML-74-001_fp0.001_predict.out
+    log: log/AML-74-001_0.001_phyolin.log, log/AML-74-001_0.001_phyolin.err.log
+    jobid: 321
+    benchmark: benchmark/AML-74-001_0.001_phyolin.out
+    wildcards: patient=AML-74-001, fp=0.001
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-59-001_input.csv
+    output: phyolin_matrix_output/AML-59-001_fp0.001_matrix.csv, phyolin_estimate/AML-59-001_fp0.001_predict.out
+    log: log/AML-59-001_0.001_phyolin.log, log/AML-59-001_0.001_phyolin.err.log
+    jobid: 276
+    benchmark: benchmark/AML-59-001_0.001_phyolin.out
+    wildcards: patient=AML-59-001, fp=0.001
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-25-001_input.csv
+    output: phyolin_matrix_output/AML-25-001_fp0.01_matrix.csv, phyolin_estimate/AML-25-001_fp0.01_predict.out
+    log: log/AML-25-001_0.01_phyolin.log, log/AML-25-001_0.01_phyolin.err.log
+    jobid: 179
+    benchmark: benchmark/AML-25-001_0.01_phyolin.out
+    wildcards: patient=AML-25-001, fp=0.01
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-62-001_input.csv
+    output: phyolin_matrix_output/AML-62-001_fp0.0_matrix.csv, phyolin_estimate/AML-62-001_fp0.0_predict.out
+    log: log/AML-62-001_0.0_phyolin.log, log/AML-62-001_0.0_phyolin.err.log
+    jobid: 283
+    benchmark: benchmark/AML-62-001_0.0_phyolin.out
+    wildcards: patient=AML-62-001, fp=0.0
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-72-001_input.csv
+    output: phyolin_matrix_output/AML-72-001_fp0.001_matrix.csv, phyolin_estimate/AML-72-001_fp0.001_predict.out
+    log: log/AML-72-001_0.001_phyolin.log, log/AML-72-001_0.001_phyolin.err.log
+    jobid: 315
+    benchmark: benchmark/AML-72-001_0.001_phyolin.out
+    wildcards: patient=AML-72-001, fp=0.001
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-60-001_input.csv
+    output: phyolin_matrix_output/AML-60-001_fp0.01_matrix.csv, phyolin_estimate/AML-60-001_fp0.01_predict.out
+    log: log/AML-60-001_0.01_phyolin.log, log/AML-60-001_0.01_phyolin.err.log
+    jobid: 278
+    benchmark: benchmark/AML-60-001_0.01_phyolin.out
+    wildcards: patient=AML-60-001, fp=0.01
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-75-001_input.csv
+    output: phyolin_matrix_output/AML-75-001_fp0.01_matrix.csv, phyolin_estimate/AML-75-001_fp0.01_predict.out
+    log: log/AML-75-001_0.01_phyolin.log, log/AML-75-001_0.01_phyolin.err.log
+    jobid: 323
+    benchmark: benchmark/AML-75-001_0.01_phyolin.out
+    wildcards: patient=AML-75-001, fp=0.01
+
+
+[Sun Jan 31 03:24:02 2021]
+rule phyolin:
+    input: input/AML-88-001_input.csv
+    output: phyolin_matrix_output/AML-88-001_fp0.01_matrix.csv, phyolin_estimate/AML-88-001_fp0.01_predict.out
+    log: log/AML-88-001_0.01_phyolin.log, log/AML-88-001_0.01_phyolin.err.log
+    jobid: 362
+    benchmark: benchmark/AML-88-001_0.01_phyolin.out
+    wildcards: patient=AML-88-001, fp=0.01
+
+[Sun Jan 31 03:39:03 2021]
+Finished job 276.
+249 of 298 steps (84%) done
+[Sun Jan 31 03:39:03 2021]
+Finished job 179.
+250 of 298 steps (84%) done
+[Sun Jan 31 03:39:03 2021]
+Finished job 315.
+251 of 298 steps (84%) done
+[Sun Jan 31 03:39:04 2021]
+Finished job 323.
+252 of 298 steps (85%) done
+[Sun Jan 31 03:39:04 2021]
+Finished job 278.
+253 of 298 steps (85%) done
+[Sun Jan 31 03:39:04 2021]
+Finished job 283.
+254 of 298 steps (85%) done
+[Sun Jan 31 03:39:06 2021]
+Finished job 362.
+255 of 298 steps (86%) done
+[Sun Jan 31 03:39:06 2021]
+Finished job 321.
+256 of 298 steps (86%) done
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-86-001_input.csv
+    output: phyolin_matrix_output/AML-86-001_fp0.001_matrix.csv, phyolin_estimate/AML-86-001_fp0.001_predict.out
+    log: log/AML-86-001_0.001_phyolin.log, log/AML-86-001_0.001_phyolin.err.log
+    jobid: 357
+    benchmark: benchmark/AML-86-001_0.001_phyolin.out
+    wildcards: patient=AML-86-001, fp=0.001
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-30-001_input.csv
+    output: phyolin_matrix_output/AML-30-001_fp0.01_matrix.csv, phyolin_estimate/AML-30-001_fp0.01_predict.out
+    log: log/AML-30-001_0.01_phyolin.log, log/AML-30-001_0.01_phyolin.err.log
+    jobid: 194
+    benchmark: benchmark/AML-30-001_0.01_phyolin.out
+    wildcards: patient=AML-30-001, fp=0.01
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-08-001_input.csv
+    output: phyolin_matrix_output/AML-08-001_fp0.001_matrix.csv, phyolin_estimate/AML-08-001_fp0.001_predict.out
+    log: log/AML-08-001_0.001_phyolin.log, log/AML-08-001_0.001_phyolin.err.log
+    jobid: 120
+    benchmark: benchmark/AML-08-001_0.001_phyolin.out
+    wildcards: patient=AML-08-001, fp=0.001
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-116-001_input.csv
+    output: phyolin_matrix_output/AML-116-001_fp0.01_matrix.csv, phyolin_estimate/AML-116-001_fp0.01_predict.out
+    log: log/AML-116-001_0.01_phyolin.log, log/AML-116-001_0.01_phyolin.err.log
+    jobid: 137
+    benchmark: benchmark/AML-116-001_0.01_phyolin.out
+    wildcards: patient=AML-116-001, fp=0.01
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-41-001_input.csv
+    output: phyolin_matrix_output/AML-41-001_fp0.001_matrix.csv, phyolin_estimate/AML-41-001_fp0.001_predict.out
+    log: log/AML-41-001_0.001_phyolin.log, log/AML-41-001_0.001_phyolin.err.log
+    jobid: 225
+    benchmark: benchmark/AML-41-001_0.001_phyolin.out
+    wildcards: patient=AML-41-001, fp=0.001
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-81-001_input.csv
+    output: phyolin_matrix_output/AML-81-001_fp0.0_matrix.csv, phyolin_estimate/AML-81-001_fp0.0_predict.out
+    log: log/AML-81-001_0.0_phyolin.log, log/AML-81-001_0.0_phyolin.err.log
+    jobid: 340
+    benchmark: benchmark/AML-81-001_0.0_phyolin.out
+    wildcards: patient=AML-81-001, fp=0.0
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-13-001_input.csv
+    output: phyolin_matrix_output/AML-13-001_fp0.01_matrix.csv, phyolin_estimate/AML-13-001_fp0.01_predict.out
+    log: log/AML-13-001_0.01_phyolin.log, log/AML-13-001_0.01_phyolin.err.log
+    jobid: 143
+    benchmark: benchmark/AML-13-001_0.01_phyolin.out
+    wildcards: patient=AML-13-001, fp=0.01
+
+
+[Sun Jan 31 03:39:06 2021]
+rule phyolin:
+    input: input/AML-13-001_input.csv
+    output: phyolin_matrix_output/AML-13-001_fp0.0_matrix.csv, phyolin_estimate/AML-13-001_fp0.0_predict.out
+    log: log/AML-13-001_0.0_phyolin.log, log/AML-13-001_0.0_phyolin.err.log
+    jobid: 142
+    benchmark: benchmark/AML-13-001_0.0_phyolin.out
+    wildcards: patient=AML-13-001, fp=0.0
+
+[Sun Jan 31 03:39:09 2021]
+Finished job 194.
+257 of 298 steps (86%) done
+[Sun Jan 31 03:44:15 2021]
+Finished job 142.
+258 of 298 steps (87%) done
+[Sun Jan 31 03:54:07 2021]
+Finished job 137.
+259 of 298 steps (87%) done
+[Sun Jan 31 03:54:07 2021]
+Finished job 120.
+260 of 298 steps (87%) done
+[Sun Jan 31 03:54:07 2021]
+Finished job 357.
+261 of 298 steps (88%) done
+[Sun Jan 31 03:54:08 2021]
+Finished job 340.
+262 of 298 steps (88%) done
+[Sun Jan 31 03:54:09 2021]
+Finished job 143.
+263 of 298 steps (88%) done
+[Sun Jan 31 03:54:13 2021]
+Finished job 225.
+264 of 298 steps (89%) done
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-50-001_input.csv
+    output: phyolin_matrix_output/AML-50-001_fp0.01_matrix.csv, phyolin_estimate/AML-50-001_fp0.01_predict.out
+    log: log/AML-50-001_0.01_phyolin.log, log/AML-50-001_0.01_phyolin.err.log
+    jobid: 248
+    benchmark: benchmark/AML-50-001_0.01_phyolin.out
+    wildcards: patient=AML-50-001, fp=0.01
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-98-001_input.csv
+    output: phyolin_matrix_output/AML-98-001_fp0.001_matrix.csv, phyolin_estimate/AML-98-001_fp0.001_predict.out
+    log: log/AML-98-001_0.001_phyolin.log, log/AML-98-001_0.001_phyolin.err.log
+    jobid: 393
+    benchmark: benchmark/AML-98-001_0.001_phyolin.out
+    wildcards: patient=AML-98-001, fp=0.001
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-21-001_input.csv
+    output: phyolin_matrix_output/AML-21-001_fp0.01_matrix.csv, phyolin_estimate/AML-21-001_fp0.01_predict.out
+    log: log/AML-21-001_0.01_phyolin.log, log/AML-21-001_0.01_phyolin.err.log
+    jobid: 167
+    benchmark: benchmark/AML-21-001_0.01_phyolin.out
+    wildcards: patient=AML-21-001, fp=0.01
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-54-001_input.csv
+    output: phyolin_matrix_output/AML-54-001_fp0.001_matrix.csv, phyolin_estimate/AML-54-001_fp0.001_predict.out
+    log: log/AML-54-001_0.001_phyolin.log, log/AML-54-001_0.001_phyolin.err.log
+    jobid: 261
+    benchmark: benchmark/AML-54-001_0.001_phyolin.out
+    wildcards: patient=AML-54-001, fp=0.001
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-68-001_input.csv
+    output: phyolin_matrix_output/AML-68-001_fp0.001_matrix.csv, phyolin_estimate/AML-68-001_fp0.001_predict.out
+    log: log/AML-68-001_0.001_phyolin.log, log/AML-68-001_0.001_phyolin.err.log
+    jobid: 303
+    benchmark: benchmark/AML-68-001_0.001_phyolin.out
+    wildcards: patient=AML-68-001, fp=0.001
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-58-001_input.csv
+    output: phyolin_matrix_output/AML-58-001_fp0.001_matrix.csv, phyolin_estimate/AML-58-001_fp0.001_predict.out
+    log: log/AML-58-001_0.001_phyolin.log, log/AML-58-001_0.001_phyolin.err.log
+    jobid: 273
+    benchmark: benchmark/AML-58-001_0.001_phyolin.out
+    wildcards: patient=AML-58-001, fp=0.001
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-73-001_input.csv
+    output: phyolin_matrix_output/AML-73-001_fp0.001_matrix.csv, phyolin_estimate/AML-73-001_fp0.001_predict.out
+    log: log/AML-73-001_0.001_phyolin.log, log/AML-73-001_0.001_phyolin.err.log
+    jobid: 318
+    benchmark: benchmark/AML-73-001_0.001_phyolin.out
+    wildcards: patient=AML-73-001, fp=0.001
+
+
+[Sun Jan 31 03:54:13 2021]
+rule phyolin:
+    input: input/AML-27-001_input.csv
+    output: phyolin_matrix_output/AML-27-001_fp0.001_matrix.csv, phyolin_estimate/AML-27-001_fp0.001_predict.out
+    log: log/AML-27-001_0.001_phyolin.log, log/AML-27-001_0.001_phyolin.err.log
+    jobid: 186
+    benchmark: benchmark/AML-27-001_0.001_phyolin.out
+    wildcards: patient=AML-27-001, fp=0.001
+
+[Sun Jan 31 04:09:14 2021]
+Finished job 261.
+265 of 298 steps (89%) done
+[Sun Jan 31 04:09:14 2021]
+Finished job 186.
+266 of 298 steps (89%) done
+[Sun Jan 31 04:09:14 2021]
+Finished job 273.
+267 of 298 steps (90%) done
+[Sun Jan 31 04:09:14 2021]
+Finished job 167.
+268 of 298 steps (90%) done
+[Sun Jan 31 04:09:14 2021]
+Finished job 248.
+269 of 298 steps (90%) done
+[Sun Jan 31 04:09:15 2021]
+Finished job 303.
+270 of 298 steps (91%) done
+[Sun Jan 31 04:09:16 2021]
+Finished job 318.
+271 of 298 steps (91%) done
+[Sun Jan 31 04:09:16 2021]
+Finished job 393.
+272 of 298 steps (91%) done
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-56-001_input.csv
+    output: phyolin_matrix_output/AML-56-001_fp0.01_matrix.csv, phyolin_estimate/AML-56-001_fp0.01_predict.out
+    log: log/AML-56-001_0.01_phyolin.log, log/AML-56-001_0.01_phyolin.err.log
+    jobid: 266
+    benchmark: benchmark/AML-56-001_0.01_phyolin.out
+    wildcards: patient=AML-56-001, fp=0.01
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-91-001_input.csv
+    output: phyolin_matrix_output/AML-91-001_fp0.0_matrix.csv, phyolin_estimate/AML-91-001_fp0.0_predict.out
+    log: log/AML-91-001_0.0_phyolin.log, log/AML-91-001_0.0_phyolin.err.log
+    jobid: 370
+    benchmark: benchmark/AML-91-001_0.0_phyolin.out
+    wildcards: patient=AML-91-001, fp=0.0
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-43-001_input.csv
+    output: phyolin_matrix_output/AML-43-001_fp0.001_matrix.csv, phyolin_estimate/AML-43-001_fp0.001_predict.out
+    log: log/AML-43-001_0.001_phyolin.log, log/AML-43-001_0.001_phyolin.err.log
+    jobid: 231
+    benchmark: benchmark/AML-43-001_0.001_phyolin.out
+    wildcards: patient=AML-43-001, fp=0.001
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-35-001_input.csv
+    output: phyolin_matrix_output/AML-35-001_fp0.01_matrix.csv, phyolin_estimate/AML-35-001_fp0.01_predict.out
+    log: log/AML-35-001_0.01_phyolin.log, log/AML-35-001_0.01_phyolin.err.log
+    jobid: 209
+    benchmark: benchmark/AML-35-001_0.01_phyolin.out
+    wildcards: patient=AML-35-001, fp=0.01
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-39-001_input.csv
+    output: phyolin_matrix_output/AML-39-001_fp0.0_matrix.csv, phyolin_estimate/AML-39-001_fp0.0_predict.out
+    log: log/AML-39-001_0.0_phyolin.log, log/AML-39-001_0.0_phyolin.err.log
+    jobid: 217
+    benchmark: benchmark/AML-39-001_0.0_phyolin.out
+    wildcards: patient=AML-39-001, fp=0.0
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-74-001_input.csv
+    output: phyolin_matrix_output/AML-74-001_fp0.0_matrix.csv, phyolin_estimate/AML-74-001_fp0.0_predict.out
+    log: log/AML-74-001_0.0_phyolin.log, log/AML-74-001_0.0_phyolin.err.log
+    jobid: 319
+    benchmark: benchmark/AML-74-001_0.0_phyolin.out
+    wildcards: patient=AML-74-001, fp=0.0
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-61-001_input.csv
+    output: phyolin_matrix_output/AML-61-001_fp0.01_matrix.csv, phyolin_estimate/AML-61-001_fp0.01_predict.out
+    log: log/AML-61-001_0.01_phyolin.log, log/AML-61-001_0.01_phyolin.err.log
+    jobid: 281
+    benchmark: benchmark/AML-61-001_0.01_phyolin.out
+    wildcards: patient=AML-61-001, fp=0.01
+
+
+[Sun Jan 31 04:09:16 2021]
+rule phyolin:
+    input: input/AML-18-001_input.csv
+    output: phyolin_matrix_output/AML-18-001_fp0.01_matrix.csv, phyolin_estimate/AML-18-001_fp0.01_predict.out
+    log: log/AML-18-001_0.01_phyolin.log, log/AML-18-001_0.01_phyolin.err.log
+    jobid: 158
+    benchmark: benchmark/AML-18-001_0.01_phyolin.out
+    wildcards: patient=AML-18-001, fp=0.01
+
+[Sun Jan 31 04:09:17 2021]
+Finished job 266.
+273 of 298 steps (92%) done
+[Sun Jan 31 04:09:18 2021]
+Finished job 209.
+274 of 298 steps (92%) done
+[Sun Jan 31 04:15:03 2021]
+Finished job 370.
+275 of 298 steps (92%) done
+[Sun Jan 31 04:24:18 2021]
+Finished job 158.
+276 of 298 steps (93%) done
+[Sun Jan 31 04:24:19 2021]
+Finished job 231.
+277 of 298 steps (93%) done
+[Sun Jan 31 04:24:19 2021]
+Finished job 281.
+278 of 298 steps (93%) done
+[Sun Jan 31 04:24:20 2021]
+Finished job 217.
+279 of 298 steps (94%) done
+[Sun Jan 31 04:24:20 2021]
+Finished job 319.
+280 of 298 steps (94%) done
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-64-001_input.csv
+    output: phyolin_matrix_output/AML-64-001_fp0.0_matrix.csv, phyolin_estimate/AML-64-001_fp0.0_predict.out
+    log: log/AML-64-001_0.0_phyolin.log, log/AML-64-001_0.0_phyolin.err.log
+    jobid: 289
+    benchmark: benchmark/AML-64-001_0.0_phyolin.out
+    wildcards: patient=AML-64-001, fp=0.0
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-09-001_input.csv
+    output: phyolin_matrix_output/AML-09-001_fp0.01_matrix.csv, phyolin_estimate/AML-09-001_fp0.01_predict.out
+    log: log/AML-09-001_0.01_phyolin.log, log/AML-09-001_0.01_phyolin.err.log
+    jobid: 122
+    benchmark: benchmark/AML-09-001_0.01_phyolin.out
+    wildcards: patient=AML-09-001, fp=0.01
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-20-001_input.csv
+    output: phyolin_matrix_output/AML-20-001_fp0.001_matrix.csv, phyolin_estimate/AML-20-001_fp0.001_predict.out
+    log: log/AML-20-001_0.001_phyolin.log, log/AML-20-001_0.001_phyolin.err.log
+    jobid: 165
+    benchmark: benchmark/AML-20-001_0.001_phyolin.out
+    wildcards: patient=AML-20-001, fp=0.001
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-03-001_input.csv
+    output: phyolin_matrix_output/AML-03-001_fp0.01_matrix.csv, phyolin_estimate/AML-03-001_fp0.01_predict.out
+    log: log/AML-03-001_0.01_phyolin.log, log/AML-03-001_0.01_phyolin.err.log
+    jobid: 107
+    benchmark: benchmark/AML-03-001_0.01_phyolin.out
+    wildcards: patient=AML-03-001, fp=0.01
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-09-001_input.csv
+    output: phyolin_matrix_output/AML-09-001_fp0.0_matrix.csv, phyolin_estimate/AML-09-001_fp0.0_predict.out
+    log: log/AML-09-001_0.0_phyolin.log, log/AML-09-001_0.0_phyolin.err.log
+    jobid: 121
+    benchmark: benchmark/AML-09-001_0.0_phyolin.out
+    wildcards: patient=AML-09-001, fp=0.0
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-23-001_input.csv
+    output: phyolin_matrix_output/AML-23-001_fp0.01_matrix.csv, phyolin_estimate/AML-23-001_fp0.01_predict.out
+    log: log/AML-23-001_0.01_phyolin.log, log/AML-23-001_0.01_phyolin.err.log
+    jobid: 173
+    benchmark: benchmark/AML-23-001_0.01_phyolin.out
+    wildcards: patient=AML-23-001, fp=0.01
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-50-001_input.csv
+    output: phyolin_matrix_output/AML-50-001_fp0.0_matrix.csv, phyolin_estimate/AML-50-001_fp0.0_predict.out
+    log: log/AML-50-001_0.0_phyolin.log, log/AML-50-001_0.0_phyolin.err.log
+    jobid: 247
+    benchmark: benchmark/AML-50-001_0.0_phyolin.out
+    wildcards: patient=AML-50-001, fp=0.0
+
+
+[Sun Jan 31 04:24:20 2021]
+rule phyolin:
+    input: input/AML-18-001_input.csv
+    output: phyolin_matrix_output/AML-18-001_fp0.0_matrix.csv, phyolin_estimate/AML-18-001_fp0.0_predict.out
+    log: log/AML-18-001_0.0_phyolin.log, log/AML-18-001_0.0_phyolin.err.log
+    jobid: 157
+    benchmark: benchmark/AML-18-001_0.0_phyolin.out
+    wildcards: patient=AML-18-001, fp=0.0
+
+[Sun Jan 31 04:24:25 2021]
+Finished job 157.
+281 of 298 steps (94%) done
+[Sun Jan 31 04:24:34 2021]
+Finished job 247.
+282 of 298 steps (95%) done
+[Sun Jan 31 04:30:08 2021]
+Finished job 289.
+283 of 298 steps (95%) done
+[Sun Jan 31 04:39:20 2021]
+Finished job 173.
+284 of 298 steps (95%) done
+[Sun Jan 31 04:39:21 2021]
+Finished job 107.
+285 of 298 steps (96%) done
+[Sun Jan 31 04:39:22 2021]
+Finished job 165.
+286 of 298 steps (96%) done
+[Sun Jan 31 04:39:24 2021]
+Finished job 122.
+287 of 298 steps (96%) done
+[Sun Jan 31 04:39:24 2021]
+Finished job 121.
+288 of 298 steps (97%) done
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-23-001_input.csv
+    output: phyolin_matrix_output/AML-23-001_fp0.0_matrix.csv, phyolin_estimate/AML-23-001_fp0.0_predict.out
+    log: log/AML-23-001_0.0_phyolin.log, log/AML-23-001_0.0_phyolin.err.log
+    jobid: 172
+    benchmark: benchmark/AML-23-001_0.0_phyolin.out
+    wildcards: patient=AML-23-001, fp=0.0
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-59-001_input.csv
+    output: phyolin_matrix_output/AML-59-001_fp0.01_matrix.csv, phyolin_estimate/AML-59-001_fp0.01_predict.out
+    log: log/AML-59-001_0.01_phyolin.log, log/AML-59-001_0.01_phyolin.err.log
+    jobid: 275
+    benchmark: benchmark/AML-59-001_0.01_phyolin.out
+    wildcards: patient=AML-59-001, fp=0.01
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-84-001_input.csv
+    output: phyolin_matrix_output/AML-84-001_fp0.0_matrix.csv, phyolin_estimate/AML-84-001_fp0.0_predict.out
+    log: log/AML-84-001_0.0_phyolin.log, log/AML-84-001_0.0_phyolin.err.log
+    jobid: 349
+    benchmark: benchmark/AML-84-001_0.0_phyolin.out
+    wildcards: patient=AML-84-001, fp=0.0
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-91-001_input.csv
+    output: phyolin_matrix_output/AML-91-001_fp0.01_matrix.csv, phyolin_estimate/AML-91-001_fp0.01_predict.out
+    log: log/AML-91-001_0.01_phyolin.log, log/AML-91-001_0.01_phyolin.err.log
+    jobid: 371
+    benchmark: benchmark/AML-91-001_0.01_phyolin.out
+    wildcards: patient=AML-91-001, fp=0.01
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-81-001_input.csv
+    output: phyolin_matrix_output/AML-81-001_fp0.001_matrix.csv, phyolin_estimate/AML-81-001_fp0.001_predict.out
+    log: log/AML-81-001_0.001_phyolin.log, log/AML-81-001_0.001_phyolin.err.log
+    jobid: 342
+    benchmark: benchmark/AML-81-001_0.001_phyolin.out
+    wildcards: patient=AML-81-001, fp=0.001
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-25-001_input.csv
+    output: phyolin_matrix_output/AML-25-001_fp0.001_matrix.csv, phyolin_estimate/AML-25-001_fp0.001_predict.out
+    log: log/AML-25-001_0.001_phyolin.log, log/AML-25-001_0.001_phyolin.err.log
+    jobid: 180
+    benchmark: benchmark/AML-25-001_0.001_phyolin.out
+    wildcards: patient=AML-25-001, fp=0.001
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-61-001_input.csv
+    output: phyolin_matrix_output/AML-61-001_fp0.001_matrix.csv, phyolin_estimate/AML-61-001_fp0.001_predict.out
+    log: log/AML-61-001_0.001_phyolin.log, log/AML-61-001_0.001_phyolin.err.log
+    jobid: 282
+    benchmark: benchmark/AML-61-001_0.001_phyolin.out
+    wildcards: patient=AML-61-001, fp=0.001
+
+
+[Sun Jan 31 04:39:24 2021]
+rule phyolin:
+    input: input/AML-32-001_input.csv
+    output: phyolin_matrix_output/AML-32-001_fp0.001_matrix.csv, phyolin_estimate/AML-32-001_fp0.001_predict.out
+    log: log/AML-32-001_0.001_phyolin.log, log/AML-32-001_0.001_phyolin.err.log
+    jobid: 201
+    benchmark: benchmark/AML-32-001_0.001_phyolin.out
+    wildcards: patient=AML-32-001, fp=0.001
+
+[Sun Jan 31 04:39:25 2021]
+Finished job 172.
+289 of 298 steps (97%) done
+[Sun Jan 31 04:39:35 2021]
+Finished job 349.
+290 of 298 steps (97%) done
+[Sun Jan 31 04:54:24 2021]
+Finished job 275.
+291 of 298 steps (98%) done
+[Sun Jan 31 04:54:25 2021]
+Finished job 180.
+292 of 298 steps (98%) done
+[Sun Jan 31 04:54:26 2021]
+Finished job 371.
+293 of 298 steps (98%) done
+[Sun Jan 31 04:54:26 2021]
+Finished job 342.
+294 of 298 steps (99%) done
+[Sun Jan 31 04:54:26 2021]
+Finished job 282.
+295 of 298 steps (99%) done
+[Sun Jan 31 04:54:28 2021]
+Finished job 201.
+296 of 298 steps (99%) done
+
+[Sun Jan 31 04:54:28 2021]
+rule phyolin:
+    input: input/AML-13-001_input.csv
+    output: phyolin_matrix_output/AML-13-001_fp0.001_matrix.csv, phyolin_estimate/AML-13-001_fp0.001_predict.out
+    log: log/AML-13-001_0.001_phyolin.log, log/AML-13-001_0.001_phyolin.err.log
+    jobid: 144
+    benchmark: benchmark/AML-13-001_0.001_phyolin.out
+    wildcards: patient=AML-13-001, fp=0.001
+
+[Sun Jan 31 05:09:30 2021]
+Finished job 144.
+297 of 298 steps (100%) done
+
+[Sun Jan 31 05:09:30 2021]
+localrule all:
+    input: input/AML-01-001_input.csv, input/AML-02-001_input.csv, input/AML-03-001_input.csv, input/AML-05-001_input.csv, input/AML-06-001_input.csv, input/AML-07-001_input.csv, input/AML-08-001_input.csv, input/AML-09-001_input.csv, input/AML-100-001_input.csv, input/AML-10-001_input.csv, input/AML-101-001_input.csv, input/AML-11-001_input.csv, input/AML-116-001_input.csv, input/AML-12-001_input.csv, input/AML-13-001_input.csv, input/AML-14-001_input.csv, input/AML-15-001_input.csv, input/AML-16-001_input.csv, input/AML-17-001_input.csv, input/AML-18-001_input.csv, input/AML-19-001_input.csv, input/AML-20-001_input.csv, input/AML-21-001_input.csv, input/AML-22-001_input.csv, input/AML-23-001_input.csv, input/AML-24-001_input.csv, input/AML-25-001_input.csv, input/AML-26-001_input.csv, input/AML-27-001_input.csv, input/AML-28-001_input.csv, input/AML-29-001_input.csv, input/AML-30-001_input.csv, input/AML-31-001_input.csv, input/AML-32-001_input.csv, input/AML-33-001_input.csv, input/AML-34-001_input.csv, input/AML-35-001_input.csv, input/AML-36-001_input.csv, input/AML-37-001_input.csv, input/AML-39-001_input.csv, input/AML-40-001_input.csv, input/AML-41-001_input.csv, input/AML-42-001_input.csv, input/AML-43-001_input.csv, input/AML-45-001_input.csv, input/AML-46-001_input.csv, input/AML-47-001_input.csv, input/AML-48-001_input.csv, input/AML-49-001_input.csv, input/AML-50-001_input.csv, input/AML-51-001_input.csv, input/AML-52-001_input.csv, input/AML-53-001_input.csv, input/AML-54-001_input.csv, input/AML-55-001_input.csv, input/AML-56-001_input.csv, input/AML-57-001_input.csv, input/AML-58-001_input.csv, input/AML-59-001_input.csv, input/AML-60-001_input.csv, input/AML-61-001_input.csv, input/AML-62-001_input.csv, input/AML-63-001_input.csv, input/AML-64-001_input.csv, input/AML-65-001_input.csv, input/AML-66-001_input.csv, input/AML-67-001_input.csv, input/AML-68-001_input.csv, input/AML-69-001_input.csv, input/AML-70-001_input.csv, input/AML-71-001_input.csv, input/AML-72-001_input.csv, input/AML-73-001_input.csv, input/AML-74-001_input.csv, input/AML-75-001_input.csv, input/AML-76-001_input.csv, input/AML-77-001_input.csv, input/AML-78-001_input.csv, input/AML-79-001_input.csv, input/AML-80-001_input.csv, input/AML-81-001_input.csv, input/AML-82-001_input.csv, input/AML-83-001_input.csv, input/AML-84-001_input.csv, input/AML-85-001_input.csv, input/AML-86-001_input.csv, input/AML-87-001_input.csv, input/AML-88-001_input.csv, input/AML-89-001_input.csv, input/AML-90-001_input.csv, input/AML-91-001_input.csv, input/AML-92-001_input.csv, input/AML-93-001_input.csv, input/AML-94-001_input.csv, input/AML-95-001_input.csv, input/AML-96-001_input.csv, input/AML-97-001_input.csv, input/AML-98-001_input.csv, input/AML-99-001_input.csv, phyolin_estimate/AML-01-001_fp0.0_predict.out, phyolin_estimate/AML-01-001_fp0.01_predict.out, phyolin_estimate/AML-01-001_fp0.001_predict.out, phyolin_estimate/AML-02-001_fp0.0_predict.out, phyolin_estimate/AML-02-001_fp0.01_predict.out, phyolin_estimate/AML-02-001_fp0.001_predict.out, phyolin_estimate/AML-03-001_fp0.0_predict.out, phyolin_estimate/AML-03-001_fp0.01_predict.out, phyolin_estimate/AML-03-001_fp0.001_predict.out, phyolin_estimate/AML-05-001_fp0.0_predict.out, phyolin_estimate/AML-05-001_fp0.01_predict.out, phyolin_estimate/AML-05-001_fp0.001_predict.out, phyolin_estimate/AML-06-001_fp0.0_predict.out, phyolin_estimate/AML-06-001_fp0.01_predict.out, phyolin_estimate/AML-06-001_fp0.001_predict.out, phyolin_estimate/AML-07-001_fp0.0_predict.out, phyolin_estimate/AML-07-001_fp0.01_predict.out, phyolin_estimate/AML-07-001_fp0.001_predict.out, phyolin_estimate/AML-08-001_fp0.0_predict.out, phyolin_estimate/AML-08-001_fp0.01_predict.out, phyolin_estimate/AML-08-001_fp0.001_predict.out, phyolin_estimate/AML-09-001_fp0.0_predict.out, phyolin_estimate/AML-09-001_fp0.01_predict.out, phyolin_estimate/AML-09-001_fp0.001_predict.out, phyolin_estimate/AML-100-001_fp0.0_predict.out, phyolin_estimate/AML-100-001_fp0.01_predict.out, phyolin_estimate/AML-100-001_fp0.001_predict.out, phyolin_estimate/AML-10-001_fp0.0_predict.out, phyolin_estimate/AML-10-001_fp0.01_predict.out, phyolin_estimate/AML-10-001_fp0.001_predict.out, phyolin_estimate/AML-101-001_fp0.0_predict.out, phyolin_estimate/AML-101-001_fp0.01_predict.out, phyolin_estimate/AML-101-001_fp0.001_predict.out, phyolin_estimate/AML-11-001_fp0.0_predict.out, phyolin_estimate/AML-11-001_fp0.01_predict.out, phyolin_estimate/AML-11-001_fp0.001_predict.out, phyolin_estimate/AML-116-001_fp0.0_predict.out, phyolin_estimate/AML-116-001_fp0.01_predict.out, phyolin_estimate/AML-116-001_fp0.001_predict.out, phyolin_estimate/AML-12-001_fp0.0_predict.out, phyolin_estimate/AML-12-001_fp0.01_predict.out, phyolin_estimate/AML-12-001_fp0.001_predict.out, phyolin_estimate/AML-13-001_fp0.0_predict.out, phyolin_estimate/AML-13-001_fp0.01_predict.out, phyolin_estimate/AML-13-001_fp0.001_predict.out, phyolin_estimate/AML-14-001_fp0.0_predict.out, phyolin_estimate/AML-14-001_fp0.01_predict.out, phyolin_estimate/AML-14-001_fp0.001_predict.out, phyolin_estimate/AML-15-001_fp0.0_predict.out, phyolin_estimate/AML-15-001_fp0.01_predict.out, phyolin_estimate/AML-15-001_fp0.001_predict.out, phyolin_estimate/AML-16-001_fp0.0_predict.out, phyolin_estimate/AML-16-001_fp0.01_predict.out, phyolin_estimate/AML-16-001_fp0.001_predict.out, phyolin_estimate/AML-17-001_fp0.0_predict.out, phyolin_estimate/AML-17-001_fp0.01_predict.out, phyolin_estimate/AML-17-001_fp0.001_predict.out, phyolin_estimate/AML-18-001_fp0.0_predict.out, phyolin_estimate/AML-18-001_fp0.01_predict.out, phyolin_estimate/AML-18-001_fp0.001_predict.out, phyolin_estimate/AML-19-001_fp0.0_predict.out, phyolin_estimate/AML-19-001_fp0.01_predict.out, phyolin_estimate/AML-19-001_fp0.001_predict.out, phyolin_estimate/AML-20-001_fp0.0_predict.out, phyolin_estimate/AML-20-001_fp0.01_predict.out, phyolin_estimate/AML-20-001_fp0.001_predict.out, phyolin_estimate/AML-21-001_fp0.0_predict.out, phyolin_estimate/AML-21-001_fp0.01_predict.out, phyolin_estimate/AML-21-001_fp0.001_predict.out, phyolin_estimate/AML-22-001_fp0.0_predict.out, phyolin_estimate/AML-22-001_fp0.01_predict.out, phyolin_estimate/AML-22-001_fp0.001_predict.out, phyolin_estimate/AML-23-001_fp0.0_predict.out, phyolin_estimate/AML-23-001_fp0.01_predict.out, phyolin_estimate/AML-23-001_fp0.001_predict.out, phyolin_estimate/AML-24-001_fp0.0_predict.out, phyolin_estimate/AML-24-001_fp0.01_predict.out, phyolin_estimate/AML-24-001_fp0.001_predict.out, phyolin_estimate/AML-25-001_fp0.0_predict.out, phyolin_estimate/AML-25-001_fp0.01_predict.out, phyolin_estimate/AML-25-001_fp0.001_predict.out, phyolin_estimate/AML-26-001_fp0.0_predict.out, phyolin_estimate/AML-26-001_fp0.01_predict.out, phyolin_estimate/AML-26-001_fp0.001_predict.out, phyolin_estimate/AML-27-001_fp0.0_predict.out, phyolin_estimate/AML-27-001_fp0.01_predict.out, phyolin_estimate/AML-27-001_fp0.001_predict.out, phyolin_estimate/AML-28-001_fp0.0_predict.out, phyolin_estimate/AML-28-001_fp0.01_predict.out, phyolin_estimate/AML-28-001_fp0.001_predict.out, phyolin_estimate/AML-29-001_fp0.0_predict.out, phyolin_estimate/AML-29-001_fp0.01_predict.out, phyolin_estimate/AML-29-001_fp0.001_predict.out, phyolin_estimate/AML-30-001_fp0.0_predict.out, phyolin_estimate/AML-30-001_fp0.01_predict.out, phyolin_estimate/AML-30-001_fp0.001_predict.out, phyolin_estimate/AML-31-001_fp0.0_predict.out, phyolin_estimate/AML-31-001_fp0.01_predict.out, phyolin_estimate/AML-31-001_fp0.001_predict.out, phyolin_estimate/AML-32-001_fp0.0_predict.out, phyolin_estimate/AML-32-001_fp0.01_predict.out, phyolin_estimate/AML-32-001_fp0.001_predict.out, phyolin_estimate/AML-33-001_fp0.0_predict.out, phyolin_estimate/AML-33-001_fp0.01_predict.out, phyolin_estimate/AML-33-001_fp0.001_predict.out, phyolin_estimate/AML-34-001_fp0.0_predict.out, phyolin_estimate/AML-34-001_fp0.01_predict.out, phyolin_estimate/AML-34-001_fp0.001_predict.out, phyolin_estimate/AML-35-001_fp0.0_predict.out, phyolin_estimate/AML-35-001_fp0.01_predict.out, phyolin_estimate/AML-35-001_fp0.001_predict.out, phyolin_estimate/AML-36-001_fp0.0_predict.out, phyolin_estimate/AML-36-001_fp0.01_predict.out, phyolin_estimate/AML-36-001_fp0.001_predict.out, phyolin_estimate/AML-37-001_fp0.0_predict.out, phyolin_estimate/AML-37-001_fp0.01_predict.out, phyolin_estimate/AML-37-001_fp0.001_predict.out, phyolin_estimate/AML-39-001_fp0.0_predict.out, phyolin_estimate/AML-39-001_fp0.01_predict.out, phyolin_estimate/AML-39-001_fp0.001_predict.out, phyolin_estimate/AML-40-001_fp0.0_predict.out, phyolin_estimate/AML-40-001_fp0.01_predict.out, phyolin_estimate/AML-40-001_fp0.001_predict.out, phyolin_estimate/AML-41-001_fp0.0_predict.out, phyolin_estimate/AML-41-001_fp0.01_predict.out, phyolin_estimate/AML-41-001_fp0.001_predict.out, phyolin_estimate/AML-42-001_fp0.0_predict.out, phyolin_estimate/AML-42-001_fp0.01_predict.out, phyolin_estimate/AML-42-001_fp0.001_predict.out, phyolin_estimate/AML-43-001_fp0.0_predict.out, phyolin_estimate/AML-43-001_fp0.01_predict.out, phyolin_estimate/AML-43-001_fp0.001_predict.out, phyolin_estimate/AML-45-001_fp0.0_predict.out, phyolin_estimate/AML-45-001_fp0.01_predict.out, phyolin_estimate/AML-45-001_fp0.001_predict.out, phyolin_estimate/AML-46-001_fp0.0_predict.out, phyolin_estimate/AML-46-001_fp0.01_predict.out, phyolin_estimate/AML-46-001_fp0.001_predict.out, phyolin_estimate/AML-47-001_fp0.0_predict.out, phyolin_estimate/AML-47-001_fp0.01_predict.out, phyolin_estimate/AML-47-001_fp0.001_predict.out, phyolin_estimate/AML-48-001_fp0.0_predict.out, phyolin_estimate/AML-48-001_fp0.01_predict.out, phyolin_estimate/AML-48-001_fp0.001_predict.out, phyolin_estimate/AML-49-001_fp0.0_predict.out, phyolin_estimate/AML-49-001_fp0.01_predict.out, phyolin_estimate/AML-49-001_fp0.001_predict.out, phyolin_estimate/AML-50-001_fp0.0_predict.out, phyolin_estimate/AML-50-001_fp0.01_predict.out, phyolin_estimate/AML-50-001_fp0.001_predict.out, phyolin_estimate/AML-51-001_fp0.0_predict.out, phyolin_estimate/AML-51-001_fp0.01_predict.out, phyolin_estimate/AML-51-001_fp0.001_predict.out, phyolin_estimate/AML-52-001_fp0.0_predict.out, phyolin_estimate/AML-52-001_fp0.01_predict.out, phyolin_estimate/AML-52-001_fp0.001_predict.out, phyolin_estimate/AML-53-001_fp0.0_predict.out, phyolin_estimate/AML-53-001_fp0.01_predict.out, phyolin_estimate/AML-53-001_fp0.001_predict.out, phyolin_estimate/AML-54-001_fp0.0_predict.out, phyolin_estimate/AML-54-001_fp0.01_predict.out, phyolin_estimate/AML-54-001_fp0.001_predict.out, phyolin_estimate/AML-55-001_fp0.0_predict.out, phyolin_estimate/AML-55-001_fp0.01_predict.out, phyolin_estimate/AML-55-001_fp0.001_predict.out, phyolin_estimate/AML-56-001_fp0.0_predict.out, phyolin_estimate/AML-56-001_fp0.01_predict.out, phyolin_estimate/AML-56-001_fp0.001_predict.out, phyolin_estimate/AML-57-001_fp0.0_predict.out, phyolin_estimate/AML-57-001_fp0.01_predict.out, phyolin_estimate/AML-57-001_fp0.001_predict.out, phyolin_estimate/AML-58-001_fp0.0_predict.out, phyolin_estimate/AML-58-001_fp0.01_predict.out, phyolin_estimate/AML-58-001_fp0.001_predict.out, phyolin_estimate/AML-59-001_fp0.0_predict.out, phyolin_estimate/AML-59-001_fp0.01_predict.out, phyolin_estimate/AML-59-001_fp0.001_predict.out, phyolin_estimate/AML-60-001_fp0.0_predict.out, phyolin_estimate/AML-60-001_fp0.01_predict.out, phyolin_estimate/AML-60-001_fp0.001_predict.out, phyolin_estimate/AML-61-001_fp0.0_predict.out, phyolin_estimate/AML-61-001_fp0.01_predict.out, phyolin_estimate/AML-61-001_fp0.001_predict.out, phyolin_estimate/AML-62-001_fp0.0_predict.out, phyolin_estimate/AML-62-001_fp0.01_predict.out, phyolin_estimate/AML-62-001_fp0.001_predict.out, phyolin_estimate/AML-63-001_fp0.0_predict.out, phyolin_estimate/AML-63-001_fp0.01_predict.out, phyolin_estimate/AML-63-001_fp0.001_predict.out, phyolin_estimate/AML-64-001_fp0.0_predict.out, phyolin_estimate/AML-64-001_fp0.01_predict.out, phyolin_estimate/AML-64-001_fp0.001_predict.out, phyolin_estimate/AML-65-001_fp0.0_predict.out, phyolin_estimate/AML-65-001_fp0.01_predict.out, phyolin_estimate/AML-65-001_fp0.001_predict.out, phyolin_estimate/AML-66-001_fp0.0_predict.out, phyolin_estimate/AML-66-001_fp0.01_predict.out, phyolin_estimate/AML-66-001_fp0.001_predict.out, phyolin_estimate/AML-67-001_fp0.0_predict.out, phyolin_estimate/AML-67-001_fp0.01_predict.out, phyolin_estimate/AML-67-001_fp0.001_predict.out, phyolin_estimate/AML-68-001_fp0.0_predict.out, phyolin_estimate/AML-68-001_fp0.01_predict.out, phyolin_estimate/AML-68-001_fp0.001_predict.out, phyolin_estimate/AML-69-001_fp0.0_predict.out, phyolin_estimate/AML-69-001_fp0.01_predict.out, phyolin_estimate/AML-69-001_fp0.001_predict.out, phyolin_estimate/AML-70-001_fp0.0_predict.out, phyolin_estimate/AML-70-001_fp0.01_predict.out, phyolin_estimate/AML-70-001_fp0.001_predict.out, phyolin_estimate/AML-71-001_fp0.0_predict.out, phyolin_estimate/AML-71-001_fp0.01_predict.out, phyolin_estimate/AML-71-001_fp0.001_predict.out, phyolin_estimate/AML-72-001_fp0.0_predict.out, phyolin_estimate/AML-72-001_fp0.01_predict.out, phyolin_estimate/AML-72-001_fp0.001_predict.out, phyolin_estimate/AML-73-001_fp0.0_predict.out, phyolin_estimate/AML-73-001_fp0.01_predict.out, phyolin_estimate/AML-73-001_fp0.001_predict.out, phyolin_estimate/AML-74-001_fp0.0_predict.out, phyolin_estimate/AML-74-001_fp0.01_predict.out, phyolin_estimate/AML-74-001_fp0.001_predict.out, phyolin_estimate/AML-75-001_fp0.0_predict.out, phyolin_estimate/AML-75-001_fp0.01_predict.out, phyolin_estimate/AML-75-001_fp0.001_predict.out, phyolin_estimate/AML-76-001_fp0.0_predict.out, phyolin_estimate/AML-76-001_fp0.01_predict.out, phyolin_estimate/AML-76-001_fp0.001_predict.out, phyolin_estimate/AML-77-001_fp0.0_predict.out, phyolin_estimate/AML-77-001_fp0.01_predict.out, phyolin_estimate/AML-77-001_fp0.001_predict.out, phyolin_estimate/AML-78-001_fp0.0_predict.out, phyolin_estimate/AML-78-001_fp0.01_predict.out, phyolin_estimate/AML-78-001_fp0.001_predict.out, phyolin_estimate/AML-79-001_fp0.0_predict.out, phyolin_estimate/AML-79-001_fp0.01_predict.out, phyolin_estimate/AML-79-001_fp0.001_predict.out, phyolin_estimate/AML-80-001_fp0.0_predict.out, phyolin_estimate/AML-80-001_fp0.01_predict.out, phyolin_estimate/AML-80-001_fp0.001_predict.out, phyolin_estimate/AML-81-001_fp0.0_predict.out, phyolin_estimate/AML-81-001_fp0.01_predict.out, phyolin_estimate/AML-81-001_fp0.001_predict.out, phyolin_estimate/AML-82-001_fp0.0_predict.out, phyolin_estimate/AML-82-001_fp0.01_predict.out, phyolin_estimate/AML-82-001_fp0.001_predict.out, phyolin_estimate/AML-83-001_fp0.0_predict.out, phyolin_estimate/AML-83-001_fp0.01_predict.out, phyolin_estimate/AML-83-001_fp0.001_predict.out, phyolin_estimate/AML-84-001_fp0.0_predict.out, phyolin_estimate/AML-84-001_fp0.01_predict.out, phyolin_estimate/AML-84-001_fp0.001_predict.out, phyolin_estimate/AML-85-001_fp0.0_predict.out, phyolin_estimate/AML-85-001_fp0.01_predict.out, phyolin_estimate/AML-85-001_fp0.001_predict.out, phyolin_estimate/AML-86-001_fp0.0_predict.out, phyolin_estimate/AML-86-001_fp0.01_predict.out, phyolin_estimate/AML-86-001_fp0.001_predict.out, phyolin_estimate/AML-87-001_fp0.0_predict.out, phyolin_estimate/AML-87-001_fp0.01_predict.out, phyolin_estimate/AML-87-001_fp0.001_predict.out, phyolin_estimate/AML-88-001_fp0.0_predict.out, phyolin_estimate/AML-88-001_fp0.01_predict.out, phyolin_estimate/AML-88-001_fp0.001_predict.out, phyolin_estimate/AML-89-001_fp0.0_predict.out, phyolin_estimate/AML-89-001_fp0.01_predict.out, phyolin_estimate/AML-89-001_fp0.001_predict.out, phyolin_estimate/AML-90-001_fp0.0_predict.out, phyolin_estimate/AML-90-001_fp0.01_predict.out, phyolin_estimate/AML-90-001_fp0.001_predict.out, phyolin_estimate/AML-91-001_fp0.0_predict.out, phyolin_estimate/AML-91-001_fp0.01_predict.out, phyolin_estimate/AML-91-001_fp0.001_predict.out, phyolin_estimate/AML-92-001_fp0.0_predict.out, phyolin_estimate/AML-92-001_fp0.01_predict.out, phyolin_estimate/AML-92-001_fp0.001_predict.out, phyolin_estimate/AML-93-001_fp0.0_predict.out, phyolin_estimate/AML-93-001_fp0.01_predict.out, phyolin_estimate/AML-93-001_fp0.001_predict.out, phyolin_estimate/AML-94-001_fp0.0_predict.out, phyolin_estimate/AML-94-001_fp0.01_predict.out, phyolin_estimate/AML-94-001_fp0.001_predict.out, phyolin_estimate/AML-95-001_fp0.0_predict.out, phyolin_estimate/AML-95-001_fp0.01_predict.out, phyolin_estimate/AML-95-001_fp0.001_predict.out, phyolin_estimate/AML-96-001_fp0.0_predict.out, phyolin_estimate/AML-96-001_fp0.01_predict.out, phyolin_estimate/AML-96-001_fp0.001_predict.out, phyolin_estimate/AML-97-001_fp0.0_predict.out, phyolin_estimate/AML-97-001_fp0.01_predict.out, phyolin_estimate/AML-97-001_fp0.001_predict.out, phyolin_estimate/AML-98-001_fp0.0_predict.out, phyolin_estimate/AML-98-001_fp0.01_predict.out, phyolin_estimate/AML-98-001_fp0.001_predict.out, phyolin_estimate/AML-99-001_fp0.0_predict.out, phyolin_estimate/AML-99-001_fp0.01_predict.out, phyolin_estimate/AML-99-001_fp0.001_predict.out
+    jobid: 0
+
+[Sun Jan 31 05:09:30 2021]
+Finished job 0.
+298 of 298 steps (100%) done
+Complete log: /scratch/data/leah/phyolin_private/aml_patients/.snakemake/log/2021-01-30T193549.128786.snakemake.log
