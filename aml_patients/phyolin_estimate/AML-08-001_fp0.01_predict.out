@@ -1,0 +1,15 @@
+variable,value
+prediction,linear
+cells,4675
+sites,3
+inputFP,0.01
+estFP,0.0108906
+inputFN,0.06
+estFN,0.0332518
+input1,8738
+input0,4386
+N_00,4087
+N_10,45
+N_11,8693
+N_01,299
+N_missing,901
