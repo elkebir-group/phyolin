@@ -1,4 +1,8 @@
-
+/*!
+ * @author Leah L. Weber
+ * @version 1.0
+ * @date June 14, 2021
+ */
 
 #ifndef PHYOLINCP_H
 #define PHYOLINCP_H
@@ -14,66 +18,81 @@
 class PhyolinCP
 {
 public:
+  /*!
+   * @brief constructor for an instance of Phyolin
+   * @param B a single cell matrix object of dimension cells x mutations containing
+   * the binary input data
+   * @param fp the false positive rate for the input data
+   * @param time the time limit for the CP solver
+   * @param threshold 
+   */
+   
   PhyolinCP(const SingleCellMatrix B, double fp, int time, double threshold);
-  
-   int getObjective() {
+   
+  /*! 
+   * @return get the number of flips made by Phyolin
+   */
+  int getObjective() {
       return _objValue;
-    }
+  }
 
-    int getSolveStatus() {
+  /*! 
+   * @return a boolean indicating if a solution has been found
+   */
+  int getSolveStatus() {
       return _solve;
-    }
-  
+  }
 
-   void write_csv(std::string filename, 
-                   std::string delim);
+  /*!
+   * @brief write the flipped output data to a file
+   * @param filename the string path to the file where the output file should be written
+   * @param delim a string delimiter for the output file
+   */
+  void write_csv(std::string filename, std::string delim);
   
-   void write_counts(std::string filename);
+  /*!
+   * @brief 
+   * @param filename the string path to the file where the output file should be written
+   * @param delim a string delimiter for the output file
+   */
+  void write_counts(std::string filename);
 
 
   double getLikelihood();
    
   
 private:
+
   void init();
   
-private:
-  SingleCellMatrix _B;
-  /// Number of features in distinguishing feature set
-  //const int _k;
-  /// Environment
+  SingleCellMatrix _B; /*!< a single cell matrix object (shape: cells x mutations) with input data */
  
+  IloEnv _env; /*!< environment variable */
 
-  IloEnv _env;
-  /// CPlex model
-  IloModel _model;
-  /// Solver
-  IloCP _cp;
-  /// Cover variables
-  IloArray <IloIntVarArray> _x;
+  IloModel _model; /*!< model variable */
 
-  IloIntVarArray _c;
+  IloCP _cp; /*!< solver  variable */
 
-  IloIntVar _y;
+  IloArray <IloIntVarArray> _x; /*!< decision variable indicating value after flipping shape( cells x mutations) */
 
-  bool _solve;
+  IloIntVarArray _c; /*!< decision variable for permutation of columns */
 
-  // IloIntVarArray _d;
-  /// Minimum weight variable
-  //IloNumVar _z;
-  /// Objective value
-  double _objValue;
+  IloIntVar _y; /*!< decision variable for the number of false positive flips */
 
-  double _fp;
+  bool _solve; /*!< value of the solve status of the model */
 
-  int _time;
+  double _objValue; /*!< the number of flips made by Phyolin */
+
+  double _fp; /*!< false positive rate */
+
+  int _time; /*!< time limit for the solver */
 
   double _threshold;
-
 
   int _fpCounts;
   
   int _cells;
+
   int _sites;
 
   double _estFP;
@@ -81,8 +100,11 @@ private:
   double _estFN;
 
   int _inputZeros;
+
   int _inputOnes;
+
   int _inputMissing;
+
   int _outputZeros;
   int _outputOnes;
   int _outputMissing;

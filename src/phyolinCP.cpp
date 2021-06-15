@@ -1,8 +1,7 @@
-/*
- * phyolinCP.cpp
- *
- *  created on 30 Apr 2020
- *   Leah Weber
+/*!
+ * @author Leah L. Weber
+ * @version 1.0
+ * @date June 14, 2021
  */
 
 #include "phyolinCP.h"
@@ -19,7 +18,7 @@ PhyolinCP::PhyolinCP( const SingleCellMatrix B, double fp, int time, double thre
   : _env()
   , _model(_env)
   , _cp(_model)
-  ,_fp(fp)
+  , _fp(fp)
   , _B(B)
   , _cells(B._cells)
   , _sites(B._sites)
@@ -39,82 +38,95 @@ PhyolinCP::PhyolinCP( const SingleCellMatrix B, double fp, int time, double thre
   , _fpCounts(0)
   , _time(time)
   , _threshold(threshold)
-
   ,_solve(false)
 {
   init();
 }
-
+/*!
+ *
+ * @brief initalize and solve a constraint programming model to find the minimum
+ * number of flips such that the input single-cell matrix represents a linear phylogeny
+ * 
+ */
 void PhyolinCP::init()
 {
 
+  std::cout << "Initializing Phyolin" << rows << std::endl;
   
-  IloInt rows = _B._cells;
-  IloInt cols = _B._sites;
-  std::cout << "rows: " << rows << std::endl;
-  std::cout << "cols: " << cols << std::endl;
+  IloInt rows = _cells;
+  IloInt cols = _sites;
+  std::cout << "cells: " << rows << std::endl;
+  std::cout << "mutations: " << cols << std::endl;
 
-  //initialize variables 
+  /*! Initialize the decision variables */
   typedef IloArray<IloIntVarArray> IloIntVarArray2;
   IloIntVarArray2 _x(_env, rows);
 
-  //add x variables to the model with domain -1, 0,1
+  
   for (IloInt i = 0; i < rows; i++) {
-      _x[i]  = IloIntVarArray(_env, cols, -1, 1);
 
-      
+      _x[i]  = IloIntVarArray(_env, cols, -1, 1); 
+
   }
+
+  int total_fps = ceil(_fp * _inputZeros/(1- _fp));
+
+  _y = IloIntVar(_env, 0, total_fps);
+
+  _c = IloIntVarArray(_env, cols, 0, cols-1);
  
   
-  
-
+  /*! Add constraints to the model */
   for(int i=0; i < rows; i++){
+    
     for(int j=0; j < cols; j++)
+      
       if(_B.is(i,j)==1){
+       
         _inputOnes++;
-        _model.add(_x[i][j] >= 0);
-        //_model.add(_x[i][j]==1
+
+        _model.add(_x[i][j] >= 0); /*!< constraint ensures non-missing data must be either 0 or 1*/
+
       }else if(_B.is(i,j)==-1){
+
         _inputMissing++;
-             //add a constraint so missing data doesn't change
-        _model.add(_x[i][j]== -1);
+             
+        _model.add(_x[i][j]== -1); /*!< add a constraint to prevent missing data from being modified*/
+
       }else{
+
          _model.add(_x[i][j] >= 0);
+
          _inputZeros++;
+
       }
   }
 
 
 
-   int total_fps = ceil(_fp * _inputZeros/(1- _fp));
-
-  // int total_fps = one_count * _fp;
   std::cout << "input zeros:" << _inputZeros << std::endl;
   std::cout << "input ones:" << _inputOnes << std::endl;
   std::cout << "input missing:" << _inputMissing << std::endl;
   std::cout << "total fp flips allowed:" << total_fps << std::endl;
 
-  
-  //_y = IloIntVarArray(_env, one_count, 0, 1);
 
-  _y = IloIntVar(_env, 0, total_fps);
+ 
+ 
+ 
 
-  //add permutation column variables to the model
-  _c = IloIntVarArray(_env, cols, 0, cols-1);
- 
- 
- 
- 
-//adding constraints
 
 //constraint to ensure the matrix _x represent a linear phylogeny
- int total_const = 0;
+
  for(IloInt k=0; k < rows; k++){
+
   for(IloInt i=0; i < cols; i++){
+
     for(IloInt j=0; j < cols; j++){
-      total_const += 1;
+
       if(_B.is(k,j) != -1 && _B.is(k,i) != -1){
+
         _model.add(IloIfThen(_env, _c[i] < _c[j], _x[k][j] <= _x[k][i]));
+        
       }
       
     }
@@ -125,61 +137,60 @@ void PhyolinCP::init()
  
  //the number of false positives must be less than integer variable y,
  // which has an upper bound of allowed false positives
-  IloIntExpr OnetoZeroFlips(_env, 0);
+IloIntExpr OnetoZeroFlips(_env, 0);
 
- for(int i=0; i< rows; i++){
-   for(int j = 0; j < cols; j++){
-     if(_B.is(i,j)==1){
-       OnetoZeroFlips += _x[i][j] ==0;
-       
-     }
-
-   }
- }
- _model.add(OnetoZeroFlips <= _y);
- 
- //every column has a different value in the ordering
- _model.add(IloAllDiff(_env, _c));
-
-
-
-
-
-
-  // std::cout << "Total FPS " << total_fps << std::endl;
-
-  std::cout << "adding objective" <<std::endl;  
-  IloIntExpr obj(_env,0);
-  IloIntExpr denom(_env,0);
-  //IloIntExpr Bsum(_env);
-  for(IloInt i=0; i < rows; i++){
-     for(IloInt j =0; j < cols; j++){
-        if(_B.is(i,j)==0){
-          obj +=  _x[i][j];
-        }
-        
+for(int i=0; i< rows; i++){
+  for(int j = 0; j < cols; j++){
+    if(_B.is(i,j)==1){
+      OnetoZeroFlips += _x[i][j] ==0;
+      
     }
+
   }
+}
+_model.add(OnetoZeroFlips <= _y);
  
+
+_model.add(IloAllDiff(_env, _c)); /*!< constraint to ensure every column in matrix has a different value in ordering */
+
+
+
+
+
+
+
+
+std::cout << "adding objective" <<std::endl;  
+IloIntExpr obj(_env,0);
+IloIntExpr denom(_env,0);
+//IloIntExpr Bsum(_env);
+for(IloInt i=0; i < rows; i++){
+    for(IloInt j =0; j < cols; j++){
+      if(_B.is(i,j)==0){
+        obj +=  _x[i][j];
+      }
+      
+  }
+}
+
 
      
   
  
 
   
-  _model.add(IloMinimize(_env, obj));
-  //_model.add(obj/denom <= _threshold);
+_model.add(IloMinimize(_env, obj));
+
    
  
 
   
- 
 
 
-  _cp.setParameter(IloCP::TimeLimit,_time);
-  _cp.setParameter(IloCP::LogPeriod, 10000);
-  _cp.setParameter(IloCP::Workers, 1);
-  _cp.setSearchPhases(IloSearchPhase(_env, _c));
+_cp.setParameter(IloCP::TimeLimit,_time);
+_cp.setParameter(IloCP::LogPeriod, 10000);
+_cp.setParameter(IloCP::Workers, 1);
+_cp.setSearchPhases(IloSearchPhase(_env, _c));
     //_cp.setParameter(IloCP::SearchType, "Multipoint")
   _cp.startNewSearch();
 
@@ -235,12 +246,6 @@ void PhyolinCP::init()
 
   std::cout << "solve:" << _solve << std::endl;  
 
-       //std::cout << _cp.getValue(_x[0][0]) << std::endl;
-      // for(IloInt i=0; i < 4; i++){
-      //   for(IloInt j=0; j < 5; j++){
-      //       std::cout << "x_" << i << "," << j << "=" << _cp.getValue(_x[i][j]) << std::endl;
-      //   }
-      // }
  
   
 }
@@ -249,7 +254,6 @@ void PhyolinCP::write_counts(std::string filename){
   
   std::ofstream myfile(filename);
 
-  // myfile << "prediction\tcells\tloci\tinputFP\testFP\tflipsFP\tinptFN\testFN\tflipsFN\tinput0\tinput1\tinputMissing\toutput0\toutput1\toutputMissing" << std::endl;
   
   std::string pred = _estFN <= _threshold ? "linear": "branched";
   myfile << "variable" << "," << "value" << std::endl;
@@ -268,88 +272,93 @@ void PhyolinCP::write_counts(std::string filename){
   myfile << "N_11" << "," << N_11 << std::endl;
   myfile << "N_01" << "," << N_01 << std::endl;
   myfile << "N_missing" << "," << _inputMissing << std::endl;
-
-  // myfile  << _fp << "\t" ;
-  // myfile << _estFP <<  "\t";
-  // myfile   <<_fpCounts << "\t" ;
-  // myfile  << _threshold << "\t" ;
-  // myfile  << _estFN << "\t" ;  
-  // myfile  << _objValue << "\t";
-  // myfile << _inputZeros << "\t";
-  // myfile << _inputOnes << "\t";
-  // myfile << _inputMissing << "\t";
-  // myfile << _outputZeros << "\t";
-  // myfile << _outputOnes << "\t";
-  // myfile << _outputMissing << "\t";
   
-
   myfile.close();
 }
 
 double PhyolinCP::getLikelihood(){
+
  int missing = 0;
+
   for(int i=0; i < _cells; i++){
+
     for(int j=0; j < _sites; j++){
+
       if(_B.is(i,j)==0 && _Bout[i][j]==0){
+
         N_00++;
+
       }else if(_B.is(i,j)==0 && _Bout[i][j]==1){
+
         N_01++;
+
       }else if(_B.is(i,j)==1 && _Bout[i][j]==1){
+
         N_11++;
+
       }else if(_B.is(i,j)==1 && _Bout[i][j]==0){
+
         N_10++;
+
       }else{
+
         missing++;
       }
     }
   }
+  
   double log_likelihood = N_00*log(1-_fp) +  N_11*log(1-_threshold) + N_10*log(_fp) + N_01*log(_threshold);
 
   return(log_likelihood);
   
 }
-//https://www.gormanalysis.com/blog/reading-and-writing-csv-files-with-cpp/
-void PhyolinCP::write_csv(std::string filename, 
-                   std::string delim){
+
+void PhyolinCP::write_csv(std::string filename, std::string delim){
+    
     std::vector<std::string> colnames = _B._mutIDs;
     
-    // Create an output filestream object
     std::ofstream myFile(filename);
     
-    // Send column names to the stream
-    for(int j = 0; j < colnames.size(); ++j)
-    {
+    /*! write the column names to the output file 
+     */
+    for(int j = 0; j < colnames.size(); ++j){
+
         myFile << colnames[j];
-        if(j != colnames.size() - 1) myFile << delim; // No comma at end of line
+
+        if(j != colnames.size() - 1){
+
+          myFile << delim; 
+
+        } 
+
     }
     if(colnames.size() > 0){
+
         myFile << "\n";
+
     }
     
     
-    // Send data to the stream
+    /*! write the flipped data to the output file 
+     */
     for(int i = 0; i < _Bout.size(); ++i)
     {
         for(int j = 0; j < _Bout[i].size(); ++j)
         {
             myFile << _Bout[i][j];
-            if(j != _Bout[i].size() - 1) myFile << delim; // No comma at end of line
+            if(j != _Bout[i].size() - 1){
+
+              myFile << delim; 
+
+            } 
         }
         myFile << "\n";
     }
     
-    // Close the file
     myFile.close();
 }
 
-// double PhyolinCP::solve()
-// {
-//   int r = _Bout.size();
-//   int c = _Bout[0].size();
-//   std::cout << "objective" << _objValue << std::endl;
-//   double estFn = (double) _objValue / (r*c);
-//   return estFn;
-// }
+
 
 
 
@@ -357,7 +366,7 @@ int main(int argc, char** argv){
   
   
 
- 
+  /*! Initialize input variables and default parameters */
   std::string inputFile;
   std::string sep (",");
   std::string outFile;
@@ -380,26 +389,24 @@ int main(int argc, char** argv){
   ap.refOption("time" ,"Max runtime in seconds of the solver", time );
   ap.run();
   
-
+  /*! create a single cell matrix object from the input data */
   SingleCellMatrix Bin(inputFile, ",", headers);
 
   PhyolinCP phy(Bin, fp, time, threshold);
   
  
   if(phy.getSolveStatus()){
+
     std::cout << "Flips: " << phy.getObjective() << std::endl;
     double like = phy.getLikelihood();
     std::cout << "Log Likelihood: " << like << std::endl;
     phy.write_csv(outFile,  sep);
     phy.write_counts(countFile);
+
   }else{
+
     std::cout << "No Solution" << std::endl;
   }
-
-
-  
-  
-
   
   return 0;
 }
