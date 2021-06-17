@@ -63,6 +63,12 @@ public:
   double getLikelihood();
 
 private:
+  /*!
+ *
+ * @brief initalize and solve a constraint programming model to find the minimum
+ * number of flips such that the input single-cell matrix represents a linear phylogeny
+ * 
+ */
   void init();
 
   SingleCellMatrix _B; /*!< a single cell matrix object (shape: cells x mutations) with input data */

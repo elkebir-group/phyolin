@@ -1,13 +1,24 @@
+"""
+Helper script to convert simulated AML patient data to the input format for 
+the deep learning method.
+"""
 import numpy as np 
 import os
 
 
 
 def convertMat(fname, fname_out, n, m):
+    """
+    Convert a simulated single-cell matrix to the input format for the deep learning comparison method 
+    :param fname: the path to the simulated input data
+    :param fname_out: the path to output file
+    :param n: the number of rows in output matrix (padding is used if input rows < n)
+    :param m: the number of columns in output matrix (padding is used if input columns < n)
+    :return:
+    """
     with open(fname) as fi:
         Binput = np.loadtxt(fi, dtype=np.int8, skiprows=1, delimiter=",")
         
-    
     rows, cols = Binput.shape
     if rows < n:
         newrows =np.zeros((n - rows, cols), dtype = np.int8)
@@ -16,7 +27,7 @@ def convertMat(fname, fname_out, n, m):
     if cols < m:
         newcols = np.zeros((n,m-cols), dtype = np.int8)
         Binput = np.hstack((Binput, newcols))
-        # skiprows=2)
+
     with open(fname_out, "w+") as predfile:
         np.savetxt(predfile,Binput, fmt="%01d")
  

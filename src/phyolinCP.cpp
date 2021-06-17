@@ -17,12 +17,7 @@ PhyolinCP::PhyolinCP(const SingleCellMatrix B, double fp, int time, double thres
 {
   init();
 }
-/*!
- *
- * @brief initalize and solve a constraint programming model to find the minimum
- * number of flips such that the input single-cell matrix represents a linear phylogeny
- * 
- */
+
 void PhyolinCP::init()
 {
 
@@ -41,10 +36,8 @@ void PhyolinCP::init()
   {
     _x[i] = IloIntVarArray(_env, cols, -1, 1);
   }
+ 
 
-  int total_fps = ceil(_fp * _inputZeros / (1 - _fp));
-
-  _y = IloIntVar(_env, 0, total_fps);
 
   _c = IloIntVarArray(_env, cols, 0, cols - 1);
 
@@ -70,6 +63,14 @@ void PhyolinCP::init()
         _inputZeros++;
       }
   }
+
+   /*! Calculate the z value to determine the budget for false positive flips
+   */
+
+  int total_fps = ceil(_fp * _inputOnes);
+  _y = IloIntVar(_env, 0, total_fps);
+
+  // int total_fps = ceil(_fp * _inputZeros / (1 - _fp));
 
   std::cout << "input zeros:" << _inputZeros << std::endl;
   std::cout << "input ones:" << _inputOnes << std::endl;
