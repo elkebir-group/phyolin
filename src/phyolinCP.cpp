@@ -36,8 +36,6 @@ void PhyolinCP::init()
   {
     _x[i] = IloIntVarArray(_env, cols, -1, 1);
   }
- 
-
 
   _c = IloIntVarArray(_env, cols, 0, cols - 1);
 
@@ -64,13 +62,11 @@ void PhyolinCP::init()
       }
   }
 
-   /*! Calculate the z value to determine the budget for false positive flips
+  /*! Calculate the z value to determine the budget for false positive flips
    */
 
   int total_fps = ceil(_fp * _inputOnes);
   _y = IloIntVar(_env, 0, total_fps);
-
-  // int total_fps = ceil(_fp * _inputZeros / (1 - _fp));
 
   std::cout << "input zeros:" << _inputZeros << std::endl;
   std::cout << "input ones:" << _inputOnes << std::endl;
@@ -218,7 +214,6 @@ void PhyolinCP::write_counts(std::string filename)
          << "," << _inputOnes << std::endl;
   myfile << "input0"
          << "," << _inputZeros << std::endl;
-  // myfile << "loglikelihood" << "," << getLikelihood() << std::endl;
   myfile << "N_00"
          << "," << N_00 << std::endl;
   myfile << "N_10"
