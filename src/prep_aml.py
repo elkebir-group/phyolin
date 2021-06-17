@@ -37,10 +37,9 @@ output_dir = "../data/sim_data/predict"
 aml_files = os.listdir(input_dir)
 n = 9300
 m = 7
-for a in aml_files:
 
-  
-        aml_in = os.path.join(input_dir, a)
-        aml_out = os.path.join(output_dir, a)
-        convertMat(aml_in, aml_out, n, m)
+for a in aml_files:
+    aml_in = os.path.join(input_dir, a)
+    aml_out = os.path.join(output_dir, a)
+    convertMat(aml_in, aml_out, n, m)
 
