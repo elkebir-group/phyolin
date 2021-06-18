@@ -22,7 +22,7 @@ def run_ms(filename, nCell, nMut):
     with open(filename, 'r') as f:
         l = [line for line in f]
     l1 = [s.strip('\n') for s in l]
-    l2 = np.array([[int(s) for s in q] for q in l1])  # Original matrix
+    l2 = np.array([[int(s) for s in q] for q in l1])  
     return l2
 
                 
