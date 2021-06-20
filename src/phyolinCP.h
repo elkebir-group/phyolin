@@ -37,6 +37,14 @@ public:
   }
 
   /*! 
+   * @return get Phyolin estimate false negative rate
+   */
+  double getEstFN()
+  {
+    return _estFN;
+  }
+
+  /*! 
    * @return a boolean indicating if a solution has been found
    */
   int getSolveStatus()

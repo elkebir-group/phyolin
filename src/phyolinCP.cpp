@@ -71,7 +71,7 @@ void PhyolinCP::init()
   std::cout << "input zeros:" << _inputZeros << std::endl;
   std::cout << "input ones:" << _inputOnes << std::endl;
   std::cout << "input missing:" << _inputMissing << std::endl;
-  std::cout << "total fp flips allowed:" << total_fps << std::endl;
+  std::cout << "total false positive flips allowed:" << total_fps << std::endl;
 
   //constraint to ensure the matrix _x represent a linear phylogeny
 
@@ -111,7 +111,6 @@ void PhyolinCP::init()
   _model.add(IloAllDiff(_env, _c)); /*!< constraint to ensure every column in matrix has a different value in ordering */
 
   /*! Add objective to the model that minimizes the number of flips from 0 to 1 (false negatives) */
-  std::cout << "adding objective" << std::endl;
 
   IloIntExpr obj(_env, 0);
 
@@ -179,12 +178,10 @@ void PhyolinCP::init()
       }
     }
 
-    _estFP = _fpCounts * 1.0 / _outputZeros;
-    _estFN = _objValue * 1.0 / _outputOnes;
+    _estFP = (_fpCounts * 1.0) / _outputZeros;
+    _estFN = (_objValue * 1.0) / _outputOnes;
   }
   _cp.end();
-
-  std::cout << "solve:" << _solve << std::endl;
 }
 
 void PhyolinCP::write_counts(std::string filename)
@@ -327,11 +324,11 @@ int main(int argc, char **argv)
   ap.refOption("input", "Binary Single Cell Matrix File", inputFile, true);
   ap.refOption("output", "Output filename for output linear phylogeny", outFile);
   ap.refOption("counts", "Filename recording the number of false positive and negative flips", countFile);
-  ap.refOption("fp", "Number of False Positives to Allow", fp);
-  ap.refOption("fn", "False Negative Threshold", threshold);
+  ap.refOption("fp", "False Positive Rate", fp);
+  ap.refOption("fn", "Threshold False Negative Rate, default is 0.25", threshold);
   ap.refOption("headers", "Input File has Headers", headers);
   ap.refOption("sep", "Character separator in input and output files, default is ','", sep);
-  ap.refOption("time", "Max runtime in seconds of the solver", time);
+  ap.refOption("time", "Max runtime in seconds of the solver, default is 300", time);
   ap.run();
 
   /*! create a single cell matrix object from the input data */
@@ -343,10 +340,18 @@ int main(int argc, char **argv)
   if (phy.getSolveStatus())
   {
     std::cout << "Flips: " << phy.getObjective() << std::endl;
-    double like = phy.getLikelihood();
-    std::cout << "Log Likelihood: " << like << std::endl;
-    phy.write_csv(outFile, sep);
-    phy.write_counts(countFile);
+    std::cout << std::setprecision(5) << "Estimated False Negatie Rate: " << phy.getEstFN() << std::endl;
+    std::string pred = phy.getEstFN() <= threshold ? "linear" : "branched";
+    std::cout << "Hypothesis: " << pred << std::endl;
+    if (!outFile.empty())
+    {
+      phy.write_csv(outFile, sep);
+    }
+    if (!countFile.empty())
+    {
+      double like = phy.getLikelihood();
+      phy.write_counts(countFile);
+    }
   }
   else
   {
