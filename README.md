@@ -81,9 +81,9 @@ Where:
   -counts str
      Filename recording the number of false positive and negative flips
   -fn num
-     False Negative Threshold
+     Threshold False Negative Rate, default is 0.25
   -fp num
-     Number of False Positives to Allow
+     False Positive Rate
   -headers
      Input File has Headers
   -input str
@@ -93,7 +93,7 @@ Where:
   -sep str
      Character separator in input and output files, default is ','
   -time int
-     Max runtime in seconds of the solver
+     Max runtime in seconds of the solver, default is 300
 ```
 <a name="example"></a>
 ## Example
@@ -101,6 +101,6 @@ The following is an example of how to use Phyolin.
 
 ```
 cd data
-../build/phyolin -input test_data.csv -ouput test_data_out.csv -counts test_data_predict.out -fn 0.2 -headers
+../build/phyolin -input test_data.csv -ouput test_data_out.csv -counts test_data_predict.out -fp 0.01 -fn 0.2 -time 60
 
 ```
