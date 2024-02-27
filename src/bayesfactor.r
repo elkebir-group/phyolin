@@ -3,10 +3,11 @@
 bayesFactor <- function(y, N, muL=0.05, sL=10, muB=0.15, sB=10){
   ####
   # 
-  #  y: the number of entries in B' that were flipped from 0 in B to 1 in B'
-  #  N: the total number of ones in B' where 
+  #  y: the number of entries in B' that were flipped from 0 in B to 1 in B'. 
+  #      This is N_01 in the output counts file
+  #  N: the total number of ones in B'.  This is N_01 + N_11 in the output counts file.
   #  muL (muB): estimated false negative rate under a hypothesis of linear (branching) evolution 
-  #  sL (sB): precision parameter controlling dispersion of the single-cel technology
+  #  sL (sB): precision parameter controlling dispersion of the single-cell technology
   # 
   #
   #  Note: B' is the matrix containing the resultant bits after flipping 
